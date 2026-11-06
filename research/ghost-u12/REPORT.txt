@@ -1,0 +1,265 @@
+PHÂN TÍCH WINDOWS 11 PRO 25H2 U12 (WPE) — 2026-11-06
+===================================================
+
+KẾT LUẬN CHÍNH
+--------------
+ISO này có dấu hiệu nhận diện GhostSpectre (registry, script, theme và Ghost
+Toolbox). Kết luận dưới đây áp dụng cho chính file người dùng đưa; không phải
+chứng thực nguồn phát hành, tính an toàn hay tất cả bản GhostSpectre khác.
+
+Đây là cách làm giữ lõi/khả năng tương thích nhiều hơn MyWin v5: WinSxS, driver,
+WinRE, .NET, PowerShell, WoW64, nhiều SystemApps và font vẫn còn. Compact và
+Superlite dùng gần như cùng payload; khác biệt quan trọng nằm ở registry/SKU,
+script triển khai OOBE và cấu hình sau cài. Không phải Superlite xóa thêm hàng
+GB file ngay bên trong install.wim so với Compact.
+
+1. NGUỒN VÀ PHẠM VI KIỂM TRA
+---------------------------
+ISO: D:\WIN11.PRO.25H2.U12.X64.(WPE).ISO
+  5,852,463,104 bytes (~5.451 GiB).
+Get-DiskImage/Get-Volume xác nhận chính ISO này đang mount E:, label trùng tên.
+Image: E:\sources\install.wim
+  4,907,989,722 bytes (~4.571 GiB), 6 index.
+  Nén LZMS, chunk 131072 bytes. Đuôi .wim không đồng nghĩa nén LZX.
+  SHA256 86613FAAF62EB6C04FC9FF8B2C9BC486A80E470F258F9529EAF4A5F3F52B6330
+boot.wim: 665,413,106 bytes (~634.6 MiB), 2 index, LZX,
+  WinPE/Setup build26100.8457. Không nhầm version WinPE với Windows sẽ cài.
+
+Chỉ đọc source ISO/WIM; extract vào thư mục audit riêng. Không mount image
+read-write, không chạy script/EXE/DLL lấy từ image, không import registry vào host.
+Các hive được đọc qua offreg.dll x86 bằng helper có sẵn. Archive được giải nén
+bằng 7-Zip có sẵn và ZPAQ7.15 tải từ release dự án, không dùng zpaq.exe trong ISO.
+Đã đọc 6 path inventories, SYSTEM/SOFTWARE/DefaultUser của cả6index; so content
+hash toàn bộ file Compact(index1),Superlite(index3),SE(index5); đọc script OOBE
+giải từ archive triển khai và cấu hình WinPE. Không cài thử, không chạy Toolbox,
+không tải/cài các gói do Toolbox cung cấp, không giải mã/decompile toàn bộ EXE.
+
+2. SÁU INDEX
+------------
+Tất cả ghi Windows11 25H2 build26200.9711, x64,en-US.
+  1 WINDOWS 11 PRO - COMPACT: không Defender, EditionID Professional.
+  2 WINDOWS 11 PRO - COMPACT + DEF: có Defender, EditionID Professional.
+  3 WINDOWS 11 PRO - SUPERLITE: không Defender, EditionID ServerRdsh.
+  4 WINDOWS 11 PRO - SUPERLITE + DEF: có Defender, EditionID ServerRdsh.
+  5 WINDOWS 11 PRO - SUPERLITE SE: không Defender, ServerRdsh, payload StartAllBack.
+  6 WINDOWS 11 PRO - SUPERLITE SE + DEF: có Defender, ServerRdsh, StartAllBack.
+
+SOFTWARE xác nhận ProductName của Superlite/SE là Windows10Enterprise multi-session,
+EditionID ServerRdsh, InstallationType Client. Đây là giá trị identity thực trong
+image, dù label quảng bá WINDOWS11PRO. Không suy ra Windows Server đầy đủ chỉ từ
+chữ ServerRdsh; không kết luận quyền sử dụng multi-session hay licensing đã hợp lệ.
+CompositionEditionID Enterprise có cả Compact. Registry ProductName cũ không phải
+căn cứ để gọi đây là Windows10: build/DisplayVersion thực vẫn26200.9711/25H2.
+
+3. NHỮNG PHẦN CÒN GIỮ — BẰNG CHỨNG TRƯỚC CÀI
+---------------------------------------------
+Số lượng đồng đều cả6index trừ app Defender:
+  WinSxS payload top-level (amd64/wow64/x86): 19,424 thư mục.
+  WinSxS\Manifests: 30,391 entries trong manifest folder.
+  DriverStore\FileRepository: 718 thư mục.
+  Windows\Fonts: 338 file ttf/ttc/fon/otf, có font Trung/Nhật/Hàn.
+  Windows\SystemApps: 47 top-level entries (có Shared/SxS, không phải47appđộc lập).
+  WindowsApps: 28 top-level entries khôngDefender,29 cóDefender.
+    Bao gồm metadata/neutral bundles và thư mục hệ thống; không gọi28appuser.
+
+RUNTIME / CÔNG CỤ:
+  .NET CLR4 ở Framework và Framework64, assembly/GAC và NativeImages.
+  Registry NDP\v4\Full Install=1, Release=534296, Version=4.8.10008.
+  Không thấy mscorwks.dll của v2.0.50727 cả32/64; không chứng minh .NET3.5 đã bật.
+  Script đặt OnlyUseLatestCLR=1; setting này không thay việc cài đầy đủ .NET3.5.
+  WindowsPowerShell x64/x86 và powershell_ise.exe còn.
+  SysWOW64/WoW64, msiexec.exe, .NET/Win32 support vẫn còn.
+  Remote Desktop client mstsc.exe, TermService, OpenSSH ssh.exe còn.
+
+SHELL / APPX / MEDIA:
+  StartMenuExperienceHost, ShellExperienceHost, Client.CBS/Core/FileExp/Photon/OOBE,
+  Account/AAD/OOBE network, Print dialogs, LockApp, BioEnrollment, Narrator,... còn.
+  Có cả AIFabric/CoreAI/AIX/AugLoop và XboxGameCallableUI ở SystemApps.
+  DesktopAppInstaller1.26.509.0 có winget.exe.
+  VCLibs140 và UI.Xaml2.8 còn; WindowsAppRuntime.CBS nằm trong SystemApps.
+  AV1,AVC,HEVC,HEIF,MPEG2,RawImage,VP9,Webp extensions còn trong WindowsApps.
+  Không thấy Microsoft.WindowsStore/StorePurchaseApp/WindowsCalculator Appx payload.
+  calc.exe tồn tại không chứng minh app Calculator hiện đại được cài.
+  Không thấy Edge msedge.exe hoặc msedgewebview2.exe và hai thư mục WebView2
+  runtime thường gặp. IE/edgehtml/mshtml legacy DLL còn; không đồng nghĩa WebView2.
+  InternetExplorer iexplore.exe,WindowsMediaPlayer wmplayer.exe32/64,
+  PhotoViewer.dll và notepad.exe còn; chưa kiểm chứng runtime từng ứng dụng.
+
+DRIVER / THIẾT BỊ:
+  Giữ driver class installers,printer packages,VMware vmxnet3/pvscsii,
+  Hyper-V wnetvsc,USB/storage/network/inbox drivers khá đầy đủ.
+  Không thấy package INF của6VirtIO ta đã tích hợp MyWin:
+    viostor,vioscsi,netkvm,balloon,viorng,vioser.
+  Có Spooler/spoolsv.exe, các script Printing_Admin_Scripts.
+
+RECOVERY / SERVICING:
+  Windows\System32\Recovery\winre.wim còn.
+  rstrui.exe,VSSVC.exe,swprv.dll,volsnap.sys,PITR.dll còn.
+  TrustedInstaller.exe,CBS servicing packages,Dism,WinSxS còn.
+  Registry CBS có3622package entries,1664 CurrentState=112; chỉ là trạng thái
+  đăng ký, không tự chứng minh mọi payload/feature/repair source đều hoàn chỉnh.
+  Hyper-V/VirtualMachinePlatform package metadata còn, nhưng vmcompute.exe không
+  thấy ởSystem32: KHÔNG kết luận Hyper-V/WSL2/Sandbox đã bật hay chạy được.
+  wsl.exe tồn tại chỉ là bằng chứng file, không phải test WSL environment.
+  Còn đường bảo trì nhiều hơn MyWinCore, nhưng chưa test WindowsUpdate/DISMrepair,
+  Storeinstall/restore,RestorePoint/WinRE hay driver install thực tế.
+
+4. SERVICES VÀ APP METADATA — KHÔNG NHẦM PRE/POST INSTALL
+------------------------------------------------------
+SYSTEM trước cài:
+  KhôngDefender:696service/driver registrations,16Start=4.
+  CóDefender:700registrations,15Start=4.
+  TaskCache282tasks ở cả6index.
+  wuauserv Start3, BITS3, DoSvc3, WaaSMedicSvc3, UsoSvc2, TrustedInstaller2.
+  BFE2,MpsSvc2,AppXSvc2,ClipSVC3,InstallService3,StateRepository2.
+  WSearch2,SysMain2,DiagTrack2,Spooler2,VSS3,swprv3,TermService3.
+  KhôngDefender thiếuWinDefend/WdNisSvc,SecurityHealthService4;
+  +DEF cóWinDefend2,WdNisSvc3,SecurityHealthService3.
+  Compact(index1) và Superlite(index3) không khác các giá trị dịch vụ đã đọc
+  (Name/Start/ImagePath/ServiceDll). Thay đổi chủ yếu được thực hiện sau đó.
+
+AppxAllUserStore cóSecHealthUIregistration trong index1 dù payloadSecHealthUI
+không có. Đây là ví dụ metadata có thể sót; không coi registry có tên là app chạy.
+
+5. CHỨNG CỨ COMPACT / SUPERLITE KHÔNG PHẢI HAI PAYLOAD CẮT RẤT KHÁC
+----------------------------------------------------------------
+Pathdiff index1vs3 =0. Stream content hash comparison:135241file records ở mỗi
+image, chỉ10pathkháccontent; không cófilethêm/bớt. So1vs5 cũng10pathkhác.
+Các path khác:
+  Users\Default\NTUSER.DAT và.LOG1
+  Windows\System32\config\COMPONENTS,SOFTWARE,SYSTEM và từng.LOG1
+  Windows\System32\update.dll
+  Windows\SystemApps\MicrosoftWindows.Client.CBS...\appxmanifest.xml
+Số file WIM metadata135243 khác parserfile-record135241; dùng cùng parser cả2
+image để so sánh, không gọi số parser là tổng file tuyệt đối trong header.
+
+Manifest Client.CBS khác các giá trị LaunchPolicy,MdmPolicyEnabledBehavior,
+DisableOnSKUCategories. Chưa xác định mọi feature node tương ứng hoặc test UI;
+không gán một hành vi shell cụ thể chỉ từ3giátrị này.
+
+6. CHUỖI TRIỂN KHAI ĐÃ TRUY RA
+-----------------------------
+ImageState=IMAGE_STATE_GENERALIZE_RESEAL_TO_OOBE: có dấu vết Sysprep/generalize.
+SYSTEM\Setup\CmdLine = oobe\windeploy.cmd.
+SYSTEM\Setup\FirstBoot\PreOobe\00 = %Windir%\System32\oobe.cmd.
+WOW6432Node\GhostSpectre\Edition = COMPACT / SUPERLITE / SUPERLITE SE.
+Registry RunOnce có startup.x64.bat reference; file này không hiện trong WIM
+inventory/selected archives. Không đoán source/bảo đảm nó sẽ chạy thành công.
+
+windeploy.cmd thực hiện:
+  đặt OnlyUseLatestCLR/điều chỉnh shutdown reliability;
+  dùng ZPAQ giải archive update.dll và ProgramData\ssh\updateau.dll;
+  gọi oobe\windeploy.exe.
+Đã giải archive bằng tool chính thức vào thư mục con audit, không vào C:\Windows.
+Đường dẫn tên.dll thực tế là archive ZPAQ có encryption; không phảiDLLPEthường.
+
+update.dll Compact chứa109file(~30.47MBuncompressed):
+  GhostToolbox updater/config,aria2c,wget,wget2,7-Zip commandline,
+  ViVeTool+FeatureDictionary, oobe.cmd,visual.cmd/startup.cmd/runapp.exe,...
+update.dll Superlite chứa112file:
+  oobe.cmd lớn hơn, thêm Panther\unattend.xml và helperVBS.
+update.dll SE chứaStartAllBack.bin~3.76MB,script cấu hình StartIsBack/StartAllBack.
+updateau.dll chứa6file ởProgramData\Microsoft\DRM:
+  autorun.exe,autorun.apm,autorun.inf,icon,logo.mp4/png. Chưa phân tích binary
+  autorun/updater hoàn chỉnh; không kết luận code bên trong hoàn toàn như script.
+
+oobe.cmd Compact(~21KB),Superlite(~55KB),SE(~48KB) là script học hữu ích:
+  chặn auto-install consumer apps bằng registry Orchestrator/ContentDelivery;
+  tắt Cortana/Bing/Widgets/Copilot/GameDVR,điều chỉnh theme/Explorer/visualeffects;
+  bỏ một số scheduledtask/ActiveSetup/contextmenu entries;
+  chỉnhWindowsUpdateUX Pause...EndTime/ExpiryTime tới2077;
+  cài7-Zip/CPU-Z bằng bộ cài đặt sẵn, chỉnhshortcut;
+  Superlite tắt hibernation,đổi dịch vụ theo profile; thấyDiagTrack/MapsBroker/
+    PhoneSvc/...Start4; Spooler đặt3 rồi ghi đè4 ở dòng551; SysMain vẫn2;
+  các khối có cả commentedcommands/giátrị bịghiđèlại. Không đếm mọi dòng REG
+    là thao tác có hiệu lực, không gọi giá trị đầu là giá trị cuối.
+
+Superlite cóDisable-NetAdapter vàDisableTaskMgr trong quá trình dựng OOBE;
+complete.vbs chứa lệnhEnable-NetAdapter lại vàcleanup. Cóunattend/PreOobe/script
+bật account RID500,bỏOOBE account screens. ConsentPromptBehaviorAdmin=0 trong
+script. Đây là quyết định hành vi/quyền hạn cần cân nhắc, không tự sao chép vào
+MyWin hay VPS chỉ vì tác giả dùng. Chưa chạy để xác nhận toàn bộ nhánh/cleanup.
+complete.vbs dọn setup files/script/log/archive sau cài, giải thích vì sao một
+số dấu vết khó đọc trên OS đã cài; nên audit từ WIM như lần này.
+
+7. WINPE VÀ COMPACTOS
+--------------------
+Bootindex2cóLaunchBar,Explorer++,WindowsSetup,WinNTSetup4vàcôngcụđĩa,
+pack vào archive Programs/Pass, giải lúc WinPEboot. Pass cópassword.exe;
+chưa execute/phân tích hành vi chương trình này.
+Shortcuts Windows Setup trong WinPE có arguments /compact và /compact:on.
+Đây là dấu hiệu chủ đích cài compressed OS, nhưng chưa chứng minh mọi đường
+cài đều bật CompactOS; cú pháp trong shortcut cũng không tự chứng minh được
+Setup phiên bản này chấp nhận. Phải queryCompactOS trên máy cài thử để biết.
+Giữ phân biệt: LZMS giảm file bộ cài; CompactOS giảm file OS trên ổ sau apply.
+Một tênprofileCOMPACT không đủ chứng minh trạng thái nén sau cài.
+
+8. SO VỚI MYWIN v5 (SO CÙNG REGEX ĐẾM)
+-------------------------------------
+                          Ghost U12           MyWin v5
+Build                     26200.9711          26300.9818
+WinSxS payload folders     19424               57
+DriverStore folders       718                 511 (gồm 6 VirtIO)
+Font files                338                 312
+SystemApps top entries    47                  24
+WinRE winre.wim            Có                  Không
+.NET4 / PS / WoW64         Có file             Có, hash bảo vệ; PS đã test ở v4
+6 VirtIO packages          Không thấy          Có, đã verify payload/boot registry
+Servicing                 Còn giữ nhiều       Core đã cắt, không serviceable
+
+WIM Ghost 4.571 GiB chứa 6 index, không chia 6 để tính size một edition vì có
+shared blobs. MyWin ESD v5 ~1.65 GiB chứa 1 index, cắt sâu hơn. Không suy ra RAM,
+tốc độ hay độ ổn định chỉ từ size ISO hoặc số folder. Chưa cài/benchmark Ghost
+để so RAM với VM MyWin.
+
+9. CÁCH HỌC VÀ ÁP DỤNG VÀO DỰ ÁN RIÊNG
+--------------------------------------
+Một quy trình có thể học từ bằng chứng, không phải khẳng định biết toàn bộ
+build source/tool nội bộ của tác giả:
+  A. Dùng Windows gốc đã update; giữ runtime, WinSxS, driver và recovery cần thiết.
+  B. Gỡ app người dùng chọn lọc; giữ App Installer/framework/codec cần thiết.
+  C. Tách profile Compact/Superlite thành cấu hình registry/services/tasks,
+     áp dụng cùng payload nền; tách SE thành lớp giao diện bổ sung.
+  D. Cấu hình Default User/OOBE có chủ đích; viết script dễ kiểm tra, có log,
+     trạng thái, khả năng chạy lại và khôi phục. Không cần giấu script trong
+     archive mang đuôi DLL để đạt mục tiêu kỹ thuật này.
+  E. Tách app/toolbox tùy chọn thành gói cài sau, lấy từ nguồn chính thức và
+     kiểm tra hash/chữ ký.
+  F. Giảm bộ cài bằng dedup và nén; cân nhắc CompactOS riêng nếu cần giảm ổ đĩa.
+  G. Test trong VM: .NET/PowerShell x64/x86, app 32-bit, MSI/MSIX, mạng, in ấn,
+     RDP; test Windows Update/repair/WinRE nếu tuyên bố hỗ trợ. Đo RAM idle trong
+     cùng điều kiện trước khi so sánh.
+
+Với MyWin: nếu muốn một bản giữ khả năng bảo trì theo hướng này, nên mở nhánh
+mới từ ISO gốc, giữ servicing ngay từ đầu. V3 cũng đã qua Core cut nên không
+phải nền đầy đủ để hứa phục hồi servicing. Không thể chỉ bù vài thư mục WinSxS
+vào v5 rồi hứa update/repair hoạt động bình thường. Chưa có yêu cầu build mới.
+Không đổi SKU sang ServerRdsh để giảm RAM nếu chưa có mục tiêu, kiểm chứng khả
+năng tương thích và điều kiện sử dụng rõ ràng. Không chép toàn bộ tweak/account
+security/activation hoặc binary đóng từ ISO vào dự án chỉ để giống giao diện.
+
+10. FILE BẰNG CHỨNG ĐỂ ĐỌC TIẾP
+-------------------------------
+image-info.txt,source-sha256.json,inventory-summary.json
+paths-1.txt...paths-6.txt;detail-1.txt,detail-3.txt,detail-5.txt
+image-content-comparison.json;file-content-diff-1-vs-3.json/1-vs-5.json
+registry-all.json;deployment-hooks.json
+index-N\services.csv,cbs-packages.csv,registry-summary.json (N1..6)
+custom-files\windeploy.cmd;shortcut.json
+archive-update-list.txt;archive-updateau-list.txt
+payload-update\C\Windows\System32\oobe.cmd (COMPACT)
+payload-index-3\C\Windows\System32\oobe.cmd (SUPERLITE)
+payload-index-5\C\Windows\System32\oobe.cmd (SE)
+payload-index-3\C\Windows\Panther\unattend.xml
+payload-index-3\C\Windows\ico\complete.vbs
+boot-files\winpeshl.ini,startnet.cmd;boot-programs-list.txt,boot-pass-list.txt
+Audit-Registry.ps1,Audit-Hooks.ps1,Compare-Images.ps1 làscript phân tích đọc dữ liệu.
+
+Các file extract chỉ để xem. Không chạy script tùy biến như công cụ audit.
+Không thay đổi MyWin hay push dữ liệu audit/third-party binaries lên repo.
+
+Tài liệu primary dùng để hiểu cơ chế:
+https://github.com/zpaq/zpaq
+https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/compact-os?view=windows-11
+https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-command-line-options?view=windows-11
+https://learn.microsoft.com/en-us/azure/virtual-desktop/windows-multisession-faq

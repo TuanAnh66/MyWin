@@ -1,0 +1,117 @@
+{
+    "Values":  [
+                   {
+                       "Hive":  "User",
+                       "Key":  "Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+                       "Name":  "TaskbarAnimations",
+                       "Kind":  0,
+                       "Value":  null
+                   },
+                   {
+                       "Hive":  "User",
+                       "Key":  "Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+                       "Name":  "Start_AccountNotifications",
+                       "Kind":  0,
+                       "Value":  null
+                   },
+                   {
+                       "Hive":  "User",
+                       "Key":  "Control Panel\\Desktop\\WindowMetrics",
+                       "Name":  "MinAnimate",
+                       "Kind":  0,
+                       "Value":  null
+                   },
+                   {
+                       "Hive":  "User",
+                       "Key":  "Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize",
+                       "Name":  "EnableTransparency",
+                       "Kind":  4,
+                       "Value":  1
+                   },
+                   {
+                       "Hive":  "User",
+                       "Key":  "System\\GameConfigStore",
+                       "Name":  "GameDVR_Enabled",
+                       "Kind":  0,
+                       "Value":  null
+                   },
+                   {
+                       "Hive":  "Software",
+                       "Key":  "Policies\\Microsoft\\Windows\\GameDVR",
+                       "Name":  "AllowGameDVR",
+                       "Kind":  0,
+                       "Value":  null
+                   },
+                   {
+                       "Hive":  "Software",
+                       "Key":  "Policies\\Microsoft\\Biometrics",
+                       "Name":  "Enabled",
+                       "Kind":  0,
+                       "Value":  null
+                   },
+                   {
+                       "Hive":  "System",
+                       "Key":  "ControlSet001\\Control\\Power",
+                       "Name":  "HibernateEnabled",
+                       "Kind":  4,
+                       "Value":  0
+                   },
+                   {
+                       "Hive":  "System",
+                       "Key":  "ControlSet001\\Control\\Terminal Server",
+                       "Name":  "fDenyTSConnections",
+                       "Kind":  4,
+                       "Value":  1
+                   },
+                   {
+                       "Hive":  "System",
+                       "Key":  "ControlSet001\\Control\\Terminal Server\\WinStations\\RDP-Tcp",
+                       "Name":  "UserAuthentication",
+                       "Kind":  4,
+                       "Value":  1
+                   }
+               ],
+    "Tasks":  [
+                  {
+                      "Task":  "LanguageComponentsInstaller\\Installation",
+                      "Exists":  true,
+                      "Id":  "{8B909FCF-7BD6-4374-98B7-F5E4513BB8EB}",
+                      "Children":  [
+
+                                   ]
+                  },
+                  {
+                      "Task":  "Application Experience\\Microsoft Compatibility Appraiser",
+                      "Exists":  false,
+                      "Id":  null,
+                      "Children":  [
+
+                                   ]
+                  },
+                  {
+                      "Task":  "Maintenance\\WinSAT",
+                      "Exists":  true,
+                      "Id":  "{731E952A-D01C-4D49-A37F-C8F1396F13B7}",
+                      "Children":  [
+
+                                   ]
+                  },
+                  {
+                      "Task":  "Windows Defender",
+                      "Exists":  true,
+                      "Id":  null,
+                      "Children":  [
+                                       "Windows Defender Cache Maintenance",
+                                       "Windows Defender Cleanup",
+                                       "Windows Defender Scheduled Scan",
+                                       "Windows Defender Verification"
+                                   ]
+                  }
+              ],
+    "SensDependents":  [
+                           {
+                               "Service":  "COMSysApp",
+                               "Dependencies":  "RpcSs;EventSystem;SENS"
+                           }
+                       ]
+}

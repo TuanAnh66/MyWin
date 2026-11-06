@@ -1,0 +1,42 @@
+[
+  {
+    "Path": "\\Users\\Default\\NTUSER.DAT",
+    "Change": "Content differs"
+  },
+  {
+    "Path": "\\Users\\Default\\NTUSER.DAT.LOG1",
+    "Change": "Content differs"
+  },
+  {
+    "Path": "\\Windows\\System32\\config\\COMPONENTS",
+    "Change": "Content differs"
+  },
+  {
+    "Path": "\\Windows\\System32\\config\\COMPONENTS.LOG1",
+    "Change": "Content differs"
+  },
+  {
+    "Path": "\\Windows\\System32\\config\\SOFTWARE",
+    "Change": "Content differs"
+  },
+  {
+    "Path": "\\Windows\\System32\\config\\SOFTWARE.LOG1",
+    "Change": "Content differs"
+  },
+  {
+    "Path": "\\Windows\\System32\\config\\SYSTEM",
+    "Change": "Content differs"
+  },
+  {
+    "Path": "\\Windows\\System32\\config\\SYSTEM.LOG1",
+    "Change": "Content differs"
+  },
+  {
+    "Path": "\\Windows\\System32\\update.dll",
+    "Change": "Content differs"
+  },
+  {
+    "Path": "\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\appxmanifest.xml",
+    "Change": "Content differs"
+  }
+]

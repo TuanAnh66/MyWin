@@ -1,0 +1,52 @@
+"Line","Operation","Key","Name","Type","Value","Conditional","ShadowedByLine"
+"2","add","HKLM\Software\Microsoft\Windows\CurrentVersion\RunOnce","taskmgr","REG_SZ","%systemdrive%\Ghost Toolbox\Temp\TaskMgr2.vbs","",
+"4","add","HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce","Complete","REG_EXPAND_SZ","%Windir%\ico\complete.vbs","",
+"5","add","HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced","TaskbarAl","REG_DWORD","1","","179"
+"7","delete","HKLM\SYSTEM\Setup\FirstBoot\PreOobe","00",,,"",
+"11","add","HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager","ContentDeliveryAllowed","REG_DWORD","0","",
+"12","add","HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager","OemPreInstalledAppsEnabled","REG_DWORD","0","",
+"13","add","HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager","PreInstalledAppsEnabled","REG_DWORD","0","",
+"14","add","HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager","PreInstalledAppsEverEnabled","REG_DWORD","0","",
+"15","add","HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager","SilentInstalledAppsEnabled","REG_DWORD","0","",
+"16","add","HKCU\Software\Microsoft\Windows\CurrentVersion\SearchSettings","IsDynamicSearchBoxEnabled","REG_DWORD","0","","37"
+"17","add","HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer","ShowRecent","REG_DWORD","0","",
+"18","add","HKCU\Software\Microsoft\Windows\CurrentVersion\PushNotifications","ToastEnabled","REG_DWORD","1","","30"
+"19","add","HKCU\Software\Policies\Microsoft\Windows\Explorer","DisableNotificationCenter","REG_DWORD","0","",
+"20","add","HKCU\Software\Microsoft\Windows\Shell\Bags\1\Desktop","FFLAGS","REG_DWORD","1075839525","",
+"21","add","HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced","ShowCortanaButton","REG_DWORD","0","",
+"22","add","HKCU\Software\Microsoft\Windows\CurrentVersion\Search","WebControlStatus","REG_DWORD","1","","197"
+"23","add","HKCU\Software\Microsoft\Windows\CurrentVersion\Search","WebControlSecondaryStatus","REG_DWORD","1","","198"
+"24","add","HKCU\Software\Microsoft\Windows\CurrentVersion\Search","SearchboxTaskbarMode","REG_DWORD","2","","199"
+"25","add","HKCU\Software\Microsoft\Windows\CurrentVersion\Search","SearchboxTaskbarModeCache","REG_DWORD","1","","201"
+"26","add","HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced","TaskbarDa","REG_DWORD","0","",
+"27","add","HKCU\Software\Microsoft\Windows\CurrentVersion\GameDVR","AppCaptureEnabled","REG_DWORD","0","",
+"28","add","HKCU\Software\Microsoft\Windows\CurrentVersion\GameDVR","GameDVR_Enabled","REG_DWORD","0","",
+"29","add","HKCU\Software\Policies\Microsoft\Windows\Windows Error Reporting","Disabled","REG_DWORD","1","",
+"30","add","HKCU\Software\Microsoft\Windows\CurrentVersion\PushNotifications","ToastEnabled","REG_DWORD","0","",
+"31","add","HKCU\Control Panel\Desktop","JPEGImportQuality","REG_DWORD","256","",
+"32","add","HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer","DisableThumbnails","REG_DWORD","0","",
+"33","add","HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced","IconsOnly","REG_DWORD","0","",
+"34","add","HKCU\Software\Microsoft\Windows\CurrentVersion\UserProfileEngagement","ScoobeSystemSettingEnabled","REG_DWORD","0","",
+"35","add","HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced","TaskbarMn","REG_DWORD","0","",
+"36","add","HKCU\Console","VirtualTerminalLevel","REG_DWORD","0x00000001","",
+"37","add","HKCU\Software\Microsoft\Windows\CurrentVersion\SearchSettings","IsDynamicSearchBoxEnabled","REG_DWORD","0","",
+"38","add","HKCU\Software\Microsoft\Windows\CurrentVersion\Search","BingSearchEnabled","REG_DWORD","0","",
+"39","add","HKLM\SOFTWARE\Policies\Microsoft\Dsh","AllowNewsAndInterests","REG_DWORD","0","",
+"41","add","HKLM\SOFTWARE\Policies\Microsoft\Windows\CloudContent","DisableWindowsConsumerFeatures","REG_DWORD","1","",
+"42","add","HKCU\Software\Policies\Microsoft\Windows\CloudContent","DisableThirdPartySuggestions","REG_DWORD","1","",
+"46","add","HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced","Start_AccountNotifications","REG_DWORD","0","","123"
+"58","add","HKLM\SOFTWARE\Microsoft\EdgeUpdate ","DoNotUpdateToEdgeWithChromium","REG_DWORD","1","",
+"123","add","HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced","Start_AccountNotifications","REG_DWORD","0","",
+"141","delete-key","HKLM\SOFTWARE\Classes\*\shellex\ContextMenuHandlers\EPP",,,,"",
+"142","delete-key","HKLM\SOFTWARE\Classes\Drive\shellex\ContextMenuHandlers\EPP",,,,"",
+"143","delete-key","HKLM\SOFTWARE\Classes\Directory\shellex\ContextMenuHandlers\EPP",,,,"",
+"144","delete-key","HKLM\SOFTWARE\Classes\Directory\shellex\ContextMenuHandlers\EPP",,,,"",
+"145","delete-key","HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\Windows Defender",,,,"",
+"157","add","HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\CrossDeviceResume\Configuration","IsResumeAllowed","REG_DWORD","0","",
+"158","add","HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\CrossDeviceResume\Configuration","IsOneDriveResumeAllowed","REG_DWORD","0","",
+"179","add","HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced","TaskbarAl","REG_DWORD","1","",
+"197","add","HKCU\Software\Microsoft\Windows\CurrentVersion\Search","WebControlStatus","REG_DWORD","1","",
+"198","add","HKCU\Software\Microsoft\Windows\CurrentVersion\Search","WebControlSecondaryStatus","REG_DWORD","1","",
+"199","add","HKCU\Software\Microsoft\Windows\CurrentVersion\Search","SearchboxTaskbarMode","REG_DWORD","2","",
+"201","add","HKCU\Software\Microsoft\Windows\CurrentVersion\Search","SearchboxTaskbarModeCache","REG_DWORD","1","",
+"219","delete-key","HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\SetupHost.exe",,,,"",

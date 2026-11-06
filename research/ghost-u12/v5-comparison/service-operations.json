@@ -1,0 +1,194 @@
+[
+  {
+    "Name": "WerSvc",
+    "TargetStart": 3,
+    "Line": 459,
+    "ShadowedByLine": null
+  },
+  {
+    "Name": "WpnService",
+    "TargetStart": 3,
+    "Line": 460,
+    "ShadowedByLine": null
+  },
+  {
+    "Name": "WpnUserService",
+    "TargetStart": 2,
+    "Line": 461,
+    "ShadowedByLine": null
+  },
+  {
+    "Name": "SENS",
+    "TargetStart": 2,
+    "Line": 462,
+    "ShadowedByLine": 542
+  },
+  {
+    "Name": "TabletInputService",
+    "TargetStart": 4,
+    "Line": 522,
+    "ShadowedByLine": 543
+  },
+  {
+    "Name": "UevAgentService",
+    "TargetStart": 4,
+    "Line": 524,
+    "ShadowedByLine": null
+  },
+  {
+    "Name": "DiagTrack",
+    "TargetStart": 4,
+    "Line": 525,
+    "ShadowedByLine": 554
+  },
+  {
+    "Name": "AssignedAccessManagerSvc",
+    "TargetStart": 4,
+    "Line": 526,
+    "ShadowedByLine": null
+  },
+  {
+    "Name": "PeerDistSvc",
+    "TargetStart": 4,
+    "Line": 527,
+    "ShadowedByLine": null
+  },
+  {
+    "Name": "cbdhsvc",
+    "TargetStart": 3,
+    "Line": 528,
+    "ShadowedByLine": null
+  },
+  {
+    "Name": "MapsBroker",
+    "TargetStart": 4,
+    "Line": 529,
+    "ShadowedByLine": null
+  },
+  {
+    "Name": "SmsRouter",
+    "TargetStart": 4,
+    "Line": 530,
+    "ShadowedByLine": null
+  },
+  {
+    "Name": "CscService",
+    "TargetStart": 4,
+    "Line": 531,
+    "ShadowedByLine": null
+  },
+  {
+    "Name": "SEMgrSvc",
+    "TargetStart": 4,
+    "Line": 532,
+    "ShadowedByLine": null
+  },
+  {
+    "Name": "PNRPsvc",
+    "TargetStart": 4,
+    "Line": 533,
+    "ShadowedByLine": null
+  },
+  {
+    "Name": "p2psvc",
+    "TargetStart": 4,
+    "Line": 534,
+    "ShadowedByLine": null
+  },
+  {
+    "Name": "p2pimsvc",
+    "TargetStart": 4,
+    "Line": 535,
+    "ShadowedByLine": null
+  },
+  {
+    "Name": "PhoneSvc",
+    "TargetStart": 4,
+    "Line": 536,
+    "ShadowedByLine": null
+  },
+  {
+    "Name": "PNRPAutoReg",
+    "TargetStart": 4,
+    "Line": 537,
+    "ShadowedByLine": null
+  },
+  {
+    "Name": "Spooler",
+    "TargetStart": 3,
+    "Line": 538,
+    "ShadowedByLine": 551
+  },
+  {
+    "Name": "RetailDemo",
+    "TargetStart": 4,
+    "Line": 539,
+    "ShadowedByLine": null
+  },
+  {
+    "Name": "Sense",
+    "TargetStart": 4,
+    "Line": 540,
+    "ShadowedByLine": null
+  },
+  {
+    "Name": "SysMain",
+    "TargetStart": 2,
+    "Line": 541,
+    "ShadowedByLine": null
+  },
+  {
+    "Name": "SENS",
+    "TargetStart": 4,
+    "Line": 542,
+    "ShadowedByLine": null
+  },
+  {
+    "Name": "TabletInputService",
+    "TargetStart": 4,
+    "Line": 543,
+    "ShadowedByLine": null
+  },
+  {
+    "Name": "WdNisSvc",
+    "TargetStart": 4,
+    "Line": 544,
+    "ShadowedByLine": null
+  },
+  {
+    "Name": "WbioSrvc",
+    "TargetStart": 3,
+    "Line": 545,
+    "ShadowedByLine": null
+  },
+  {
+    "Name": "WinRM",
+    "TargetStart": 4,
+    "Line": 546,
+    "ShadowedByLine": 548
+  },
+  {
+    "Name": "SgrmBroker",
+    "TargetStart": 4,
+    "Line": 547,
+    "ShadowedByLine": null
+  },
+  {
+    "Name": "WinRM",
+    "TargetStart": 4,
+    "Line": 548,
+    "ShadowedByLine": null
+  },
+  {
+    "Name": "Spooler",
+    "TargetStart": 4,
+    "Line": 551,
+    "ShadowedByLine": null
+  },
+  {
+    "Name": "DiagTrack",
+    "TargetStart": 4,
+    "Line": 554,
+    "ShadowedByLine": null
+  }
+]

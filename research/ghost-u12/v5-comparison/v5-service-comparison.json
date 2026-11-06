@@ -1,0 +1,245 @@
+[
+    {
+        "Service":  "WerSvc",
+        "SourceLine":  459,
+        "SuperliteStart":  3,
+        "V5Exists":  true,
+        "V5Start":  4,
+        "AlreadySame":  false,
+        "StartOverrideNames":  ""
+    },
+    {
+        "Service":  "WpnService",
+        "SourceLine":  460,
+        "SuperliteStart":  3,
+        "V5Exists":  true,
+        "V5Start":  2,
+        "AlreadySame":  false,
+        "StartOverrideNames":  ""
+    },
+    {
+        "Service":  "WpnUserService",
+        "SourceLine":  461,
+        "SuperliteStart":  2,
+        "V5Exists":  true,
+        "V5Start":  2,
+        "AlreadySame":  true,
+        "StartOverrideNames":  ""
+    },
+    {
+        "Service":  "UevAgentService",
+        "SourceLine":  524,
+        "SuperliteStart":  4,
+        "V5Exists":  true,
+        "V5Start":  4,
+        "AlreadySame":  true,
+        "StartOverrideNames":  ""
+    },
+    {
+        "Service":  "AssignedAccessManagerSvc",
+        "SourceLine":  526,
+        "SuperliteStart":  4,
+        "V5Exists":  true,
+        "V5Start":  3,
+        "AlreadySame":  false,
+        "StartOverrideNames":  ""
+    },
+    {
+        "Service":  "PeerDistSvc",
+        "SourceLine":  527,
+        "SuperliteStart":  4,
+        "V5Exists":  true,
+        "V5Start":  3,
+        "AlreadySame":  false,
+        "StartOverrideNames":  ""
+    },
+    {
+        "Service":  "cbdhsvc",
+        "SourceLine":  528,
+        "SuperliteStart":  3,
+        "V5Exists":  true,
+        "V5Start":  2,
+        "AlreadySame":  false,
+        "StartOverrideNames":  ""
+    },
+    {
+        "Service":  "MapsBroker",
+        "SourceLine":  529,
+        "SuperliteStart":  4,
+        "V5Exists":  true,
+        "V5Start":  4,
+        "AlreadySame":  true,
+        "StartOverrideNames":  ""
+    },
+    {
+        "Service":  "SmsRouter",
+        "SourceLine":  530,
+        "SuperliteStart":  4,
+        "V5Exists":  true,
+        "V5Start":  3,
+        "AlreadySame":  false,
+        "StartOverrideNames":  ""
+    },
+    {
+        "Service":  "CscService",
+        "SourceLine":  531,
+        "SuperliteStart":  4,
+        "V5Exists":  true,
+        "V5Start":  3,
+        "AlreadySame":  false,
+        "StartOverrideNames":  ""
+    },
+    {
+        "Service":  "SEMgrSvc",
+        "SourceLine":  532,
+        "SuperliteStart":  4,
+        "V5Exists":  true,
+        "V5Start":  3,
+        "AlreadySame":  false,
+        "StartOverrideNames":  ""
+    },
+    {
+        "Service":  "PNRPsvc",
+        "SourceLine":  533,
+        "SuperliteStart":  4,
+        "V5Exists":  false,
+        "V5Start":  null,
+        "AlreadySame":  false,
+        "StartOverrideNames":  ""
+    },
+    {
+        "Service":  "p2psvc",
+        "SourceLine":  534,
+        "SuperliteStart":  4,
+        "V5Exists":  false,
+        "V5Start":  null,
+        "AlreadySame":  false,
+        "StartOverrideNames":  ""
+    },
+    {
+        "Service":  "p2pimsvc",
+        "SourceLine":  535,
+        "SuperliteStart":  4,
+        "V5Exists":  false,
+        "V5Start":  null,
+        "AlreadySame":  false,
+        "StartOverrideNames":  ""
+    },
+    {
+        "Service":  "PhoneSvc",
+        "SourceLine":  536,
+        "SuperliteStart":  4,
+        "V5Exists":  true,
+        "V5Start":  4,
+        "AlreadySame":  true,
+        "StartOverrideNames":  ""
+    },
+    {
+        "Service":  "PNRPAutoReg",
+        "SourceLine":  537,
+        "SuperliteStart":  4,
+        "V5Exists":  false,
+        "V5Start":  null,
+        "AlreadySame":  false,
+        "StartOverrideNames":  ""
+    },
+    {
+        "Service":  "RetailDemo",
+        "SourceLine":  539,
+        "SuperliteStart":  4,
+        "V5Exists":  true,
+        "V5Start":  4,
+        "AlreadySame":  true,
+        "StartOverrideNames":  ""
+    },
+    {
+        "Service":  "Sense",
+        "SourceLine":  540,
+        "SuperliteStart":  4,
+        "V5Exists":  true,
+        "V5Start":  4,
+        "AlreadySame":  true,
+        "StartOverrideNames":  ""
+    },
+    {
+        "Service":  "SysMain",
+        "SourceLine":  541,
+        "SuperliteStart":  2,
+        "V5Exists":  true,
+        "V5Start":  2,
+        "AlreadySame":  true,
+        "StartOverrideNames":  ""
+    },
+    {
+        "Service":  "SENS",
+        "SourceLine":  542,
+        "SuperliteStart":  4,
+        "V5Exists":  true,
+        "V5Start":  2,
+        "AlreadySame":  false,
+        "StartOverrideNames":  ""
+    },
+    {
+        "Service":  "TabletInputService",
+        "SourceLine":  543,
+        "SuperliteStart":  4,
+        "V5Exists":  false,
+        "V5Start":  null,
+        "AlreadySame":  false,
+        "StartOverrideNames":  ""
+    },
+    {
+        "Service":  "WdNisSvc",
+        "SourceLine":  544,
+        "SuperliteStart":  4,
+        "V5Exists":  true,
+        "V5Start":  4,
+        "AlreadySame":  true,
+        "StartOverrideNames":  ""
+    },
+    {
+        "Service":  "WbioSrvc",
+        "SourceLine":  545,
+        "SuperliteStart":  3,
+        "V5Exists":  true,
+        "V5Start":  3,
+        "AlreadySame":  true,
+        "StartOverrideNames":  ""
+    },
+    {
+        "Service":  "SgrmBroker",
+        "SourceLine":  547,
+        "SuperliteStart":  4,
+        "V5Exists":  false,
+        "V5Start":  null,
+        "AlreadySame":  false,
+        "StartOverrideNames":  ""
+    },
+    {
+        "Service":  "WinRM",
+        "SourceLine":  548,
+        "SuperliteStart":  4,
+        "V5Exists":  true,
+        "V5Start":  3,
+        "AlreadySame":  false,
+        "StartOverrideNames":  ""
+    },
+    {
+        "Service":  "Spooler",
+        "SourceLine":  551,
+        "SuperliteStart":  4,
+        "V5Exists":  true,
+        "V5Start":  2,
+        "AlreadySame":  false,
+        "StartOverrideNames":  ""
+    },
+    {
+        "Service":  "DiagTrack",
+        "SourceLine":  554,
+        "SuperliteStart":  4,
+        "V5Exists":  true,
+        "V5Start":  4,
+        "AlreadySame":  true,
+        "StartOverrideNames":  ""
+    }
+]

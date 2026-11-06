@@ -466,6 +466,29 @@ https://learn.microsoft.com/en-us/microsoft-edge/webview2/concepts/distribution
 https://wimlib.net/man1/wimdelete.html
 https://www.wimlib.net/man1/wimoptimize.html
 
+15. NGHIÊN CỨU GHOST U12 / SUPERLITE VÀ ĐỐI CHIẾU v5
+--------------------------------------------------
+Đã phân tích ISO WIN11.PRO.25H2.U12.X64.(WPE).ISO, mount E:, build26200.9711.
+Workspace audit local: C:\tiny11-work\ghost-u12-audit.
+Tài liệu repo: research/ghost-u12/README.md, REPORT.txt,
+v5-comparison/ANALYSIS.txt và các bảng CSV/JSON/candidate-plan.json.
+
+6 index Compact/Superlite/SE, có/không Defender. Giữ19.424 WinSxS payload dirs,
+718 driver folders,338fontfiles,WinRE,.NET/PowerShell/WoW64. Compact vsSuperlite
+không khác path, chỉ10filekháccontent. Registry/SKU và archive/script triển khai
+là khác biệt quan trọng; Superlite/SE cóEditionID ServerRdsh.
+
+Đã đọc oobe.cmd,visual.cmd và helper từ archive triển khai; không execute file
+trong ISO, không cài thử Ghost, không sửa v5/host. Chỉ dùng công cụ giải nén chính
+thức để đọc dữ liệu. File/hive/payload/script Ghost gốc không đưa lên repo.
+
+Đối chiếu27service targets với v5:10đãcùng,6khôngcó,11khác. Spooler cuối script
+là4, không phải3; WerSvc target3 sẽ làm ngược v5 hiện4; SysMain vẫn2. Không chép
+lệnh tắtSENS,đổiCLRglobal,UAC/SmartScreen/HVCI,network/TaskManager/account/SKU.
+Candidate chỉ để review: giảmanimation/transparency,GameDVRpolicy và gợi ý app;
+tắt dịch vụ chức năng không dùng theo điều kiện. Manual3 chưa chắc tốnRAMidle.
+Chưa có yêu cầu tạo v6 hoặc áp dụng các đề xuất; không tự thực hiện sau handoff.
+
 ĐIỂM TIẾP TỤC CHO AGENT SAU
 --------------------------
 1) Đọc hồ sơ này + lite-v5\report.json + Build-LiteV5.ps1.

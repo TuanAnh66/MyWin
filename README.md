@@ -9,6 +9,7 @@ Trạng thái hiện tại: **v5**, giữ .NET Framework, Windows PowerShell, Wo
 - [Bàn giao đầy đủ v1–v5](docs/HANDOFF.txt): các mốc, script, checksum, lỗi đã gặp và cách tiếp tục.
 - [Cách dùng các script](docs/WORKFLOW.md): môi trường, đường dẫn cố định và dữ liệu cần chuẩn bị.
 - [Báo cáo WIM v5](reports/lite-v5.json), [báo cáo ESD v5](reports/lite-v5-esd.json), [font đã gỡ](reports/v5-removed-font-files.txt).
+- [Phân tích Ghost U12/Superlite và đối chiếu với v5](research/ghost-u12/README.md): thành phần giữ lại, dịch vụ, registry và các đề xuất chưa áp dụng.
 - [Nguồn và phạm vi repository](NOTICE.md).
 
 ## Các mốc

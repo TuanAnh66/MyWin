@@ -1,0 +1,3482 @@
+[
+  {
+    "Line": 27,
+    "Operation": "create-key",
+    "Key": "HKLM\\Software\\Policies\\Microsoft\\MRT",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "Only if MRT value absent",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 28,
+    "Operation": "add",
+    "Key": "HKLM\\Software\\Policies\\Microsoft\\MRT",
+    "Name": "DontOfferThroughWUAU",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "Only if MRT value absent",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 34,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System",
+    "Name": "ConsentPromptBehaviorAdmin",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 35,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System",
+    "Name": "EnableLUA",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 36,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System",
+    "Name": "PromptOnSecureDesktop",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 53,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnce",
+    "Name": "taskmgr1",
+    "Type": "REG_EXPAND_SZ",
+    "Value": "%systemdrive%\\Ghost Toolbox\\Temp\\TaskMgr1.vbs",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 54,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnce",
+    "Name": "taskmgr3",
+    "Type": "REG_EXPAND_SZ",
+    "Value": "%systemdrive%\\Ghost Toolbox\\Temp\\Printer.vbs",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 55,
+    "Operation": "add",
+    "Key": "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System",
+    "Name": "DisableTaskMgr",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 59,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\SetupHost.exe",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 70,
+    "Operation": "add",
+    "Key": "hku\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+    "Name": "TaskbarMn",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": 246
+  },
+  {
+    "Line": 76,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\WindowsUpdate\\Orchestrator\\UScheduler\\TFLUpdate",
+    "Name": "workCompleted",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 77,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\WindowsUpdate\\Orchestrator\\UScheduler\\OutlookUpdate",
+    "Name": "workCompleted",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 78,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\WindowsUpdate\\Orchestrator\\UScheduler\\LXP",
+    "Name": "workCompleted",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 79,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\WindowsUpdate\\Orchestrator\\UScheduler\\IA",
+    "Name": "workCompleted",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 80,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\WindowsUpdate\\Orchestrator\\UScheduler\\DevHomeUpdate",
+    "Name": "workCompleted",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 81,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\WindowsUpdate\\Orchestrator\\UScheduler\\CrossDeviceUpdate",
+    "Name": "workCompleted",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 85,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects",
+    "Name": "VisualFXSetting",
+    "Type": "REG_DWORD",
+    "Value": "4",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 86,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\AnimateMinMax",
+    "Name": "DefaultValue",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 87,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\AnimateMinMax",
+    "Name": "DefaultApplied",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 88,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\ComboBoxAnimation",
+    "Name": "DefaultValue",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 89,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\ComboBoxAnimation",
+    "Name": "DefaultApplied",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 90,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\ControlAnimations",
+    "Name": "DefaultValue",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 91,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\ControlAnimations",
+    "Name": "DefaultApplied",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 92,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\CursorShadow",
+    "Name": "DefaultValue",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 93,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\CursorShadow",
+    "Name": "DefaultApplied",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 94,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\DragFullWindows",
+    "Name": "DefaultValue",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 95,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\DragFullWindows",
+    "Name": "DefaultApplied",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 96,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\DropShadow",
+    "Name": "DefaultValue",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 97,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\DropShadow",
+    "Name": "DefaultApplied",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 98,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\DWMAeroPeekEnabled",
+    "Name": "DefaultValue",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 99,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\DWMAeroPeekEnabled",
+    "Name": "DefaultApplied",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 100,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\DWMEnabled",
+    "Name": "DefaultValue",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 101,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\DWMEnabled",
+    "Name": "DefaultApplied",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 102,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\DWMSaveThumbnailEnabled",
+    "Name": "DefaultValue",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 103,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\DWMSaveThumbnailEnabled",
+    "Name": "DefaultApplied",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 104,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\FontSmoothing",
+    "Name": "",
+    "Type": "REG_SZ",
+    "Value": "",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 105,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\ListBoxSmoothScrolling",
+    "Name": "DefaultValue",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 106,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\ListBoxSmoothScrolling",
+    "Name": "DefaultApplied",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 107,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\ListviewAlphaSelect",
+    "Name": "DefaultValue",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 108,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\ListviewAlphaSelect",
+    "Name": "DefaultApplied",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 109,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\ListviewShadow",
+    "Name": "DefaultValue",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 110,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\ListviewShadow",
+    "Name": "DefaultApplied",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 111,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\MenuAnimation",
+    "Name": "DefaultValue",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 112,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\MenuAnimation",
+    "Name": "DefaultApplied",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 113,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\SelectionFade",
+    "Name": "DefaultValue",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 114,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\SelectionFade",
+    "Name": "DefaultApplied",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 115,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\TaskbarAnimations",
+    "Name": "DefaultValue",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 116,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\TaskbarAnimations",
+    "Name": "DefaultApplied",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 117,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\Themes",
+    "Name": "DefaultValue",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 118,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\Themes",
+    "Name": "DefaultApplied",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 119,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\ThumbnailsOrIcon",
+    "Name": "DefaultValue",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 120,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\ThumbnailsOrIcon",
+    "Name": "DefaultApplied",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 121,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\TooltipAnimation",
+    "Name": "DefaultValue",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 122,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects\\TooltipAnimation",
+    "Name": "DefaultApplied",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 124,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "BlockSendInputResets",
+    "Type": "REG_SZ",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 125,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "CaretTimeout",
+    "Type": "REG_DWORD",
+    "Value": "5000",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 126,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "CaretWidth",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 127,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "ClickLockTime",
+    "Type": "REG_DWORD",
+    "Value": "1200",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 128,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "CoolSwitchColumns",
+    "Type": "REG_SZ",
+    "Value": "7",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 129,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "CoolSwitchRows",
+    "Type": "REG_SZ",
+    "Value": "3",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 130,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "CursorBlinkRate",
+    "Type": "REG_SZ",
+    "Value": "530",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 131,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "DockMoving",
+    "Type": "REG_SZ",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 132,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "DragFromMaximize",
+    "Type": "REG_SZ",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 133,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "DragFullWindows",
+    "Type": "REG_SZ",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 134,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "DragHeight",
+    "Type": "REG_SZ",
+    "Value": "4",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 135,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "DragWidth",
+    "Type": "REG_SZ",
+    "Value": "4",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 136,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "FocusBorderHeight",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 137,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "FocusBorderWidth",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 138,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "FontSmoothing",
+    "Type": "REG_SZ",
+    "Value": "2",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 139,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "FontSmoothingGamma",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 140,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "FontSmoothingOrientation",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 141,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "FontSmoothingType",
+    "Type": "REG_DWORD",
+    "Value": "2",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 142,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "ForegroundFlashCount",
+    "Type": "REG_DWORD",
+    "Value": "7",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 143,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "ForegroundLockTimeout",
+    "Type": "REG_DWORD",
+    "Value": "200000",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 144,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "LeftOverlapChars",
+    "Type": "REG_SZ",
+    "Value": "3",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 145,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "MenuShowDelay",
+    "Type": "REG_SZ",
+    "Value": "400",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 146,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "MouseWheelRouting",
+    "Type": "REG_DWORD",
+    "Value": "2",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 147,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "PaintDesktopVersion",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 148,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "Pattern",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 149,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "RightOverlapChars",
+    "Type": "REG_SZ",
+    "Value": "3",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 150,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "ScreenSaveActive",
+    "Type": "REG_SZ",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 151,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "SnapSizing",
+    "Type": "REG_SZ",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 152,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "TileWallpaper",
+    "Type": "REG_SZ",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 154,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "WallpaperOriginX",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 155,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "WallpaperOriginY",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 156,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "WallpaperStyle",
+    "Type": "REG_SZ",
+    "Value": "10",
+    "Conditional": "",
+    "ShadowedByLine": 229
+  },
+  {
+    "Line": 157,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "WheelScrollChars",
+    "Type": "REG_SZ",
+    "Value": "3",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 158,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "WheelScrollLines",
+    "Type": "REG_SZ",
+    "Value": "3",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 159,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "WindowArrangementActive",
+    "Type": "REG_SZ",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 160,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "ActiveWndTrackTimeout",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 161,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "JPEGImportQuality",
+    "Type": "REG_DWORD",
+    "Value": "256",
+    "Conditional": "",
+    "ShadowedByLine": 228
+  },
+  {
+    "Line": 162,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "Win8DpiScaling",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 163,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "DpiScalingVer",
+    "Type": "REG_DWORD",
+    "Value": "4096",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 164,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "UserPreferencesMask",
+    "Type": "REG_BINARY",
+    "Value": "9012038010000000",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 165,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "MaxVirtualDesktopDimension",
+    "Type": "REG_DWORD",
+    "Value": "1780",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 166,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "MaxMonitorDimension",
+    "Type": "REG_DWORD",
+    "Value": "1780",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 167,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "TranscodedImageCount",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 168,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "LastUpdated",
+    "Type": "REG_DWORD",
+    "Value": "4294967295",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 169,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "TranscodedImageCache",
+    "Type": "REG_BINARY",
+    "Value": "<Long binary/cache data omitted from public report>",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 170,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "ActiveBorder",
+    "Type": "REG_SZ",
+    "Value": "212 208 200",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 171,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "ActiveTitle",
+    "Type": "REG_SZ",
+    "Value": "10 36 106",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 172,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "AppWorkSpace",
+    "Type": "REG_SZ",
+    "Value": "128 128 128",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 173,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "ButtonAlternateFace",
+    "Type": "REG_SZ",
+    "Value": "181 181 181",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 174,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "ButtonDkShadow",
+    "Type": "REG_SZ",
+    "Value": "64 64 64",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 175,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "ButtonFace",
+    "Type": "REG_SZ",
+    "Value": "212 208 200",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 176,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "ButtonHiLight",
+    "Type": "REG_SZ",
+    "Value": "255 255 255",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 177,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "ButtonLight",
+    "Type": "REG_SZ",
+    "Value": "212 208 200",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 178,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "ButtonShadow",
+    "Type": "REG_SZ",
+    "Value": "128 128 128",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 179,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "ButtonText",
+    "Type": "REG_SZ",
+    "Value": "0 0 0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 180,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "GradientActiveTitle",
+    "Type": "REG_SZ",
+    "Value": "166 202 240",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 181,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "GradientInactiveTitle",
+    "Type": "REG_SZ",
+    "Value": "192 192 192",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 182,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "GrayText",
+    "Type": "REG_SZ",
+    "Value": "128 128 128",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 183,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "Hilight",
+    "Type": "REG_SZ",
+    "Value": "10 36 106",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 184,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "HilightText",
+    "Type": "REG_SZ",
+    "Value": "255 255 255",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 185,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "HotTrackingColor",
+    "Type": "REG_SZ",
+    "Value": "0 0 128",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 186,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "InactiveBorder",
+    "Type": "REG_SZ",
+    "Value": "212 208 200",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 187,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "InactiveTitle",
+    "Type": "REG_SZ",
+    "Value": "128 128 128",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 188,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "InactiveTitleText",
+    "Type": "REG_SZ",
+    "Value": "212 208 200",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 189,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "InfoText",
+    "Type": "REG_SZ",
+    "Value": "0 0 0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 190,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "InfoWindow",
+    "Type": "REG_SZ",
+    "Value": "255 255 255",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 191,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "Menu",
+    "Type": "REG_SZ",
+    "Value": "212 208 200",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 192,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "MenuText",
+    "Type": "REG_SZ",
+    "Value": "0 0 0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 193,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "Scrollbar",
+    "Type": "REG_SZ",
+    "Value": "212 208 200",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 194,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "TitleText",
+    "Type": "REG_SZ",
+    "Value": "255 255 255",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 195,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "Window",
+    "Type": "REG_SZ",
+    "Value": "255 255 255",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 196,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "WindowFrame",
+    "Type": "REG_SZ",
+    "Value": "0 0 0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 197,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\Colors",
+    "Name": "WindowText",
+    "Type": "REG_SZ",
+    "Value": "0 0 0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 198,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\WindowMetrics",
+    "Name": "BorderWidth",
+    "Type": "REG_SZ",
+    "Value": "-15",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 199,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\WindowMetrics",
+    "Name": "CaptionFont",
+    "Type": "REG_BINARY",
+    "Value": "f4ffffff0000000000000000000000009001000000000001000005005300650067006f006500200055004900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 200,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\WindowMetrics",
+    "Name": "CaptionHeight",
+    "Type": "REG_SZ",
+    "Value": "-330",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 201,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\WindowMetrics",
+    "Name": "CaptionWidth",
+    "Type": "REG_SZ",
+    "Value": "-330",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 202,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\WindowMetrics",
+    "Name": "IconFont",
+    "Type": "REG_BINARY",
+    "Value": "f4ffffff0000000000000000000000009001000000000001000005005300650067006f006500200055004900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 203,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\WindowMetrics",
+    "Name": "IconTitleWrap",
+    "Type": "REG_SZ",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 204,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\WindowMetrics",
+    "Name": "MenuFont",
+    "Type": "REG_BINARY",
+    "Value": "f4ffffff0000000000000000000000009001000000000001000005005300650067006f006500200055004900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 205,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\WindowMetrics",
+    "Name": "MenuHeight",
+    "Type": "REG_SZ",
+    "Value": "-285",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 206,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\WindowMetrics",
+    "Name": "MenuWidth",
+    "Type": "REG_SZ",
+    "Value": "-285",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 207,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\WindowMetrics",
+    "Name": "MessageFont",
+    "Type": "REG_BINARY",
+    "Value": "f4ffffff0000000000000000000000009001000000000001000005005300650067006f006500200055004900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 208,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\WindowMetrics",
+    "Name": "ScrollHeight",
+    "Type": "REG_SZ",
+    "Value": "-255",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 209,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\WindowMetrics",
+    "Name": "ScrollWidth",
+    "Type": "REG_SZ",
+    "Value": "-255",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 210,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\WindowMetrics",
+    "Name": "Shell Icon Size",
+    "Type": "REG_SZ",
+    "Value": "32",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 211,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\WindowMetrics",
+    "Name": "SmCaptionFont",
+    "Type": "REG_BINARY",
+    "Value": "f4ffffff0000000000000000000000009001000000000001000005005300650067006f006500200055004900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 212,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\WindowMetrics",
+    "Name": "SmCaptionHeight",
+    "Type": "REG_SZ",
+    "Value": "-330",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 213,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\WindowMetrics",
+    "Name": "SmCaptionWidth",
+    "Type": "REG_SZ",
+    "Value": "-330",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 214,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\WindowMetrics",
+    "Name": "StatusFont",
+    "Type": "REG_BINARY",
+    "Value": "f4ffffff0000000000000000000000009001000000000001000005005300650067006f006500200055004900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 215,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\WindowMetrics",
+    "Name": "PaddedBorderWidth",
+    "Type": "REG_SZ",
+    "Value": "-60",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 216,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\WindowMetrics",
+    "Name": "AppliedDPI",
+    "Type": "REG_DWORD",
+    "Value": "96",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 217,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\WindowMetrics",
+    "Name": "IconSpacing",
+    "Type": "REG_SZ",
+    "Value": "-1125",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 218,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\WindowMetrics",
+    "Name": "IconVerticalSpacing",
+    "Type": "REG_SZ",
+    "Value": "-1125",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 219,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop\\WindowMetrics",
+    "Name": "MinAnimate",
+    "Type": "REG_SZ",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 222,
+    "Operation": "add",
+    "Key": "HKU\\Default\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Themes",
+    "Name": "WallpaperSetFromTheme",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 223,
+    "Operation": "add",
+    "Key": "HKU\\Default\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Themes",
+    "Name": "ColorSetFromTheme",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 224,
+    "Operation": "add",
+    "Key": "HKU\\Default\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Themes",
+    "Name": "CurrentTheme",
+    "Type": "REG_SZ",
+    "Value": "%Windir%\\Resources\\Themes\\GHOSTV5_AI.02.theme",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 225,
+    "Operation": "add",
+    "Key": "HKU\\Default\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Themes",
+    "Name": "SetupVersion",
+    "Type": "REG_SZ",
+    "Value": "10",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 226,
+    "Operation": "add",
+    "Key": "HKU\\Default\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Themes\\HighContrast",
+    "Name": "Pre-High Contrast Scheme",
+    "Type": "REG_SZ",
+    "Value": "%Windir%\\Resources\\Themes\\GHOSTV5_AI.02.theme",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 227,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "WallPaper",
+    "Type": "REG_SZ",
+    "Value": "%Windir%\\Resources\\Themes\\GHOSTV5\\GHOST-PDX02.jpg",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 228,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "JPEGImportQuality",
+    "Type": "REG_DWORD",
+    "Value": "256",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 229,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Control Panel\\Desktop",
+    "Name": "WallpaperStyle",
+    "Type": "REG_SZ",
+    "Value": "10",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 232,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize",
+    "Name": "ColorPrevalence",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 233,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize",
+    "Name": "EnableTransparency",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 234,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize",
+    "Name": "AppsUseLightTheme",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 235,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize",
+    "Name": "SystemUsesLightTheme",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 238,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+    "Name": "ContentDeliveryAllowed",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": 281
+  },
+  {
+    "Line": 239,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+    "Name": "FeatureManagementEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 240,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+    "Name": "OemPreInstalledAppsEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": 282
+  },
+  {
+    "Line": 241,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+    "Name": "PreInstalledAppsEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": 283
+  },
+  {
+    "Line": 242,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+    "Name": "PreInstalledAppsEverEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": 284
+  },
+  {
+    "Line": 243,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+    "Name": "SilentInstalledAppsEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": 285
+  },
+  {
+    "Line": 246,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+    "Name": "TaskbarMn",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 249,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Search",
+    "Name": "SearchboxTaskbarMode",
+    "Type": "REG_DWORD",
+    "Value": "2",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 252,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\SearchSettings",
+    "Name": "IsDynamicSearchBoxEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 255,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Policies\\Microsoft\\WindowsMediaPlayer",
+    "Name": "GroupPrivacyAcceptance",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 256,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\MediaPlayer\\Preferences",
+    "Name": "AcceptedPrivacyStatement",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 257,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\MediaPlayer\\Preferences",
+    "Name": "AddVideosFromPicturesLibrary",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 258,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\MediaPlayer\\Preferences",
+    "Name": "AutoAddMusicToLibrary",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 259,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\MediaPlayer\\Preferences",
+    "Name": "AutoAddVideoToLibrary",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 260,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\MediaPlayer\\Preferences",
+    "Name": "DeleteRemovesFromComputer",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 261,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\MediaPlayer\\Preferences",
+    "Name": "DisableLicenseRefresh",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 262,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\MediaPlayer\\Preferences",
+    "Name": "FirstRun",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 263,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\MediaPlayer\\Preferences",
+    "Name": "FlushRatingsToFiles",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 264,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\MediaPlayer\\Preferences",
+    "Name": "LibraryHasBeenRun",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 265,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\MediaPlayer\\Preferences",
+    "Name": "MetadataRetrieval",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 266,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\MediaPlayer\\Preferences",
+    "Name": "SilentAcquisition",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 267,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\MediaPlayer\\Preferences",
+    "Name": "SilentDRMConfiguration",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 268,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\MediaPlayer\\Preferences",
+    "Name": "DisableMRU",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 269,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\MediaPlayer\\Preferences",
+    "Name": "UsageTracking",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 270,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\MediaPlayer\\Preferences",
+    "Name": "SendUserGUID",
+    "Type": "REG_BINARY",
+    "Value": "00",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 271,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\MediaPlayer\\Preferences",
+    "Name": "AskMeAgain",
+    "Type": "REG_SZ",
+    "Value": "No",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 272,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\MediaPlayer\\Preferences",
+    "Name": "StartInMediaGuide",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 273,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\MediaPlayer\\Preferences",
+    "Name": "SnapToVideoV11",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 278,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+    "Name": "ShowCopilotButton",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 281,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+    "Name": "ContentDeliveryAllowed",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 282,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+    "Name": "OemPreInstalledAppsEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 283,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+    "Name": "PreInstalledAppsEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 284,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+    "Name": "PreInstalledAppsEverEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 285,
+    "Operation": "add",
+    "Key": "HKU\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+    "Name": "SilentInstalledAppsEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 301,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Reliability",
+    "Name": "ShutdownReasonUI",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 302,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Reliability",
+    "Name": "ShutdownReasonOn",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 303,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Reliability\\shutdown",
+    "Name": "ReasonCode",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 304,
+    "Operation": "delete",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Reliability",
+    "Name": "DirtyShutdown",
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 305,
+    "Operation": "delete",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Reliability",
+    "Name": "DirtyShutdownTime",
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 306,
+    "Operation": "delete",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Reliability",
+    "Name": "LastAliveStamp",
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 309,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TelemetryController\\MareBackup",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 310,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Schedule\\TaskCache\\Tree\\Microsoft\\Windows\\Application Experience\\MareBackup",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 311,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Schedule\\TaskCache\\Tasks\\{12B608AD-347F-4391-B99C-2999DD173B8B}",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 312,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Schedule\\TaskCache\\Tasks\\{0937BEA9-9036-415D-8D38-40B0B9E1531E}",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 313,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Schedule\\TaskCache\\Tree\\Microsoft\\Windows\\Application Experience\\Microsoft Compatibility Appraiser Exp",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 316,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Schedule\\TaskCache\\Tasks\\{E0F10DCF-44AD-40E8-9370-FB5DA59F93FB}",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 317,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Schedule\\TaskCache\\Tree\\Microsoft\\Windows\\UpdateOrchestrator\\USO_UxBroker",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 319,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{9459C573-B17A-45AE-9F64-1857B5D58CEE}",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 320,
+    "Operation": "delete",
+    "Key": "HKLM\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ShellIconOverlayIdentifiers",
+    "Name": " OneDrive1",
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 321,
+    "Operation": "delete",
+    "Key": "HKLM\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ShellIconOverlayIdentifiers",
+    "Name": " OneDrive2",
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 322,
+    "Operation": "delete",
+    "Key": "HKLM\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ShellIconOverlayIdentifiers",
+    "Name": " OneDrive3",
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 323,
+    "Operation": "delete",
+    "Key": "HKLM\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ShellIconOverlayIdentifiers",
+    "Name": " OneDrive4",
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 324,
+    "Operation": "delete",
+    "Key": "HKLM\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ShellIconOverlayIdentifiers",
+    "Name": " OneDrive5",
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 325,
+    "Operation": "delete",
+    "Key": "HKLM\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ShellIconOverlayIdentifiers",
+    "Name": " OneDrive6",
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 326,
+    "Operation": "delete",
+    "Key": "HKLM\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ShellIconOverlayIdentifiers",
+    "Name": " OneDrive7",
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 327,
+    "Operation": "delete",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ShellIconOverlayIdentifiers",
+    "Name": " OneDrive1",
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 328,
+    "Operation": "delete",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ShellIconOverlayIdentifiers",
+    "Name": " OneDrive2",
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 329,
+    "Operation": "delete",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ShellIconOverlayIdentifiers",
+    "Name": " OneDrive3",
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 330,
+    "Operation": "delete",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ShellIconOverlayIdentifiers",
+    "Name": " OneDrive4",
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 331,
+    "Operation": "delete",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ShellIconOverlayIdentifiers",
+    "Name": " OneDrive5",
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 332,
+    "Operation": "delete",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ShellIconOverlayIdentifiers",
+    "Name": " OneDrive6",
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 333,
+    "Operation": "delete",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ShellIconOverlayIdentifiers",
+    "Name": " OneDrive7",
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 350,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Classes\\*\\shellex\\ContextMenuHandlers\\EPP",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 351,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Classes\\Drive\\shellex\\ContextMenuHandlers\\EPP",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 352,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Classes\\Directory\\shellex\\ContextMenuHandlers\\EPP",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 353,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Classes\\Directory\\shellex\\ContextMenuHandlers\\EPP",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 354,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Schedule\\TaskCache\\Tree\\Microsoft\\Windows\\Windows Defender",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 356,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer",
+    "Name": "SmartScreenEnabled",
+    "Type": "REG_SZ",
+    "Value": "Off",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 357,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\PhishingFilter",
+    "Name": "EnabledV9",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 358,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\System",
+    "Name": "EnableSmartScreen",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 362,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\Layers",
+    "Name": "%SystemDrive%\\Ghost Toolbox\\wget\\netspeedmonitor_2_5_4_0_x64_setup.msi",
+    "Type": "REG_SZ",
+    "Value": "~ MSIAUTO",
+    "Conditional": "",
+    "ShadowedByLine": 415
+  },
+  {
+    "Line": 369,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\DeviceGuard\\Scenarios\\HypervisorEnforcedCodeIntegrity",
+    "Name": "Enabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 375,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MyComputer\\NameSpace\\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 376,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MyComputer\\NameSpace\\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 378,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MyComputer\\NameSpace\\{A8CDFF1C-4878-43be-B5FD-F8091C1C60D0}",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 379,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MyComputer\\NameSpace\\{d3162b92-9365-467a-956b-92703aca08af}",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 381,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MyComputer\\NameSpace\\{374DE290-123F-4565-9164-39C4925E467B}",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 382,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MyComputer\\NameSpace\\{088e3905-0323-4b02-9826-5d99428e115f}",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 384,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MyComputer\\NameSpace\\{1CF1260C-4DD0-4ebb-811F-33C572699FDE}",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 385,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MyComputer\\NameSpace\\{3dfdf296-dbec-4fb4-81d1-6a3438bcf4de}",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 387,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MyComputer\\NameSpace\\{3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA}",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 388,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MyComputer\\NameSpace\\{24ad3ad4-a569-4530-98e1-ab02f9417aa8}",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 390,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MyComputer\\NameSpace\\{A0953C92-50DC-43bf-BE83-3742FED03C9C}",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 391,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MyComputer\\NameSpace\\{f86fa3ab-70d2-4fc7-9c99-fcbf05467f3a}",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 394,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer",
+    "Name": "ShowRecent",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 398,
+    "Operation": "add",
+    "Key": "HKCU\\Console",
+    "Name": "VirtualTerminalLevel",
+    "Type": "REG_DWORD",
+    "Value": "0x00000001",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 415,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\Layers",
+    "Name": "%SystemDrive%\\Ghost Toolbox\\wget\\netspeedmonitor_2_5_4_0_x64_setup.msi",
+    "Type": "REG_SZ",
+    "Value": "~ MSIAUTO",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 421,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts",
+    "Name": "Visitor TT2 BRK (TrueType)",
+    "Type": "REG_SZ",
+    "Value": "visitor2.ttf",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 422,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts",
+    "Name": "Visitor -BRK- 7",
+    "Type": "REG_SZ",
+    "Value": "VISITOR.FON",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 423,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts",
+    "Name": "Visitor TT1 BRK (TrueType)",
+    "Type": "REG_SZ",
+    "Value": "visitor1.ttf",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 424,
+    "Operation": "add",
+    "Key": "HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts",
+    "Name": "Visitor TT2 BRK (TrueType)",
+    "Type": "REG_SZ",
+    "Value": "visitor2.ttf",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 425,
+    "Operation": "add",
+    "Key": "HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts",
+    "Name": "Visitor -BRK- 7",
+    "Type": "REG_SZ",
+    "Value": "VISITOR.FON",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 426,
+    "Operation": "add",
+    "Key": "HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts",
+    "Name": "Visitor TT1 BRK (TrueType)",
+    "Type": "REG_SZ",
+    "Value": "visitor1.ttf",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 429,
+    "Operation": "add",
+    "Key": "HKLM\\Software\\Microsoft\\EdgeUpdate ",
+    "Name": "DoNotUpdateToEdgeWithChromium",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 432,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\WindowsUpdate\\UpdatePolicy\\Settings",
+    "Name": "PausedFeatureStatus",
+    "Type": "REG_DWORD",
+    "Value": "2",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 433,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\WindowsUpdate\\UpdatePolicy\\Settings",
+    "Name": "PausedQualityStatus",
+    "Type": "REG_DWORD",
+    "Value": "2",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 434,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings",
+    "Name": "ActiveHoursEnd",
+    "Type": "REG_DWORD",
+    "Value": "17",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 435,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings",
+    "Name": "ActiveHoursStart",
+    "Type": "REG_DWORD",
+    "Value": "8",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 436,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings",
+    "Name": "InsiderProgramEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 437,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings",
+    "Name": "PendingRebootStartTime",
+    "Type": "REG_SZ",
+    "Value": "2019-07-28T03:07:38Z",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 438,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings",
+    "Name": "PauseFeatureUpdatesStartTime",
+    "Type": "REG_SZ",
+    "Value": "2019-07-28T10:38:56Z",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 439,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings",
+    "Name": "PauseFeatureUpdatesEndTime",
+    "Type": "REG_SZ",
+    "Value": "2077-01-01T10:38:56Z",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 440,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings",
+    "Name": "PauseQualityUpdatesStartTime",
+    "Type": "REG_SZ",
+    "Value": "2019-07-28T10:38:56Z",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 441,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings",
+    "Name": "PauseQualityUpdatesEndTime",
+    "Type": "REG_SZ",
+    "Value": "2077-01-01T10:38:56Z",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 442,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings",
+    "Name": "PauseUpdatesStartTime",
+    "Type": "REG_SZ",
+    "Value": "2022-06-28T19:26:20Z",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 443,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\WindowsUpdate\\UX\\Settings",
+    "Name": "PauseUpdatesExpiryTime",
+    "Type": "REG_SZ",
+    "Value": "2077-01-01T10:38:56Z",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 446,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Serialize",
+    "Name": "StartupDelayInMSec",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 449,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+    "Name": "TaskbarMn",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 458,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\PushNotifications",
+    "Name": "ToastEnabled",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": 513
+  },
+  {
+    "Line": 459,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WerSvc",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "3",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 460,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WpnService",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "3",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 461,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WpnUserService",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "2",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 462,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\SENS",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "2",
+    "Conditional": "",
+    "ShadowedByLine": 542
+  },
+  {
+    "Line": 463,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Policies\\Microsoft\\Windows\\Explorer",
+    "Name": "DisableNotificationCenter",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 466,
+    "Operation": "add",
+    "Key": "HKCU\\SOFTWARE\\Microsoft\\Windows\\Shell\\Bags\\1\\Desktop",
+    "Name": "FFLAGS",
+    "Type": "REG_DWORD",
+    "Value": "1075839525",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 469,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search",
+    "Name": "AllowCortana",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 470,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+    "Name": "ShowCortanaButton",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 476,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Search",
+    "Name": "WebControlStatus",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 477,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Search",
+    "Name": "WebControlSecondaryStatus",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 478,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Search",
+    "Name": "SearchboxTaskbarMode",
+    "Type": "REG_DWORD",
+    "Value": "2",
+    "Conditional": "",
+    "ShadowedByLine": 623
+  },
+  {
+    "Line": 480,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Search",
+    "Name": "SearchboxTaskbarModeCache",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": 625
+  },
+  {
+    "Line": 484,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+    "Name": "TaskbarDa",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 485,
+    "Operation": "add",
+    "Key": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+    "Name": "TaskbarDa",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 488,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\SearchSettings",
+    "Name": "IsDynamicSearchBoxEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 491,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Wow6432Node\\Microsoft\\.NETFramework",
+    "Name": "OnlyUseLatestCLR",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 492,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\.NETFramework",
+    "Name": "OnlyUseLatestCLR",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 495,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows Search\\Gather\\Windows\\SystemIndex",
+    "Name": "EnableFindMyFiles",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 498,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Policies\\Microsoft\\Biometrics",
+    "Name": "Enabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 505,
+    "Operation": "add",
+    "Key": "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\GameDVR",
+    "Name": "AppCaptureEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 506,
+    "Operation": "add",
+    "Key": "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\GameDVR",
+    "Name": "GameDVR_Enabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 509,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization",
+    "Name": "NoLockScreen",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 510,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\Windows Error Reporting",
+    "Name": "Disabled",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 511,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Policies\\Microsoft\\Windows\\Windows Error Reporting",
+    "Name": "Disabled",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 512,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Error Reporting",
+    "Name": "Disabled",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 513,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\PushNotifications",
+    "Name": "ToastEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 522,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\TabletInputService",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "4",
+    "Conditional": "",
+    "ShadowedByLine": 543
+  },
+  {
+    "Line": 524,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\UevAgentService",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "4",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 525,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\DiagTrack",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "4",
+    "Conditional": "",
+    "ShadowedByLine": 554
+  },
+  {
+    "Line": 526,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\AssignedAccessManagerSvc",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "4",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 527,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\PeerDistSvc",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "4",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 528,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\cbdhsvc",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "3",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 529,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\MapsBroker",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "4",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 530,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\SmsRouter",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "4",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 531,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\CscService",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "4",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 532,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\SEMgrSvc",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "4",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 533,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\PNRPsvc",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "4",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 534,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\p2psvc",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "4",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 535,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\p2pimsvc",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "4",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 536,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\PhoneSvc",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "4",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 537,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\PNRPAutoReg",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "4",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 538,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\Spooler",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "3",
+    "Conditional": "",
+    "ShadowedByLine": 551
+  },
+  {
+    "Line": 539,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\RetailDemo",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "4",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 540,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\Sense",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "4",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 541,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\SysMain",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "2",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 542,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\SENS",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "4",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 543,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\TabletInputService",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "4",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 544,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WdNisSvc",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "4",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 545,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WbioSrvc",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "3",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 546,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WinRM",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "4",
+    "Conditional": "",
+    "ShadowedByLine": 548
+  },
+  {
+    "Line": 547,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\SgrmBroker",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "4",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 548,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WinRM",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "4",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 551,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\Spooler",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "4",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 554,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\DiagTrack",
+    "Name": "Start",
+    "Type": "REG_DWORD",
+    "Value": "4",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 558,
+    "Operation": "add",
+    "Key": "HKCU\\Control Panel\\Desktop",
+    "Name": "JPEGImportQuality",
+    "Type": "REG_DWORD",
+    "Value": "256",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 561,
+    "Operation": "add",
+    "Key": "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer",
+    "Name": "DisableThumbnails",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 562,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer",
+    "Name": "DisableThumbnails",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": 563
+  },
+  {
+    "Line": 563,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer",
+    "Name": "DisableThumbnails",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 564,
+    "Operation": "add",
+    "Key": "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+    "Name": "IconsOnly",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 565,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+    "Name": "IconsOnly",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 568,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+    "Name": "UseOLEDTaskbarTransparency",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 569,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\SYSTEM\\CurrentControlSet\\Control\\Terminal Server",
+    "Name": "fDenyTSConnections",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 570,
+    "Operation": "add",
+    "Key": "HKLM\\SYSTEM\\SYSTEM\\CurrentControlSet\\Control\\Terminal Server\\WinStations\\RDP-Tcp",
+    "Name": "UserAuthentication",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 571,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\UserProfileEngagement",
+    "Name": "ScoobeSystemSettingEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 580,
+    "Operation": "delete",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer",
+    "Name": "SettingsPageVisibility",
+    "Type": null,
+    "Value": null,
+    "Conditional": "Only if GhostSpectre registry query contains DEF",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 617,
+    "Operation": "add",
+    "Key": "HKLM\\System\\CurrentControlSet\\Control\\Session Manager\\Power",
+    "Name": "HiberbootEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 619,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+    "Name": "ShowCopilotButton",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 621,
+    "Operation": "add",
+    "Key": "HKLM\\Software\\Policies\\Microsoft\\Windows\\WindowsCopilot",
+    "Name": "TurnOffWindowsCopilot",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 623,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Search",
+    "Name": "SearchboxTaskbarMode",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 625,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Search",
+    "Name": "SearchboxTaskbarModeCache",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 627,
+    "Operation": "add",
+    "Key": "HKLM\\Software\\Policies\\Microsoft\\Windows\\CloudContent",
+    "Name": "DisableWindowsConsumerFeatures",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 629,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+    "Name": "SystemPaneSuggestionsEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 631,
+    "Operation": "add",
+    "Key": "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Search",
+    "Name": "BingSearchEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 633,
+    "Operation": "add",
+    "Key": "HKLM\\Software\\Policies\\Microsoft\\Dsh",
+    "Name": "AllowNewsAndInterests",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 635,
+    "Operation": "add",
+    "Key": "HKLM\\Software\\Policies\\Microsoft\\Windows\\Windows Feeds",
+    "Name": "EnableFeeds",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 637,
+    "Operation": "add",
+    "Key": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Communications",
+    "Name": "ConfigureChatAutoInstall",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 639,
+    "Operation": "add",
+    "Key": "HKLM\\Software\\Policies\\Microsoft\\Windows\\CloudContent",
+    "Name": "DisableCloudOptimizedContent",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 641,
+    "Operation": "add",
+    "Key": "HKLM\\Software\\Policies\\Microsoft\\Edge",
+    "Name": "HideFirstRunExperience",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  }
+]

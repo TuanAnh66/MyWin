@@ -1,0 +1,273 @@
+PHÂN TÍCH SCRIPT SUPERLITE VÀ ĐỐI CHIẾU MYWIN v5 — 2026-11-06
+============================================================
+
+KẾT LUẬN
+--------
+Có thể học và áp dụng thêm một số ý tưởng, nhưng không nên chạy nguyên script.
+MyWin v5 đã tắt phần lớn telemetry/Update/Xbox/consumer content. Tối ưu bổ sung
+đáng thử là giảm hiệu ứng giao diện, policy Game DVR, và dịch vụ chức năng không
+dùng. Nhiều dịch vụ còn lại đã Manual, nên chưa có bằng chứng giảm RAM đáng kể.
+Không sửa WIM/ESD v5 hoặc Windows host trong lần phân tích này.
+
+1. PHẠM VI, CÁCH ĐỌC, GIỚI HẠN
+------------------------------
+Source chính:
+  ..\payload-index-3\C\Windows\System32\oobe.cmd (664 dòng kể cả dòng trống)
+  ..\payload-index-3\C\Windows\System32\visual\visual.cmd (248 dòng)
+  ..\payload-index-3\C\Ghost Toolbox\Temp\Printer.vbs,TaskMgr1.vbs,TaskMgr2.vbs
+  ..\payload-index-3\C\Windows\ico\complete.vbs
+
+Đã extract SYSTEM/SOFTWARE/DefaultUser mới từ v5 install.wim vào .\hives, chỉ đọc
+bằng offreg, không reg load vào Windows host. Hives tạm không phải file để chia sẻ.
+Source Ghost là 26200.9711; v5 là26300.9818. Tweak/feature IDs có thể khác hành vi.
+
+Parse-Superlite.ps1 thực hiện phân tích tĩnh riêng profile SUPERLITE: bỏ dòng ::,
+REM, nhánh SE, phần sau exit /b; theo dõi lần ghi cuối theo cùng hive/key/value.
+oobe.cmd:348 thao tác registry parse được,18 thao tác bị ghi đè,27 service targets.
+visual.cmd:51 thao tác registry parse được,8 thao tác bị ghi đè; không đổi Start.
+Không coi các số này là số thay đổi chắc chắn thành công trên OS sau cài.
+Parser không phải trình thông dịch CMD tổng quát, không chạy command hay binary.
+Điều kiện MRT/DEF, lỗi lệnh, thứ tự helper bất đồng bộ và bối cảnh HKCU có thể
+làm hành vi cuối khác kết quả đọc tĩnh. HKCU và Default User không được trộn làm
+một hive: bảng HKCU chỉ dùng Default User của v5 làm mốc tham khảo cho user mới.
+Registry không có value không có nghĩa tính năng đã tắt: còn giá trị mặc định,
+policy khác, app/file đã gỡ hoặc thiết lập phát sinh khi OOBE/đăng nhập.
+
+Chuỗi gọi tìm được:
+  Setup -> windeploy.cmd -> giải update.dll -> PreOobe gọi oobe.cmd.
+  RunOnce gọi Printer.vbs -> visual\startup.cmd -> runapp.exe;
+  config.arg chứa visual.cmd, nhưng chưa decompile/run runapp.exe.
+  visual.cmd đặt RunOnce TaskMgr2/Complete và có cleanup/restart.
+  complete.vbs có bật lại adapter và xóa DisableTaskMgr.
+Do có helper/EXE trung gian, không hứa trạng thái cuối chỉ dựa oobe.cmd.
+
+2. DỊCH VỤ — GIÁ TRỊ CUỐI TRONG oobe.cmd
+---------------------------------------
+Start2=Automatic,3=Manual/có thể trigger-start,4=Disabled.
+Đây là Start trong WIM v5, không phải service đang chạy trong VM đã cài.
+
+Service                    Superlite   v5        Đánh giá
+WerSvc                     3           4         KHÔNG chép: sẽ bật lại khả năng khởi chạy
+WpnService                 3           2         Tùy chọn; có thể ảnh hưởng thông báo
+WpnUserService             2           2         Giống, không phải bị tắt
+UevAgentService            4           4         Đã làm
+AssignedAccessManagerSvc   4           3         Cân nhắc nếu không kiosk/assigned access
+PeerDistSvc                4           3         Cân nhắc nếu không dùng BranchCache
+cbdhsvc                    3           2         Không ưu tiên: clipboard/user-service
+MapsBroker                 4           4         Đã làm
+SmsRouter                  4           3         Cân nhắc nếu không dùng SMS/modem cellular
+CscService                 4           3         Cân nhắc nếu không dùng Offline Files
+SEMgrSvc                   4           3         Cân nhắc nếu không NFC/secure element
+PNRPsvc                    4           không có   Không tạo service giả
+p2psvc                     4           không có   Không tạo service giả
+p2pimsvc                   4           không có   Không tạo service giả
+PhoneSvc                   4           4         Đã làm
+PNRPAutoReg                4           không có   Không tạo service giả
+RetailDemo                 4           4         Đã làm
+Sense                      4           4         Đã làm; khác SENS
+SysMain                    2           2         HỌ GIỮ Automatic, không tắt
+SENS                       4           2         Nên giữ của v5
+TabletInputService         4           không có   Không đổi TextInputManagementService thay thế
+WdNisSvc                   4           4         Đã làm
+WbioSrvc                   3           3         Giống, không phải Disabled
+SgrmBroker                 4           không có   Không tạo service giả
+WinRM                      4           3         Chỉ tắt nếu không quản trị qua WinRM/WSMan
+Spooler                    4           2         Chỉ tắt nếu không in, kể cả luồng in PDF
+DiagTrack                  4           4         Đã làm
+
+27 mục:10 đã cùng giá trị,6 không có service trong v5,11 khác giá trị.
+21 mục bị đặt Disabled trong script; trong đó7 v5 đã Disabled,6 không có,
+và8 còn khác (kiosk,BranchCache,SMS,Offline Files,NFC,SENS,WinRM,Spooler).
+
+Các lần ghi đè quan trọng:
+  SENS dòng462 Start2 -> dòng542 Start4.
+  Spooler dòng538 Start3 -> dòng551 Start4.
+  WerSvc dòng516 Disabled chỉ là comment; dòng459 Manual mới có hiệu lực.
+  WpnService/WpnUserService các dòng tắt516-520 là comment.
+  SysMain dòng541 Start2, không có lệnh tắt sau đó.
+  TabletInputService/WinRM/DiagTrack có dòng lặp, không phải thêm chức năng.
+
+Tác động cần cân nhắc:
+  SENS cung cấp thông báo logon/network/power cho subscriber qua COM+ Event
+  System. Không tắt chỉ để giảm một ít RAM khi ưu tiên tương thích và VPS.
+  WinRM khác WindowsPowerShell cục bộ: tắt WinRM không xóa powershell.exe nhưng
+  làm mất các phiên quản trị WinRM/WSMan cần nó. Không mặc định VPS không dùng.
+  cbdhsvc/WpnUserService là per-user service; Windows tạo các instance hậu tố.
+  Đổi một template Start không chứng minh mọi instance/trigger đã được xử lý.
+  Clipboard history/các kịch bản app dùng clipboard có thể bị ảnh hưởng.
+  Nhóm Manual3 không đồng nghĩa luôn chạy, cũng không đồng nghĩa luôn dừng.
+  Phải đo Running/PID/PrivateWorkingSet trong guest để biết giảm thực tế.
+
+3. REGISTRY GIAO DIỆN
+--------------------
+DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects:
+  VisualFXSetting=4; nhiều subkey AnimateMinMax/ComboBoxAnimation/ControlAnimations/
+  CursorShadow/DragFullWindows/DropShadow/MenuAnimation/TaskbarAnimations/... có
+  DefaultValue0,DefaultApplied1. Có ngoại lệ AeroPeek và thumbnail được đặt1.
+DefaultUser\Control Panel\Desktop:
+  DragFullWindows="0",UserPreferencesMask binary,FontSmoothing="2" và hàng loạt
+  màu/kích thước/font/DPI/wallpaper cache. WindowMetrics\MinAnimate="0".
+Theme Personalize vẫn EnableTransparency=1; thumbnail vẫn bật IconsOnly=0,
+DisableThumbnails=0. Không gọi đây là profile tắt hết hiệu ứng.
+
+v5 hiện tại:
+  DragFullWindows="1"; MinAnimate/TaskbarAnimations chưa có value rõ ràng;
+  EnableTransparency=1. Có khoảng trống để thử giảm animation/transparency.
+Không sao chép nguyên VisualFXSetting4 hoặc binary UserPreferencesMask/cache:
+không có bằng chứng mọi giá trị đó là hợp lệ/hữu ích trên build26300.
+Nên dùng lựa chọn Visual Effects được Windows hỗ trợ, hoặc chỉ các setting đơn
+lẻ đã kiểm chứng; giữ font smoothing để chữ không xấu. Không thể tắt compositor
+Windows11 chỉ bằng tạo registry VisualEffects\DWMEnabled=0.
+Đề xuất EnableTransparency0 là điều chỉnh phù hợp mục tiêu v5, KHÔNG phải giá
+trị đang dùng trong Superlite (Superlite vẫn1).
+
+Các phần chỉ thay diện mạo, không chứng minh giảm RAM:
+  theme Ghost,wallpaper,transcoded cache,Desktop Colors,WindowMetrics,
+  JPEGImportQuality256,TaskbarAl1,ẩn thư mục This PC/shortcut/font Visitor.
+  StartupDelayInMSec0 chỉ là ý định bỏ delay startup, không giảm memory app.
+  HKCU SearchboxTaskbarMode trong oobe.cmd2 rồi1; visual.cmd lại2.
+  DefaultUser của Ghost có2; v5 hiện0 (ẩn). Không chép sang làm hiện searchbox.
+
+4. QUẢNG CÁO, APP ĐỀ XUẤT, COPILOT, XBOX
+---------------------------------------
+oobe.cmd ghi workCompleted1 cho6 nhánh WindowsUpdate\Orchestrator\UScheduler
+(TFLUpdate,OutlookUpdate,LXP,IA,DevHomeUpdate,CrossDeviceUpdate). Đây là state
+triển khai riêng, không phải policy chung để chặn mọi app tự cài.
+ContentDeliveryManager trong DefaultUser/HKCU:
+  ContentDeliveryAllowed0,FeatureManagementEnabled0,OemPreInstalledAppsEnabled0,
+  PreInstalledAppsEnabled0,PreInstalledAppsEverEnabled0,SilentInstalledAppsEnabled0,
+  SystemPaneSuggestionsEnabled0.
+CloudContent machine policies:
+  DisableWindowsConsumerFeatures1,DisableCloudOptimizedContent1.
+Ngoài ra AllowCortana0,TaskbarDa0,ShowCopilotButton0,TurnOffWindowsCopilot1,
+BingSearchEnabled0,IsDynamicSearchBoxEnabled0,EnableFeeds0,ConfigureChatAutoInstall0.
+
+v5 đã có phần lớn ContentDelivery0,hai CloudContent policy1,Copilot1,
+Widgets policy0 và phần app/Xbox đã cắt. PreInstalledAppsEverEnabled thiếu value
+nhưng các policy/content switches khác đã chặn; không coi bổ sung là gain lớn.
+visual.cmd còn DisableThirdPartySuggestions1,Start_AccountNotifications0,
+CrossDeviceResume\Configuration IsResumeAllowed0/IsOneDriveResumeAllowed0.
+Các value này chưa có trong DefaultUser v5; có thể cân nhắc cho user mới.
+Do v5 đã gỡ OneDrive và nhiều app liên quan, lợi ích thường chỉ là giao diện/
+giới hạn trải nghiệm nền, chưa có đo RAM hoặc chứng minh tiết kiệm dung lượng.
+
+GameDVR:
+  Ghost đặt AppCaptureEnabled0 và GameDVR_Enabled0 dưới HKCU\...\GameDVR.
+  Không nên sao chép tên value mà bỏ qua vị trí được Windows hỗ trợ.
+  v5 chưa có machine policy Policies\Microsoft\Windows\GameDVR\AllowGameDVR.
+  Nếu muốn chặn recording rõ ràng, ưu tiên AllowGameDVR0 theo policy Microsoft,
+  giữ AppCaptureEnabled0 cho user; GameDVR_Enabled cần kiểm tra đúng
+  HKCU\System\GameConfigStore, không chỉ tạo dưới nhánh GameDVR như script.
+  Đây là bổ sung hạn chế ghi hình, không phải thủ thuật giảm hàng trăm MB RAM.
+
+5. WINDOWS UPDATE, ERROR REPORTING, TASKS
+---------------------------------------
+Ghost đặt PausedFeatureStatus/PausedQualityStatus2 và các mốc pause tới2077.
+Đây là cách tác giả sửa UI/state; chưa test Update có thực sự pause tới đó.
+v5 đã cắt servicing và disable update services; không cần giả mốc2077.
+Không chép Installed/Orchestrator state hay ngày pending reboot từ2019.
+
+WER: machine/user Disabled1 nhưng WerSvc lạiManual3 trong Ghost.
+v5 đãWerSvc4, nên chỉ thêm policy nếu muốn quy định rõ, không bật lại dịch vụ.
+
+Tasks:
+  Ghost xóa MareBackup,CompatibilityAppraiserExp,USO_UxBroker,DefenderTaskCache;
+  schtasks disable LanguageComponentsInstaller\Installation,
+  Application Experience\Microsoft Compatibility Appraiser,Maintenance\WinSAT.
+  v5 không còn registry của MareBackup/AppraiserExp/USO_UxBroker/Appraiser.
+  LanguageComponentsInstaller\Installation,Maintenance\WinSAT và4Defender task
+  registry entries vẫn còn. Chưa kiểm chứng ScheduledTask đang tồn tại/chạy sau
+  OOBE; file task trong WIM không đủ để suy ra final runtime registration.
+  Có thể cân nhắc disable task đúng tên sau cài nếu không dùng; chặn cài language
+  component sẽ ảnh hưởng việc bổ sung ngôn ngữ. Không hard-code GUID của ISO khác.
+  Nếu dọn offline phải xử lý cấu trúc task/file/registration nhất quán, không
+  chỉ reg delete một nhánh rồi gọi mọi task đã sạch.
+
+6. .NET, NGUỒN ĐIỆN, THÔNG BÁO
+-----------------------------
+OnlyUseLatestCLR1 đặt global cả32/64 trong .NETFramework. v5 chưa có, nên KHÔNG
+chép: thay cách chọn CLR có thể giảm tương thích ứng dụng/bộ cài cũ. Đây không
+phải cài .NET3.5 hoặc cách giảm RAM an toàn khi user yêu cầu giữ .NET/PS/WoW64.
+
+powercfg /h off và /hibernate off là hai lệnh cùng mục đích trong Ghost.
+HiberbootEnabled0 cũng được đặt. v5 đãHibernateEnabled0 dù HiberbootEnabled1.
+Đặt HiberbootEnabled0 chỉ làm cấu hình nhất quán hơn; không hứa tiết kiệm thêm
+dung lượng/RAM khi hibernation vốn đã bị tắt. Kiểm tra hiberfil/powercfg trong VM
+nếu cần; không chạy powercfg host để đánh giá Windows guest.
+
+Ghost ghi ToastEnabled1 rồi0 và vẫn đểWpnUserService2. Đây là ẩn thông báo,
+không tương đương xóa push stack hay bảo đảm giảm process. Không ưu tiên tắt
+toàn bộ vì còn thông báo ứng dụng và sự kiện vận hành.
+
+7. PHẦN KHÔNG ĐỀ XUẤT ĐƯA VÀO v5
+--------------------------------
+  - Tắt SENS hoặc TextInputManagementService; không thay TabletInputService cũ
+    bằng dịch vụ input hiện đại chỉ vì tên gần nhau.
+  - Disable-NetAdapter,DisableTaskMgr,Stop-Process sysprep,đổiaccountRID500,
+    slmgr/product key và pipeline tự xóa log/script: dành quy trình tác giả,
+    không phải tối ưu RAM của Windows đã cài; rất bất tiện cho VPS từ xa.
+  - ConsentPromptBehaviorAdmin0 (v5 hiện5),SmartScreenOff,HVCI0:
+    thay đổi mức bảo vệ, không phải dọn thành phần thừa. Không tự áp dụng.
+  - Dùng ViVeTool ID của26200.9711 cho26300.9818; chưa xác định feature mapping
+    hoặc tác động, không bật/tắt theo số mà không test.
+  - ChépOnlyUseLatestCLR1,nguồn theme/cache/font Visitor,net speed monitor AppCompat,
+    giảWindowsUpdatePause2077 hoặc épEnableFindMyFiles1 khiWSearch v5 đãDisabled.
+  - Tạo lại6service không có trong v5 chỉ để thêm Start4.
+
+Lỗi/mâu thuẫn trong source cần nhận ra:
+  HKLM\SYSTEM\SYSTEM\CurrentControlSet\Control\Terminal Server bị lặpSYSTEM;
+  không đổi đúng setting RDP. v5 currentTerminalServer fDenyTSConnections1,
+  UserAuthentication1: chưa bậtRDP trong WIM. Không sửa mục này trong audit.
+  Microsoft\EdgeUpdate có trailing space; không coi là chặnEdgeUpdate chắc chắn.
+  XóaOneDrive overlay bằngreg delete parent /vOneDriveN không giống xóa subkey.
+  Các dòng##Reg không phảicommentCMD chuẩn và không phảiREGcommand hợp lệ.
+  Service values ghi nhiều lần; nhiều dòngtắt chỉcomment; toast/search đổi lại.
+  Sau dòng647 có '&exit /b 0', phần sau không tới được nếu chạy thẳng tới đó.
+  ##,bỏquaerror,helper bấtđồngbộ và scripts cũ là lý do không gọi toàn bộ source
+  là recipe chuẩn hoặc mọi dòng đều thực sự có hiệu lực.
+
+8. DANH SÁCH ƯU TIÊN ĐỀ XUẤT — CHƯA ÁP DỤNG
+------------------------------------------
+Ưu tiên1, ít tác động chức năng chính:
+  - Tắt animation thu/phóng/taskbar; tùy chọn chỉ vẽ khung khi kéo cửa sổ.
+  - Tắt transparency, giữ font smoothing. Đây là chỉnh UI, không cắt .NET/PS/WoW64.
+  - MachineAllowGameDVR0 nếu không cần recording; userAppCaptureEnabled0.
+  - Tắt account/third-party suggestions/cross-device resume nếu không dùng.
+
+Ưu tiên2, profile tùy chức năng:
+  - AssignedAccessManagerSvc,PeerDistSvc,SmsRouter,CscService,SEMgrSvc:
+    từManual3 sangDisabled4 khi đã xác nhận không dùng kiosk/BranchCache/SMS/
+    OfflineFiles/NFC. Giá trịManual hiện tại có thể vốn không tốnRAMidle.
+  - Spooler từ2 sang4 choVPS không dùng bất kỳ luồngin nào, kể cảPDF.
+  - WinRM từ3 sang4 chỉ nếu quản trị quaRDP/SSH và không dùngWSMan/WinRM.
+  - Task language installer/WinSAT/Defender còn đăng ký: kiểm tra sau cài rồi
+    disable theo chức năng; không xóa cứng metadata bằng GUID của image khác.
+
+Giữ lại: SENS/EventSystem,RPC/DCOM/Winmgmt,TaskScheduler,network/DHCP/DNS,
+TermService/NLA khi cầnVPS,RDPclipboard/input,AppXSvc/StateRepository,
+.NET/PowerShell/WoW64 vàVirtIO. Chưa có số đo cho mức RAM giảm.
+
+Nếu được yêu cầu triển khai, nên tạov6 từ bản sao v5, không sửa v5WIM/ESD:
+  kiểmtra sourcehash -> capture hivebefore -> áp dụng allowlist nhỏ -> verify
+  mọi fileprotected -> xuấtWIMLZX -> testVM cùngRAM/driver/idle -> đo và rollback.
+Không hứa WIM nhỏ đáng kể vì hầu hết thay đổi chỉ là vài giá trị registry.
+
+9. FILE CHI TIẾT
+----------------
+registry-operations.csv/json:mọi REGcommand đã parse ởoobe.cmd,kèmLine vàShadowedByLine.
+service-targets.csv,service-operations.json:27service và lần ghiđè.
+v5-service-comparison.csv/json:trạng thái v5 so với target nguồn.
+v5-registry-comparison.csv/json:scope,key,value,target,giátrị v5,AlreadySame.
+visual-* files:phân tích riêng visual.cmd để không trộn thứtự hai phase.
+extra-v5-settings.json:GameDVR/visual/hibernation/RDP vàTaskCache còn lại.
+candidate-plan.json:danh sách đềxuất review,không phải script được thực thi.
+parse-summary.json,excluded-operations.json:phạm vi/đếm/nhánh loại.
+
+Nguồn Microsoft để diễn giải, không suy đoán từ tên service:
+https://learn.microsoft.com/en-us/windows/win32/sens/about-system-event-notification-service
+https://learn.microsoft.com/en-us/windows/application-management/per-user-services-in-windows
+https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_remote_requirements
+https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-applicationmanagement#allowgamedvr
+https://support.microsoft.com/en-au/accessibility/windows/make-it-easier-to-focus-on-tasks
+
+HẾT. Không thay đổi v5,host hoặc repo MyWin trong lần phân tích này.

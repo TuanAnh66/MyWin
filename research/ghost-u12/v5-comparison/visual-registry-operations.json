@@ -1,0 +1,512 @@
+[
+  {
+    "Line": 2,
+    "Operation": "add",
+    "Key": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce",
+    "Name": "taskmgr",
+    "Type": "REG_SZ",
+    "Value": "%systemdrive%\\Ghost Toolbox\\Temp\\TaskMgr2.vbs",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 4,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnce",
+    "Name": "Complete",
+    "Type": "REG_EXPAND_SZ",
+    "Value": "%Windir%\\ico\\complete.vbs",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 5,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+    "Name": "TaskbarAl",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": 179
+  },
+  {
+    "Line": 7,
+    "Operation": "delete",
+    "Key": "HKLM\\SYSTEM\\Setup\\FirstBoot\\PreOobe",
+    "Name": "00",
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 11,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+    "Name": "ContentDeliveryAllowed",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 12,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+    "Name": "OemPreInstalledAppsEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 13,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+    "Name": "PreInstalledAppsEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 14,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+    "Name": "PreInstalledAppsEverEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 15,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+    "Name": "SilentInstalledAppsEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 16,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\SearchSettings",
+    "Name": "IsDynamicSearchBoxEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": 37
+  },
+  {
+    "Line": 17,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer",
+    "Name": "ShowRecent",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 18,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\PushNotifications",
+    "Name": "ToastEnabled",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": 30
+  },
+  {
+    "Line": 19,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Policies\\Microsoft\\Windows\\Explorer",
+    "Name": "DisableNotificationCenter",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 20,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\Shell\\Bags\\1\\Desktop",
+    "Name": "FFLAGS",
+    "Type": "REG_DWORD",
+    "Value": "1075839525",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 21,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+    "Name": "ShowCortanaButton",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 22,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Search",
+    "Name": "WebControlStatus",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": 197
+  },
+  {
+    "Line": 23,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Search",
+    "Name": "WebControlSecondaryStatus",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": 198
+  },
+  {
+    "Line": 24,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Search",
+    "Name": "SearchboxTaskbarMode",
+    "Type": "REG_DWORD",
+    "Value": "2",
+    "Conditional": "",
+    "ShadowedByLine": 199
+  },
+  {
+    "Line": 25,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Search",
+    "Name": "SearchboxTaskbarModeCache",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": 201
+  },
+  {
+    "Line": 26,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+    "Name": "TaskbarDa",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 27,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\GameDVR",
+    "Name": "AppCaptureEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 28,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\GameDVR",
+    "Name": "GameDVR_Enabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 29,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Policies\\Microsoft\\Windows\\Windows Error Reporting",
+    "Name": "Disabled",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 30,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\PushNotifications",
+    "Name": "ToastEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 31,
+    "Operation": "add",
+    "Key": "HKCU\\Control Panel\\Desktop",
+    "Name": "JPEGImportQuality",
+    "Type": "REG_DWORD",
+    "Value": "256",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 32,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer",
+    "Name": "DisableThumbnails",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 33,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+    "Name": "IconsOnly",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 34,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\UserProfileEngagement",
+    "Name": "ScoobeSystemSettingEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 35,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+    "Name": "TaskbarMn",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 36,
+    "Operation": "add",
+    "Key": "HKCU\\Console",
+    "Name": "VirtualTerminalLevel",
+    "Type": "REG_DWORD",
+    "Value": "0x00000001",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 37,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\SearchSettings",
+    "Name": "IsDynamicSearchBoxEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 38,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Search",
+    "Name": "BingSearchEnabled",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 39,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Policies\\Microsoft\\Dsh",
+    "Name": "AllowNewsAndInterests",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 41,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent",
+    "Name": "DisableWindowsConsumerFeatures",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 42,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Policies\\Microsoft\\Windows\\CloudContent",
+    "Name": "DisableThirdPartySuggestions",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 46,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+    "Name": "Start_AccountNotifications",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": 123
+  },
+  {
+    "Line": 58,
+    "Operation": "add",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\EdgeUpdate ",
+    "Name": "DoNotUpdateToEdgeWithChromium",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 123,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+    "Name": "Start_AccountNotifications",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 141,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Classes\\*\\shellex\\ContextMenuHandlers\\EPP",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 142,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Classes\\Drive\\shellex\\ContextMenuHandlers\\EPP",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 143,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Classes\\Directory\\shellex\\ContextMenuHandlers\\EPP",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 144,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Classes\\Directory\\shellex\\ContextMenuHandlers\\EPP",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 145,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Schedule\\TaskCache\\Tree\\Microsoft\\Windows\\Windows Defender",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 157,
+    "Operation": "add",
+    "Key": "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\CrossDeviceResume\\Configuration",
+    "Name": "IsResumeAllowed",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 158,
+    "Operation": "add",
+    "Key": "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\CrossDeviceResume\\Configuration",
+    "Name": "IsOneDriveResumeAllowed",
+    "Type": "REG_DWORD",
+    "Value": "0",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 179,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+    "Name": "TaskbarAl",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 197,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Search",
+    "Name": "WebControlStatus",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 198,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Search",
+    "Name": "WebControlSecondaryStatus",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 199,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Search",
+    "Name": "SearchboxTaskbarMode",
+    "Type": "REG_DWORD",
+    "Value": "2",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 201,
+    "Operation": "add",
+    "Key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Search",
+    "Name": "SearchboxTaskbarModeCache",
+    "Type": "REG_DWORD",
+    "Value": "1",
+    "Conditional": "",
+    "ShadowedByLine": null
+  },
+  {
+    "Line": 219,
+    "Operation": "delete-key",
+    "Key": "HKLM\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\SetupHost.exe",
+    "Name": null,
+    "Type": null,
+    "Value": null,
+    "Conditional": "",
+    "ShadowedByLine": null
+  }
+]

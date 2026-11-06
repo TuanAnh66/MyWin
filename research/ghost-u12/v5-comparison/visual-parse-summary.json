@@ -1,0 +1,10 @@
+{
+  "FinalValueOperations": 37,
+  "ExcludedConditionalOrUnreachableOperations": 5,
+  "ParsedRegistryOperations": 51,
+  "UniqueServiceTargets": 0,
+  "ShadowedOperations": 8,
+  "SourceExecuted": false,
+  "Scope": "Static analysis for SUPERLITE profile, assuming earlier commands continue; external helpers may change final runtime state",
+  "TotalSourceLines": 248
+}

@@ -1,0 +1,131 @@
+{
+  "Status": "Analysis only; not applied",
+  "Source": "Superlite 26200.9711 oobe.cmd and visual.cmd",
+  "Target": "MyWin v5 26300.9818",
+  "Protected": [
+    ".NET Framework",
+    "PowerShell",
+    "WoW64",
+    "VirtIO",
+    "SENS",
+    "EventSystem",
+    "core networking",
+    "RDP and input when required"
+  ],
+  "UiCandidates": [
+    {
+      "Action": "Disable using supported visual-effect settings; retain font smoothing",
+      "Setting": "Minimize/maximize and taskbar animations",
+      "V5": "No explicit MinAnimate/TaskbarAnimations template values"
+    },
+    {
+      "Value": 0,
+      "Setting": "Transparency",
+      "Note": "Adapted proposal; Ghost itself uses 1",
+      "V5Value": 1
+    },
+    {
+      "Value": "0",
+      "Setting": "DragFullWindows",
+      "Tradeoff": "Window contents not rendered continuously during drag",
+      "V5Value": "1"
+    }
+  ],
+  "PolicyCandidates": [
+    {
+      "Condition": "No game capture required",
+      "Value": 0,
+      "V5ValueAbsent": true,
+      "Name": "AllowGameDVR",
+      "Key": "Policies\\Microsoft\\Windows\\GameDVR",
+      "Hive": "SOFTWARE"
+    },
+    {
+      "Hive": "Default User",
+      "Name": "AppCaptureEnabled",
+      "Value": 0,
+      "V5ValueAbsent": true,
+      "Key": "Software\\Microsoft\\Windows\\CurrentVersion\\GameDVR"
+    },
+    {
+      "Hive": "Default User",
+      "Name": "Start_AccountNotifications",
+      "Value": 0,
+      "V5ValueAbsent": true,
+      "Key": "Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+    },
+    {
+      "Hive": "Default User",
+      "Name": "DisableThirdPartySuggestions",
+      "Value": 1,
+      "V5ValueAbsent": true,
+      "Key": "Software\\Policies\\Microsoft\\Windows\\CloudContent"
+    },
+    {
+      "Hive": "Default User",
+      "Name": "IsResumeAllowed",
+      "Value": 0,
+      "V5ValueAbsent": true,
+      "Key": "Software\\Microsoft\\Windows\\CurrentVersion\\CrossDeviceResume\\Configuration"
+    }
+  ],
+  "ConditionalServiceCandidates": [
+    {
+      "ProposedStart": 4,
+      "Name": "AssignedAccessManagerSvc",
+      "Condition": "No kiosk/assigned access",
+      "CurrentStart": 3
+    },
+    {
+      "ProposedStart": 4,
+      "Name": "PeerDistSvc",
+      "Condition": "No BranchCache",
+      "CurrentStart": 3
+    },
+    {
+      "ProposedStart": 4,
+      "Name": "SmsRouter",
+      "Condition": "No cellular SMS",
+      "CurrentStart": 3
+    },
+    {
+      "ProposedStart": 4,
+      "Name": "CscService",
+      "Condition": "No Offline Files",
+      "CurrentStart": 3
+    },
+    {
+      "ProposedStart": 4,
+      "Name": "SEMgrSvc",
+      "Condition": "No NFC/secure element",
+      "CurrentStart": 3
+    },
+    {
+      "ProposedStart": 4,
+      "Name": "Spooler",
+      "Condition": "No printing including print-to-PDF workflows",
+      "CurrentStart": 2
+    },
+    {
+      "ProposedStart": 4,
+      "Name": "WinRM",
+      "Condition": "No WinRM/WSMan management or remoting",
+      "CurrentStart": 3
+    }
+  ],
+  "DoNotCopy": [
+    "Disable SENS",
+    "Global OnlyUseLatestCLR",
+    "Account/RID500/product-key changes",
+    "Disable network adapters or Task Manager",
+    "UAC/SmartScreen/HVCI weakening",
+    "Unknown ViVeTool IDs",
+    "Ghost theme/cache/font data",
+    "Create absent legacy services",
+    "Re-enable WerSvc from disabled to manual",
+    "Search UI values overriding v5 hidden search"
+  ],
+  "ExpectedRamSavings": "Not measured; many conditional services are already manual",
+  "ExpectedImageSizeSavings": "No significant saving established; mainly registry changes",
+  "NextBuildRequiresRequest": true
+}
