@@ -12,7 +12,8 @@ thường để cài thử nhanh; ESD nén mạnh chỉ tạo khi yêu cầu.
 
 TRẠNG THÁI HIỆN TẠI: v5 đã hoàn thành, người dùng đã vào desktop VMware và mở
 Task Manager được. Không có build đang chờ hoàn thành. Chưa có yêu cầu tạo v6.
-Tin nhắn cuối: yêu cầu bàn giao toàn bộ công việc cho agent sau. Không cắt thêm.
+ESD v5 cũng đã hoàn thành và kiểm chứng; WIM nguồn giữ nguyên. Repo MyWin đã
+push public; cập nhật này đồng bộ kết quả nén vào hồ sơ/báo cáo. Không cắt thêm.
 
 File chính hiện tại:
   C:\tiny11-work\lite-v5\install.wim
@@ -20,6 +21,14 @@ File chính hiện tại:
   build 26300.9818
   SHA256 D2BFA4503E6A5B94B78F179BE7B3A7DC450645192C2E1685537B0B37A6227CF5
   Báo cáo: C:\tiny11-work\lite-v5\report.json
+
+ESD hiện tại:
+  C:\tiny11-work\lite-v5\install.esd
+  1,769,795,512 bytes = khoảng 1.65 GiB, solid LZMS
+  SHA256 C90704DC0C289876F666B3E544DBE96488E1B02A3319D72E925F70D8B436E53D
+  Báo cáo local: C:\tiny11-work\lite-v5\esd-report.json
+  Báo cáo repo: reports/lite-v5-esd.json
+  Repo public: https://github.com/TuanAnh66/MyWin
 
 1. MÔI TRƯỜNG VÀ NGUYÊN TẮC THAO TÁC
 ------------------------------------
@@ -304,7 +313,27 @@ Artifacts lite-v5:
   paths-final.txt / removed-paths.txt / removed-font-files.txt
   wim-update-commands.txt / registry-changes.txt / hives\SOFTWARE[.cleaned]
   working.wim (private intermediate, không file cài chính)
-Không tạo ISO/boot.wim/install.esd v5. Không tự xóa intermediates/old artifacts.
+Không tạo ISO/boot.wim v5. ESD v5 đã hoàn thành sau khi WIM được user thử.
+Không tự xóa intermediates/old artifacts.
+
+Kết quả nén ESD v5 (2026-11-06):
+  Full recompression từ WIM: solid LZMS, 16 MiB/chunk, 8 threads.
+  ESD 1,769,795,512 bytes (~1.65 GiB), giảm 783,933,557 bytes (~747.6 MiB),
+  tương đương 30.70% so với WIM 2,553,729,069 bytes.
+  ElapsedMinutes=13.03 cho script nén và kiểm chứng; DISM kiểm tra bổ sung sau đó.
+  EsdIntegrityVerified, ImageMetadataMatches, FilePathsMatch,
+  DismImageInfoVerified, WimPreserved đều true.
+  ESD SHA256 C90704DC0C289876F666B3E544DBE96488E1B02A3319D72E925F70D8B436E53D
+  WIM vẫn SHA256 D2BFA4503E6A5B94B78F179BE7B3A7DC450645192C2E1685537B0B37A6227CF5
+  DISM đọc đúng 1 index Windows 11 Pro x64,26300.9818.
+  Chưa có test cài riêng từ ESD; VMware test trước đó là v5 WIM.
+
+Lần thử seed reuse trước full recompression:
+  ESD hợp lệ nhưng 2,448,952,992 bytes, chỉ giảm4.10% so với WIM.
+  Solid blocks tái sử dụng giữ cả dữ liệu đã bị xóa, nên size gần v4 VirtIO.
+  Output/report/logs lần thử được giữ tại lite-v5\esd-seed-reuse-attempt\.
+  File install.esd chính ở lite-v5 là FULL recompression, không phải lần thử.
+  Không đăng WIM/ESD hoặc file thử lên GitHub; repo chỉ có báo cáo/tài liệu.
 
 10. WEBVIEW2 CÀI LẠI VÀ RECOVERY
 -------------------------------
@@ -373,9 +402,11 @@ Params: -Root <folder> -ImageLabel <label> -SeedEsd <optional verified ESD>
 Mặc định Rootlite-v4; nhớ truyền Root nếu build v5/v6!
 Script đọc SHA từ Root\report.json, từ chối output/partial đã tồn tại.
 Root phải có install.wim, report.json, paths-final.txt.
-V5 chưa được yêu cầu nén; không tự chạy. Khi user yêu cầu có thể dùng:
-  pwsh -NoProfile -File C:\tiny11-work\Compress-LiteV4.ps1 -Root C:\tiny11-work\lite-v5 -ImageLabel v5 -SeedEsd C:\tiny11-work\lite-v4-virtio\install.esd
-Đây là ví dụ triển khai sau yêu cầu; kiểm tra script/paths trước khi chạy.
+V5 đã nén xong bằng full recompression, lệnh đã dùng:
+  pwsh -NoProfile -File C:\tiny11-work\Compress-LiteV4.ps1 -Root C:\tiny11-work\lite-v5 -ImageLabel v5
+Không chạy lại đè output đã hoàn tất; script chủ động từ chối output tồn tại.
+Với build sau: seed reuse phù hợp khi thay đổi ít; nếu cắt nhiều file như v5,
+full recompression cho size tốt hơn rõ rệt. Kiểm tra script/paths trước khi chạy.
 
 Mechanism:
   copy seed ESD sang PRIVATEpartial;
@@ -390,7 +421,7 @@ Không --recompress nếu muốn reuse compressedblobs. Solidblocks có thể gi
 deadbytes của vài blobchia sẻ; fullrecompress có thể nhỏ hơn nhưng chậm hơn.
 LZMS default64MiBchunk cần~640MiB/thread; host16GB từng auto2threads rất chậm.
 16MiBchunks cho8threads~1.4GBRAM, fullcompression v4~18.72phút.
-V4VirtIO tận dụngseed chỉ~2.77phút. Không hứa v5 chắc cùng thời gian.
+V4VirtIO tận dụngseed chỉ~2.77phút. V5 full recompression+verify mất13.03phút.
 
 Incomplete files, KHÔNG DÙNG:
   lite-v4\install-aborted-64MiB.partial
@@ -438,7 +469,7 @@ https://www.wimlib.net/man1/wimoptimize.html
 ĐIỂM TIẾP TỤC CHO AGENT SAU
 --------------------------
 1) Đọc hồ sơ này + lite-v5\report.json + Build-LiteV5.ps1.
-2) Chờ user chọn: test thêm v5, nén ESD, tạo v6 cắt candidate, hoặc chuẩn bị VPS.
+2) V5 WIM+ESD đã xong; chờ user chọn test thêm, tạo v6 hoặc chuẩn bị VPS.
 3) Nếu cut thêm, snapshot inputhash và tạo root/output mới; giữv3/v4/v5.
 4) Giữ .NET/PS/WoW64/VirtIO; đừng gọi cắt an toàn nếu chưa verifydependencies.
 5) Hoàn thành fullWIMintegrity+retainedfilehashcompare+DISMinfo trước giao;

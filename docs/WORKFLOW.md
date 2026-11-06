@@ -13,7 +13,7 @@ Các đường dẫn lịch sử:
 | `C:\tiny11-work\lite-v3` | Nguồn giữ runtime |
 | `C:\tiny11-work\lite-v4` | WIM/ESD v4 |
 | `C:\tiny11-work\lite-v4-virtio` | WIM/ESD có VirtIO, input MSI/driver tải riêng |
-| `C:\tiny11-work\lite-v5` | WIM v5 đã hoàn thành |
+| `C:\tiny11-work\lite-v5` | WIM LZX và ESD LZMS v5 đã hoàn thành |
 
 Repo `MyWin` là bản lưu source riêng. Việc clone repo **không** tự tạo các image, hives, inventory hay mount cần thiết. Không copy toàn bộ repo vào output folder của một build rồi chạy vì nhiều script từ chối thư mục đã tồn tại. Giữ script tại build workspace hoặc chỉnh các đường dẫn trong một nhánh riêng trước khi triển khai.
 
@@ -29,7 +29,9 @@ Repo `MyWin` là bản lưu source riêng. Việc clone repo **không** tự t�
 
 Đọc `HANDOFF.txt` trước. Copy script thành bản mới với root mới, chọn nguồn/checksum rõ ràng. Không chỉ đổi tên output rồi chạy lại logic vốn phụ thuộc snapshot của build cũ. Bảo vệ .NET, assembly/GAC, SysWOW64, PowerShell và VirtIO. Tách kiểm tra hash offline khỏi kiểm chứng boot/app thực tế.
 
-Nếu được yêu cầu nén v5 thành ESD, `Compress-LiteV4.ps1` thực tế có tham số `-Root`, `-ImageLabel`, `-SeedEsd`. Có thể tái sử dụng dữ liệu nén của ESD VirtIO đã verify; script phải thao tác **bản sao** seed. Xem lệnh và quy trình trong hồ sơ. V5 hiện chưa có ESD.
+V5 đã nén ESD thành công bằng `Compress-LiteV4.ps1 -Root C:\tiny11-work\lite-v5 -ImageLabel v5`, **không dùng `-SeedEsd`**. File ESD cuối 1.769.795.512 bytes; WIM nguồn giữ nguyên. Xem [báo cáo](../reports/lite-v5-esd.json).
+
+Thử dùng lại seed ESD VirtIO chỉ giảm 4,10% so với WIM vì các solid block còn giữ dữ liệu đã bị cắt khỏi v5. Nén lại toàn bộ mới giảm 30,70%. Seed reuse thích hợp với thay đổi nhỏ như thêm driver; khi xóa nhiều payload, cần cân nhắc full recompression. Script từ chối output đã tồn tại: không chạy lại lệnh trên thư mục v5 đã hoàn tất nếu chưa chuẩn bị thư mục/output mới.
 
 ## Nội dung không được đưa vào Git
 
