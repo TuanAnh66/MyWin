@@ -1,0 +1,93 @@
+SERVICE	DiagTrack	2 -> 4
+SERVICE	dmwappushservice	3 -> 4
+SERVICE	DoSvc	3 -> 4
+SERVICE	edgeupdate	2 -> 4
+SERVICE	edgeupdatem	3 -> 4
+SERVICE	lfsvc	3 -> 4
+SERVICE	MapsBroker	2 -> 4
+SERVICE	MessagingService	3 -> 4
+SERVICE	OneSyncSvc	3 -> 4
+SERVICE	PhoneSvc	3 -> 4
+SERVICE	PimIndexMaintenanceSvc	3 -> 4
+SERVICE	RemoteRegistry	4 -> 4
+SERVICE	RetailDemo	3 -> 4
+SERVICE	SecurityHealthService	3 -> 4
+SERVICE	Sense	3 -> 4
+SERVICE	UnistoreSvc	3 -> 4
+SERVICE	UserDataSvc	3 -> 4
+SERVICE	UsoSvc	2 -> 4
+SERVICE	WaaSMedicSvc	3 -> 4
+SERVICE	WdFilter	0 -> 4
+SERVICE	WdNisDrv	3 -> 4
+SERVICE	WdNisSvc	3 -> 4
+SERVICE	WerSvc	3 -> 4
+SERVICE	WinDefend	2 -> 4
+SERVICE	WMPNetworkSvc	3 -> 4
+SERVICE	WSearch	2 -> 4
+SERVICE	wuauserv	3 -> 4
+SERVICE	XblAuthManager	3 -> 4
+SERVICE	XblGameSave	3 -> 4
+SERVICE	XboxGipSvc	3 -> 4
+SERVICE	XboxNetApiSvc	3 -> 4
+PRESERVED_SERVICE	BFE	2
+PRESERVED_SERVICE	MpsSvc	2
+PRESERVED_SERVICE	Dhcp	2
+PRESERVED_SERVICE	Dnscache	2
+PRESERVED_SERVICE	RpcSs	2
+PRESERVED_SERVICE	DcomLaunch	2
+PRESERVED_SERVICE	EventLog	2
+PRESERVED_SERVICE	Schedule	2
+PRESERVED_SERVICE	Winmgmt	2
+PRESERVED_SERVICE	AppXSvc	2
+PRESERVED_SERVICE	ClipSVC	3
+PRESERVED_SERVICE	StateRepository	2
+POLICY	Policies\Microsoft\Windows\WindowsUpdate\AU\NoAutoUpdate = 1
+POLICY	Policies\Microsoft\Windows\WindowsUpdate\DisableWindowsUpdateAccess = 1
+POLICY	Policies\Microsoft\Windows Defender\DisableAntiSpyware = 1
+POLICY	Policies\Microsoft\Windows Defender\Real-Time Protection\DisableRealtimeMonitoring = 1
+POLICY	Policies\Microsoft\Windows\CloudContent\DisableWindowsConsumerFeatures = 1
+POLICY	Policies\Microsoft\Windows\CloudContent\DisableCloudOptimizedContent = 1
+POLICY	Policies\Microsoft\Windows\WindowsCopilot\TurnOffWindowsCopilot = 1
+POLICY	Policies\Microsoft\Windows\WindowsAI\DisableAIDataAnalysis = 1
+POLICY	Policies\Microsoft\Dsh\AllowNewsAndInterests = 0
+POLICY	Policies\Microsoft\Windows\DataCollection\AllowTelemetry = 0
+POLICY	Policies\Microsoft\Windows\Windows Search\AllowCortana = 0
+POLICY	Policies\Microsoft\Windows\Windows Search\AllowCloudSearch = 0
+POLICY	Policies\Microsoft\Windows\OneDrive\DisableFileSyncNGSC = 1
+POLICY	Policies\Microsoft\Windows\OOBE\DisablePrivacyExperience = 1
+POLICY	Microsoft\Windows\CurrentVersion\ReserveManager\ShippedWithReserves = 0
+UNINSTALL_ENTRY	WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft Edge
+UNINSTALL_ENTRY	WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft Edge Update
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\WindowsUpdate\Automatic App Update	{F6A049C3-1EF5-49E7-A4F8-28BCFBE7DD57}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\WindowsUpdate\Refresh Group Policy Cache	{95425085-1A14-4B85-9028-E50D0FC160B4}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\WindowsUpdate\Scheduled Start	{A0FB6F87-FEC5-46F8-843B-B58DD5E06AD6}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\WindowsUpdate\sihboot	{BD58A217-4EC6-4B9D-85AE-304A8DF3849E}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\UpdateOrchestrator\Report policies	{1C2D31FF-9436-4C6F-8EC0-827E8A0FC3DE}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\UpdateOrchestrator\Schedule Scan Static Task	{311EBBE5-EF7C-46F8-B4F8-7E978873E45A}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\UpdateOrchestrator\Start Oobe Expedite Work	{0AF6A994-1B3A-4B10-B485-9753CE6DF6A4}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\UpdateOrchestrator\StartOobeAppsScanAfterUpdate	{DD6E2608-767B-4449-BB55-45CAD83FADA4}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\UpdateOrchestrator\StartOobeAppsScan_LicenseAccepted	{EDC62534-48CF-4D30-A263-32780ED68B57}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\UpdateOrchestrator\StartOobeAppsScan_OobeAppReady	{3AD7BF78-E68B-46F3-882F-F851EF5EB050}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\UpdateOrchestrator\UIEOrchestrator	{DB31A790-52AB-43DC-9408-BD5BB9EEAA22}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\UpdateOrchestrator\UpdateModelTask	{48E69052-C0FA-4F65-B5E1-C00D6D0EAE2D}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\UpdateOrchestrator\USO_UxBroker	{F3E6E7ED-A196-4E44-8803-55FAB3AD4E29}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\UpdateOrchestrator\UUS Failover Task	{B576F45F-2D22-4C61-AC8B-3274A08317F1}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\WaaSMedic\PerformRemediation	{D2E8BEB4-6AC1-4881-8DAD-33150CE72101}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\Application Experience\AitAgent	{88E95386-F687-4E58-A4C9-0418D8942929}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\Application Experience\MareBackup	{61012F9B-FFD6-4E36-BD45-42CE5AC83FC1}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\Application Experience\Microsoft Compatibility Appraiser	{57799EF8-6EAF-470A-9F64-4FA805E23641}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\Application Experience\Microsoft Compatibility Appraiser Exp	{A0C71CB8-E8F0-498A-901D-4EDA09E07FF4}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\Application Experience\ProgramDataUpdater	{E292525C-72F1-482C-8F35-C513FAA98DAE}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\Application Experience\SdbinstMergeDbTask	{B86F17B7-0298-4679-9BEA-3567E58A7D51}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\Application Experience\StartupAppTask	{DB351805-180A-4A8A-A7FB-048D230942B2}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\Autochk\Proxy	{30E6DB3D-C3AA-44DA-8E88-9DB52D84975E}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\Customer Experience Improvement Program\Consolidator	{E4FED5BC-D567-4044-9642-2EDADF7DE108}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\Customer Experience Improvement Program\KernelCeipTask	{BCD0EBE5-8F05-4C87-A513-EF5D03ED5D79}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\Customer Experience Improvement Program\UsbCeip	{FD607F42-4541-418A-B812-05C32EBA8626}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\Feedback\Siuf\DmClient	{4D8B7A8B-0E1C-45A9-8A64-27E4DFD546BE}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\Feedback\Siuf\DmClientOnScenarioDownload	{7285636E-5715-48F0-A8FF-3CFB5893A966}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\Maps\MapsToastTask	{D52A78FD-0791-4BF2-8602-D6C4777A145D}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\Maps\MapsUpdateTask	{3618F5DB-17E6-4B70-BD4A-D3F82EC3B63E}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\Windows Error Reporting\QueueReporting	{6FD85B93-7A13-4DCA-B793-1D7D18FEAC39}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\Location\WindowsActionDialog	{D65186C7-C4E4-43DF-A485-050BBF1DBBF0}
+TASK	Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\Speech\SpeechModelDownloadTask	{E6C7550D-E55B-4429-B9DF-F0802C7E96F1}

@@ -1,0 +1,2122 @@
+[
+  {
+    "Folder": "1394.inf_amd64_ff5c4e8141fc4520",
+    "Inf": "1394.inf",
+    "Class": "1394",
+    "ClassGuid": "{6BDD1FC1-810F-11D0-BEC7-08002BE2092F}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\1394.inf_amd64_ff5c4e8141fc4520\\1394.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "61883.inf_amd64_9b37c5172d1526af",
+    "Inf": "61883.inf",
+    "Class": "61883",
+    "ClassGuid": "{7EBEFBC0-3200-11d2-B4C2-00A0C9697D07}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\61883.inf_amd64_9b37c5172d1526af\\61883.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "b57nd60a.inf_amd64_86493878b5fef607",
+    "Inf": "b57nd60a.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\b57nd60a.inf_amd64_86493878b5fef607\\b57nd60a.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "bcmdhd64.inf_amd64_0c3c6ca9708e5a9a",
+    "Inf": "bcmdhd64.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\bcmdhd64.inf_amd64_0c3c6ca9708e5a9a\\bcmdhd64.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "bcmwdidhdpcie.inf_amd64_b244d6a9a7f90517",
+    "Inf": "bcmwdidhdpcie.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\bcmwdidhdpcie.inf_amd64_b244d6a9a7f90517\\bcmwdidhdpcie.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "e2xw10x64.inf_amd64_b78633a7607613a0",
+    "Inf": "e2xw10x64.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\e2xw10x64.inf_amd64_b78633a7607613a0\\e2xw10x64.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "ehstorpwddrv.inf_amd64_1d9d14f627d4fd36",
+    "Inf": "ehstorpwddrv.inf",
+    "Class": "EhStorSilo",
+    "ClassGuid": "{9DA2B80F-F89F-4A49-A5C2-511B085B9E8A}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\ehstorpwddrv.inf_amd64_1d9d14f627d4fd36\\ehstorpwddrv.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "ehstortcgdrv.inf_amd64_d091b1ef3ab4feaa",
+    "Inf": "ehstortcgdrv.inf",
+    "Class": "EhStorSilo",
+    "ClassGuid": "{9DA2B80F-F89F-4A49-A5C2-511B085B9E8A}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\ehstortcgdrv.inf_amd64_d091b1ef3ab4feaa\\ehstortcgdrv.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "fdc.inf_amd64_718e7d1a486ec0d5",
+    "Inf": "fdc.inf",
+    "Class": "fdc",
+    "ClassGuid": "{4D36E969-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\fdc.inf_amd64_718e7d1a486ec0d5\\fdc.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "flpydisk.inf_amd64_8df68b73cf266628",
+    "Inf": "flpydisk.inf",
+    "Class": "FloppyDisk",
+    "ClassGuid": "{4D36E980-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\flpydisk.inf_amd64_8df68b73cf266628\\flpydisk.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "fusionv2.inf_amd64_bc2eea8cf0bc174e",
+    "Inf": "fusionv2.inf",
+    "Class": "Sensor",
+    "ClassGuid": "{5175D334-C371-4806-B3BA-71FD53C9258D}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\fusionv2.inf_amd64_bc2eea8cf0bc174e\\fusionv2.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "helloface.inf_amd64_4048036a8fcabf75",
+    "Inf": "helloface.inf",
+    "Class": "Biometric",
+    "ClassGuid": "{53D29EF7-377C-4D14-864B-EB3A85769359}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\helloface.inf_amd64_4048036a8fcabf75\\helloface.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "hidscanner.inf_amd64_375dc9dd6a6abd8a",
+    "Inf": "hidscanner.inf",
+    "Class": "BarcodeScanner",
+    "ClassGuid": "{C243FFBD-3AFC-45E9-B3D3-2BA18BC7EBC5}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\hidscanner.inf_amd64_375dc9dd6a6abd8a\\hidscanner.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "idtsec.inf_amd64_c0b1f25ab2028a46",
+    "Inf": "idtsec.inf",
+    "Class": "HidMsr",
+    "ClassGuid": "{2A9FE532-0CDC-44F9-9827-76192F2CA2FB}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\idtsec.inf_amd64_c0b1f25ab2028a46\\idtsec.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "ipoib6x.inf_amd64_c009b0cd3e63f884",
+    "Inf": "ipoib6x.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\ipoib6x.inf_amd64_c009b0cd3e63f884\\ipoib6x.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdm3com.inf_amd64_60545ab840205b89",
+    "Inf": "mdm3com.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdm3com.inf_amd64_60545ab840205b89\\mdm3com.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdm5674a.inf_amd64_129d226656b382a3",
+    "Inf": "mdm5674a.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdm5674a.inf_amd64_129d226656b382a3\\mdm5674a.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmadc.inf_amd64_817cc926c1f73b22",
+    "Inf": "mdmadc.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmadc.inf_amd64_817cc926c1f73b22\\mdmadc.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmagm64.inf_amd64_596c8fd6d9bb0499",
+    "Inf": "mdmagm64.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmagm64.inf_amd64_596c8fd6d9bb0499\\mdmagm64.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmags64.inf_amd64_1415985e2751dc24",
+    "Inf": "mdmags64.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmags64.inf_amd64_1415985e2751dc24\\mdmags64.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmairte.inf_amd64_2f3fd088bcf459d6",
+    "Inf": "mdmairte.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmairte.inf_amd64_2f3fd088bcf459d6\\mdmairte.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmaiwa.inf_amd64_c2de8a66523ff6fc",
+    "Inf": "mdmaiwa.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmaiwa.inf_amd64_c2de8a66523ff6fc\\mdmaiwa.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmaiwa3.inf_amd64_45b1ba4f9b082120",
+    "Inf": "mdmaiwa3.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmaiwa3.inf_amd64_45b1ba4f9b082120\\mdmaiwa3.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmaiwa4.inf_amd64_bd19e4a61b3a12f5",
+    "Inf": "mdmaiwa4.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmaiwa4.inf_amd64_bd19e4a61b3a12f5\\mdmaiwa4.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmaiwa5.inf_amd64_0a1744a08be659c5",
+    "Inf": "mdmaiwa5.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmaiwa5.inf_amd64_0a1744a08be659c5\\mdmaiwa5.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmaiwat.inf_amd64_416be65375d77c95",
+    "Inf": "mdmaiwat.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmaiwat.inf_amd64_416be65375d77c95\\mdmaiwat.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmar1.inf_amd64_d83e37847829f079",
+    "Inf": "mdmar1.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmar1.inf_amd64_d83e37847829f079\\mdmar1.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmarch.inf_amd64_e073a734998ae9fa",
+    "Inf": "mdmarch.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmarch.inf_amd64_e073a734998ae9fa\\mdmarch.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmarn.inf_amd64_1a5f77e2da0f214e",
+    "Inf": "mdmarn.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmarn.inf_amd64_1a5f77e2da0f214e\\mdmarn.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmati.inf_amd64_7c78e7e557741593",
+    "Inf": "mdmati.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmati.inf_amd64_7c78e7e557741593\\mdmati.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmatm2k.inf_amd64_84b3aaac73750c81",
+    "Inf": "mdmatm2k.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmatm2k.inf_amd64_84b3aaac73750c81\\mdmatm2k.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmaus.inf_amd64_7f69be2ff9192715",
+    "Inf": "mdmaus.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmaus.inf_amd64_7f69be2ff9192715\\mdmaus.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmboca.inf_amd64_ea5e3edacd2452ef",
+    "Inf": "mdmboca.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmboca.inf_amd64_ea5e3edacd2452ef\\mdmboca.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmbsb.inf_amd64_54d54919878081e6",
+    "Inf": "mdmbsb.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmbsb.inf_amd64_54d54919878081e6\\mdmbsb.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmbug3.inf_amd64_f48338a502caa53d",
+    "Inf": "mdmbug3.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmbug3.inf_amd64_f48338a502caa53d\\mdmbug3.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmbw561.inf_amd64_8a08574d6aeb366f",
+    "Inf": "mdmbw561.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmbw561.inf_amd64_8a08574d6aeb366f\\mdmbw561.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmc26a.inf_amd64_0301ba78bef149f3",
+    "Inf": "mdmc26a.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmc26a.inf_amd64_0301ba78bef149f3\\mdmc26a.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmcdp.inf_amd64_37f7d8be243e41ea",
+    "Inf": "mdmcdp.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmcdp.inf_amd64_37f7d8be243e41ea\\mdmcdp.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmcm28.inf_amd64_b1a17d74d674b1bd",
+    "Inf": "mdmcm28.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmcm28.inf_amd64_b1a17d74d674b1bd\\mdmcm28.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmcodex.inf_amd64_bb7888621e6174aa",
+    "Inf": "mdmcodex.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmcodex.inf_amd64_bb7888621e6174aa\\mdmcodex.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmcom1.inf_amd64_b5ad2f4d45074592",
+    "Inf": "mdmcom1.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmcom1.inf_amd64_b5ad2f4d45074592\\mdmcom1.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmcommu.inf_amd64_a3a9d2553a0d2660",
+    "Inf": "mdmcommu.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmcommu.inf_amd64_a3a9d2553a0d2660\\mdmcommu.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmcomp.inf_amd64_05e4018ad534bf64",
+    "Inf": "mdmcomp.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmcomp.inf_amd64_05e4018ad534bf64\\mdmcomp.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmcpq.inf_amd64_c0d18bae9611d9ba",
+    "Inf": "mdmcpq.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmcpq.inf_amd64_c0d18bae9611d9ba\\mdmcpq.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmcpq2.inf_amd64_47c5d54d37862160",
+    "Inf": "mdmcpq2.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmcpq2.inf_amd64_47c5d54d37862160\\mdmcpq2.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmcpv.inf_amd64_764ecbcf7daefe4d",
+    "Inf": "mdmcpv.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmcpv.inf_amd64_764ecbcf7daefe4d\\mdmcpv.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmcrtix.inf_amd64_09ae7d6dfe8202c7",
+    "Inf": "mdmcrtix.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmcrtix.inf_amd64_09ae7d6dfe8202c7\\mdmcrtix.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmcxhv6.inf_amd64_f1a7a2fbd6554d60",
+    "Inf": "mdmcxhv6.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmcxhv6.inf_amd64_f1a7a2fbd6554d60\\mdmcxhv6.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmcxpv6.inf_amd64_46a3b42507e9d29e",
+    "Inf": "mdmcxpv6.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmcxpv6.inf_amd64_46a3b42507e9d29e\\mdmcxpv6.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmdcm5.inf_amd64_ca7bcc60b39fb4a6",
+    "Inf": "mdmdcm5.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmdcm5.inf_amd64_ca7bcc60b39fb4a6\\mdmdcm5.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmdcm6.inf_amd64_d1f4817a0bf577f4",
+    "Inf": "mdmdcm6.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmdcm6.inf_amd64_d1f4817a0bf577f4\\mdmdcm6.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmdf56f.inf_amd64_c4449b24334fe342",
+    "Inf": "mdmdf56f.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmdf56f.inf_amd64_c4449b24334fe342\\mdmdf56f.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmdgitn.inf_amd64_29c4bda59d59db69",
+    "Inf": "mdmdgitn.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmdgitn.inf_amd64_29c4bda59d59db69\\mdmdgitn.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmdp2.inf_amd64_cbc03ba404ddd31e",
+    "Inf": "mdmdp2.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmdp2.inf_amd64_cbc03ba404ddd31e\\mdmdp2.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmdsi.inf_amd64_d1cefbdfe4c47805",
+    "Inf": "mdmdsi.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmdsi.inf_amd64_d1cefbdfe4c47805\\mdmdsi.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmdyna.inf_amd64_9ebe4c99d3b5bbcc",
+    "Inf": "mdmdyna.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmdyna.inf_amd64_9ebe4c99d3b5bbcc\\mdmdyna.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmeiger.inf_amd64_4ba3925fa8f25b9b",
+    "Inf": "mdmeiger.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmeiger.inf_amd64_4ba3925fa8f25b9b\\mdmeiger.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmelsa.inf_amd64_57bef17817c15bc9",
+    "Inf": "mdmelsa.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmelsa.inf_amd64_57bef17817c15bc9\\mdmelsa.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmeric.inf_amd64_470243d798045409",
+    "Inf": "mdmeric.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmeric.inf_amd64_470243d798045409\\mdmeric.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmeric2.inf_amd64_c0b8887d31bfd4bd",
+    "Inf": "mdmeric2.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmeric2.inf_amd64_c0b8887d31bfd4bd\\mdmeric2.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmetech.inf_amd64_010868c016a50e24",
+    "Inf": "mdmetech.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmetech.inf_amd64_010868c016a50e24\\mdmetech.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmfj2.inf_amd64_bc799f4c1471e3ba",
+    "Inf": "mdmfj2.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmfj2.inf_amd64_bc799f4c1471e3ba\\mdmfj2.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmgatew.inf_amd64_a4a1b493f46d2c9f",
+    "Inf": "mdmgatew.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmgatew.inf_amd64_a4a1b493f46d2c9f\\mdmgatew.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmgcs.inf_amd64_ca238fc8b0e3add4",
+    "Inf": "mdmgcs.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmgcs.inf_amd64_ca238fc8b0e3add4\\mdmgcs.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmgen.inf_amd64_3d89b391ca3b6be9",
+    "Inf": "mdmgen.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmgen.inf_amd64_3d89b391ca3b6be9\\mdmgen.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmgsm.inf_amd64_fd32132b97188596",
+    "Inf": "mdmgsm.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmgsm.inf_amd64_fd32132b97188596\\mdmgsm.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmhaeu.inf_amd64_869cf3ae1e1b0424",
+    "Inf": "mdmhaeu.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmhaeu.inf_amd64_869cf3ae1e1b0424\\mdmhaeu.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmhandy.inf_amd64_583b80689fadea49",
+    "Inf": "mdmhandy.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmhandy.inf_amd64_583b80689fadea49\\mdmhandy.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmhay2.inf_amd64_0ecb99ca4f1a2e92",
+    "Inf": "mdmhay2.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmhay2.inf_amd64_0ecb99ca4f1a2e92\\mdmhay2.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmhayes.inf_amd64_0b13676ea2013ddf",
+    "Inf": "mdmhayes.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmhayes.inf_amd64_0b13676ea2013ddf\\mdmhayes.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdminfot.inf_amd64_1cdd9539c62720be",
+    "Inf": "mdminfot.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdminfot.inf_amd64_1cdd9539c62720be\\mdminfot.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmiodat.inf_amd64_fb447a854b12a8c6",
+    "Inf": "mdmiodat.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmiodat.inf_amd64_fb447a854b12a8c6\\mdmiodat.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmirmdm.inf_amd64_278f8aea3f666c3b",
+    "Inf": "mdmirmdm.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmirmdm.inf_amd64_278f8aea3f666c3b\\mdmirmdm.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmisdn.inf_amd64_a447fa490d597a1f",
+    "Inf": "mdmisdn.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmisdn.inf_amd64_a447fa490d597a1f\\mdmisdn.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmjf56e.inf_amd64_8d3f422350641d6b",
+    "Inf": "mdmjf56e.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmjf56e.inf_amd64_8d3f422350641d6b\\mdmjf56e.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmke.inf_amd64_5ea8266653f1d657",
+    "Inf": "mdmke.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmke.inf_amd64_5ea8266653f1d657\\mdmke.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmkortx.inf_amd64_39a0627e106b9d40",
+    "Inf": "mdmkortx.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmkortx.inf_amd64_39a0627e106b9d40\\mdmkortx.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmlasat.inf_amd64_dc6f37438b741136",
+    "Inf": "mdmlasat.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmlasat.inf_amd64_dc6f37438b741136\\mdmlasat.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmlasno.inf_amd64_07987d6ed3b78a11",
+    "Inf": "mdmlasno.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmlasno.inf_amd64_07987d6ed3b78a11\\mdmlasno.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmlucnt.inf_amd64_1a3e7fdb65a2d6c7",
+    "Inf": "mdmlucnt.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmlucnt.inf_amd64_1a3e7fdb65a2d6c7\\mdmlucnt.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmmc288.inf_amd64_e474c67ccd36f199",
+    "Inf": "mdmmc288.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmmc288.inf_amd64_e474c67ccd36f199\\mdmmc288.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmmcd.inf_amd64_697485fe66c5447e",
+    "Inf": "mdmmcd.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmmcd.inf_amd64_697485fe66c5447e\\mdmmcd.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmmcom.inf_amd64_17811d0841979d6b",
+    "Inf": "mdmmcom.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmmcom.inf_amd64_17811d0841979d6b\\mdmmcom.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmmct.inf_amd64_35bef4dc3a0ed4a3",
+    "Inf": "mdmmct.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmmct.inf_amd64_35bef4dc3a0ed4a3\\mdmmct.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmmega.inf_amd64_19a8518c31f0bcbe",
+    "Inf": "mdmmega.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmmega.inf_amd64_19a8518c31f0bcbe\\mdmmega.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmmetri.inf_amd64_1618847a52fdb480",
+    "Inf": "mdmmetri.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmmetri.inf_amd64_1618847a52fdb480\\mdmmetri.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmmhrtz.inf_amd64_308403cec9c96f4f",
+    "Inf": "mdmmhrtz.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmmhrtz.inf_amd64_308403cec9c96f4f\\mdmmhrtz.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmmhzel.inf_amd64_0f85c107f79168be",
+    "Inf": "mdmmhzel.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmmhzel.inf_amd64_0f85c107f79168be\\mdmmhzel.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmminij.inf_amd64_ce6f6941399aa9bb",
+    "Inf": "mdmminij.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmminij.inf_amd64_ce6f6941399aa9bb\\mdmminij.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmmod.inf_amd64_77b9af9b5dc9a81f",
+    "Inf": "mdmmod.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmmod.inf_amd64_77b9af9b5dc9a81f\\mdmmod.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmmot64.inf_amd64_9bff7f90de78bfd6",
+    "Inf": "mdmmot64.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmmot64.inf_amd64_9bff7f90de78bfd6\\mdmmot64.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmmoto1.inf_amd64_21fe7c2a9915e8ba",
+    "Inf": "mdmmoto1.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmmoto1.inf_amd64_21fe7c2a9915e8ba\\mdmmoto1.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmmotou.inf_amd64_c9149c10c92a99ee",
+    "Inf": "mdmmotou.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmmotou.inf_amd64_c9149c10c92a99ee\\mdmmotou.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmmts.inf_amd64_22faadd47636c50a",
+    "Inf": "mdmmts.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmmts.inf_amd64_22faadd47636c50a\\mdmmts.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmneuhs.inf_amd64_f1b3193158ca0b53",
+    "Inf": "mdmneuhs.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmneuhs.inf_amd64_f1b3193158ca0b53\\mdmneuhs.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmnis1u.inf_amd64_0a1eb7db3fdba085",
+    "Inf": "mdmnis1u.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmnis1u.inf_amd64_0a1eb7db3fdba085\\mdmnis1u.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmnis2u.inf_amd64_b245ae4531734eff",
+    "Inf": "mdmnis2u.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmnis2u.inf_amd64_b245ae4531734eff\\mdmnis2u.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmnis3t.inf_amd64_a50c61a133de0101",
+    "Inf": "mdmnis3t.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmnis3t.inf_amd64_a50c61a133de0101\\mdmnis3t.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmnis5t.inf_amd64_8c419c25ecb6a6f5",
+    "Inf": "mdmnis5t.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmnis5t.inf_amd64_8c419c25ecb6a6f5\\mdmnis5t.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmnokia.inf_amd64_54b805b39dede457",
+    "Inf": "mdmnokia.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmnokia.inf_amd64_54b805b39dede457\\mdmnokia.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmnova.inf_amd64_13c3cf5197d9a9df",
+    "Inf": "mdmnova.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmnova.inf_amd64_13c3cf5197d9a9df\\mdmnova.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmntt1.inf_amd64_0c8ddc2e322f22d8",
+    "Inf": "mdmntt1.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmntt1.inf_amd64_0c8ddc2e322f22d8\\mdmntt1.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmnttd2.inf_amd64_5c6fa4212118caa4",
+    "Inf": "mdmnttd2.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmnttd2.inf_amd64_5c6fa4212118caa4\\mdmnttd2.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmnttd6.inf_amd64_eec911e25d1ae891",
+    "Inf": "mdmnttd6.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmnttd6.inf_amd64_eec911e25d1ae891\\mdmnttd6.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmnttme.inf_amd64_536262670a091bfa",
+    "Inf": "mdmnttme.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmnttme.inf_amd64_536262670a091bfa\\mdmnttme.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmnttp.inf_amd64_387fa100a5619901",
+    "Inf": "mdmnttp.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmnttp.inf_amd64_387fa100a5619901\\mdmnttp.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmnttp2.inf_amd64_f2172b3092e18956",
+    "Inf": "mdmnttp2.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmnttp2.inf_amd64_f2172b3092e18956\\mdmnttp2.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmnttte.inf_amd64_363a3ce6c2df0e55",
+    "Inf": "mdmnttte.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmnttte.inf_amd64_363a3ce6c2df0e55\\mdmnttte.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmolic.inf_amd64_c513a3fa0ddf7d0c",
+    "Inf": "mdmolic.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmolic.inf_amd64_c513a3fa0ddf7d0c\\mdmolic.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmomrn3.inf_amd64_c88f6db44a821b04",
+    "Inf": "mdmomrn3.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmomrn3.inf_amd64_c88f6db44a821b04\\mdmomrn3.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmoptn.inf_amd64_de74a0bd672717c8",
+    "Inf": "mdmoptn.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmoptn.inf_amd64_de74a0bd672717c8\\mdmoptn.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmosi.inf_amd64_22c1ec286ba6bd6f",
+    "Inf": "mdmosi.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmosi.inf_amd64_22c1ec286ba6bd6f\\mdmosi.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmpace.inf_amd64_c4a479746aae2d0a",
+    "Inf": "mdmpace.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmpace.inf_amd64_c4a479746aae2d0a\\mdmpace.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmpenr.inf_amd64_66812053e61099d7",
+    "Inf": "mdmpenr.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmpenr.inf_amd64_66812053e61099d7\\mdmpenr.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmpin.inf_amd64_44ea84391d784116",
+    "Inf": "mdmpin.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmpin.inf_amd64_44ea84391d784116\\mdmpin.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmpn1.inf_amd64_04e2b3e1519bf3ab",
+    "Inf": "mdmpn1.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmpn1.inf_amd64_04e2b3e1519bf3ab\\mdmpn1.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmpp.inf_amd64_07789eefb8bab402",
+    "Inf": "mdmpp.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmpp.inf_amd64_07789eefb8bab402\\mdmpp.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmpsion.inf_amd64_8eb48a1ed60db5aa",
+    "Inf": "mdmpsion.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmpsion.inf_amd64_8eb48a1ed60db5aa\\mdmpsion.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmracal.inf_amd64_e310cd60d16b81de",
+    "Inf": "mdmracal.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmracal.inf_amd64_e310cd60d16b81de\\mdmracal.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmrock.inf_amd64_c1901f90912b31b8",
+    "Inf": "mdmrock.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmrock.inf_amd64_c1901f90912b31b8\\mdmrock.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmrock3.inf_amd64_bf1fd1df52487c62",
+    "Inf": "mdmrock3.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmrock3.inf_amd64_bf1fd1df52487c62\\mdmrock3.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmrock4.inf_amd64_a25fdc6632f306dc",
+    "Inf": "mdmrock4.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmrock4.inf_amd64_a25fdc6632f306dc\\mdmrock4.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmrock5.inf_amd64_ea4a55d19df202a0",
+    "Inf": "mdmrock5.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmrock5.inf_amd64_ea4a55d19df202a0\\mdmrock5.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmsier.inf_amd64_00b55826cfcef443",
+    "Inf": "mdmsier.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmsier.inf_amd64_00b55826cfcef443\\mdmsier.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmsii64.inf_amd64_b5fcd818aa96625a",
+    "Inf": "mdmsii64.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmsii64.inf_amd64_b5fcd818aa96625a\\mdmsii64.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmsmart.inf_amd64_a29d03393c5b8df4",
+    "Inf": "mdmsmart.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmsmart.inf_amd64_a29d03393c5b8df4\\mdmsmart.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmsonyu.inf_amd64_14a7284fa9a0166b",
+    "Inf": "mdmsonyu.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmsonyu.inf_amd64_14a7284fa9a0166b\\mdmsonyu.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmsun1.inf_amd64_81279c511b958f30",
+    "Inf": "mdmsun1.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmsun1.inf_amd64_81279c511b958f30\\mdmsun1.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmsun2.inf_amd64_44fb39233cf1cbca",
+    "Inf": "mdmsun2.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmsun2.inf_amd64_44fb39233cf1cbca\\mdmsun2.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmsupr3.inf_amd64_a2a9e6046ba92331",
+    "Inf": "mdmsupr3.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmsupr3.inf_amd64_a2a9e6046ba92331\\mdmsupr3.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmsupra.inf_amd64_7361a9a63f76d949",
+    "Inf": "mdmsupra.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmsupra.inf_amd64_7361a9a63f76d949\\mdmsupra.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmsuprv.inf_amd64_8fff9a7265103f8f",
+    "Inf": "mdmsuprv.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmsuprv.inf_amd64_8fff9a7265103f8f\\mdmsuprv.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmtdk.inf_amd64_c4a6e97f1f4ff742",
+    "Inf": "mdmtdk.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmtdk.inf_amd64_c4a6e97f1f4ff742\\mdmtdk.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmtdkj2.inf_amd64_2c5ee59bab206918",
+    "Inf": "mdmtdkj2.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmtdkj2.inf_amd64_2c5ee59bab206918\\mdmtdkj2.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmtdkj3.inf_amd64_9c2e30c9f1849c9b",
+    "Inf": "mdmtdkj3.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmtdkj3.inf_amd64_9c2e30c9f1849c9b\\mdmtdkj3.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmtdkj4.inf_amd64_e1eb2cb3737e5d38",
+    "Inf": "mdmtdkj4.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmtdkj4.inf_amd64_e1eb2cb3737e5d38\\mdmtdkj4.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmtdkj5.inf_amd64_35150ab75d7edb76",
+    "Inf": "mdmtdkj5.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmtdkj5.inf_amd64_35150ab75d7edb76\\mdmtdkj5.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmtdkj6.inf_amd64_a09041d938ffffb9",
+    "Inf": "mdmtdkj6.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmtdkj6.inf_amd64_a09041d938ffffb9\\mdmtdkj6.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmtdkj7.inf_amd64_9c36f8c3c6c5a831",
+    "Inf": "mdmtdkj7.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmtdkj7.inf_amd64_9c36f8c3c6c5a831\\mdmtdkj7.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmtexas.inf_amd64_d37df6bbb6bc07c9",
+    "Inf": "mdmtexas.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmtexas.inf_amd64_d37df6bbb6bc07c9\\mdmtexas.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmti.inf_amd64_6274c56b34f2ee29",
+    "Inf": "mdmti.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmti.inf_amd64_6274c56b34f2ee29\\mdmti.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmtkr.inf_amd64_aee545a1fab2ba8e",
+    "Inf": "mdmtkr.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmtkr.inf_amd64_aee545a1fab2ba8e\\mdmtkr.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmtron.inf_amd64_31548bab34db6ae6",
+    "Inf": "mdmtron.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmtron.inf_amd64_31548bab34db6ae6\\mdmtron.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmusrf.inf_amd64_63b3cae9db8a64b7",
+    "Inf": "mdmusrf.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmusrf.inf_amd64_63b3cae9db8a64b7\\mdmusrf.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmusrg.inf_amd64_a1de83a93d8c95a2",
+    "Inf": "mdmusrg.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmusrg.inf_amd64_a1de83a93d8c95a2\\mdmusrg.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmusrgl.inf_amd64_7fb9a67b41123de6",
+    "Inf": "mdmusrgl.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmusrgl.inf_amd64_7fb9a67b41123de6\\mdmusrgl.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmusrk1.inf_amd64_0bb5ab2732177fad",
+    "Inf": "mdmusrk1.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmusrk1.inf_amd64_0bb5ab2732177fad\\mdmusrk1.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmusrsp.inf_amd64_528e2fd5acf43561",
+    "Inf": "mdmusrsp.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmusrsp.inf_amd64_528e2fd5acf43561\\mdmusrsp.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmvdot.inf_amd64_0a2f787e87eed470",
+    "Inf": "mdmvdot.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmvdot.inf_amd64_0a2f787e87eed470\\mdmvdot.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmvv.inf_amd64_2c04e7d79b1797c8",
+    "Inf": "mdmvv.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmvv.inf_amd64_2c04e7d79b1797c8\\mdmvv.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmwhql0.inf_amd64_61a6722ee00b3f61",
+    "Inf": "mdmwhql0.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmwhql0.inf_amd64_61a6722ee00b3f61\\mdmwhql0.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmx5560.inf_amd64_06c26c35bd84478b",
+    "Inf": "mdmx5560.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmx5560.inf_amd64_06c26c35bd84478b\\mdmx5560.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmzoom.inf_amd64_fdd83c13a0d6c797",
+    "Inf": "mdmzoom.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmzoom.inf_amd64_fdd83c13a0d6c797\\mdmzoom.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmzyp.inf_amd64_1f02d249a25581ed",
+    "Inf": "mdmzyp.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmzyp.inf_amd64_1f02d249a25581ed\\mdmzyp.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmzyxel.inf_amd64_84a66f54ba76bfbe",
+    "Inf": "mdmzyxel.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmzyxel.inf_amd64_84a66f54ba76bfbe\\mdmzyxel.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mdmzyxlg.inf_amd64_abdea4fc1a7172cd",
+    "Inf": "mdmzyxlg.inf",
+    "Class": "Modem",
+    "ClassGuid": "{4D36E96D-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mdmzyxlg.inf_amd64_abdea4fc1a7172cd\\mdmzyxlg.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "mgtdyn.inf_amd64_d3918352bede320b",
+    "Inf": "mgtdyn.inf",
+    "Class": "HidMsr",
+    "ClassGuid": "{2A9FE532-0CDC-44F9-9827-76192F2CA2FB}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\mgtdyn.inf_amd64_d3918352bede320b\\mgtdyn.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "msdri.inf_amd64_fdc036dc83da2115",
+    "Inf": "msdri.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\msdri.inf_amd64_fdc036dc83da2115\\msdri.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "msux64w10.inf_amd64_f329abee714f5000",
+    "Inf": "msux64w10.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\msux64w10.inf_amd64_f329abee714f5000\\msux64w10.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "net1yx64.inf_amd64_3e5c319fac7067a7",
+    "Inf": "net1yx64.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\net1yx64.inf_amd64_3e5c319fac7067a7\\net1yx64.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "net2ic68.inf_amd64_7af2e2aa52ab9b71",
+    "Inf": "net2ic68.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\net2ic68.inf_amd64_7af2e2aa52ab9b71\\net2ic68.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "net44amd.inf_amd64_6af2734d06d3e49f",
+    "Inf": "net44amd.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\net44amd.inf_amd64_6af2734d06d3e49f\\net44amd.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "net7400-x64-n650.inf_amd64_213b9c153c9b4d01",
+    "Inf": "net7400-x64-n650.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\net7400-x64-n650.inf_amd64_213b9c153c9b4d01\\net7400-x64-n650.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "net7500-x64-n650f.inf_amd64_7a936ac081dc1b16",
+    "Inf": "net7500-x64-n650f.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\net7500-x64-n650f.inf_amd64_7a936ac081dc1b16\\net7500-x64-n650f.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "net7800-x64-n650f.inf_amd64_bfc44179ca196669",
+    "Inf": "net7800-x64-n650f.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\net7800-x64-n650f.inf_amd64_bfc44179ca196669\\net7800-x64-n650f.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "net9500-x64-n650f.inf_amd64_566fa98f770451d2",
+    "Inf": "net9500-x64-n650f.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\net9500-x64-n650f.inf_amd64_566fa98f770451d2\\net9500-x64-n650f.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "netax88179_178a.inf_amd64_be76888d30e8464a",
+    "Inf": "netax88179_178a.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\netax88179_178a.inf_amd64_be76888d30e8464a\\netax88179_178a.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "netbc64.inf_amd64_4c416384b17ee84f",
+    "Inf": "netbc64.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\netbc64.inf_amd64_4c416384b17ee84f\\netbc64.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "netbxnd0a.inf_amd64_9744de6fd6c11c4f",
+    "Inf": "netbxnd0a.inf",
+    "Class": "net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\netbxnd0a.inf_amd64_9744de6fd6c11c4f\\netbxnd0a.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "netbxnda.inf_amd64_5cfb6a07d9d75a4a",
+    "Inf": "netbxnda.inf",
+    "Class": "net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\netbxnda.inf_amd64_5cfb6a07d9d75a4a\\netbxnda.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "nete1e3e.inf_amd64_71ee3a27d9580084",
+    "Inf": "nete1e3e.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\nete1e3e.inf_amd64_71ee3a27d9580084\\nete1e3e.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "netefe3e.inf_amd64_c4fbd94d20e3c73c",
+    "Inf": "netefe3e.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\netefe3e.inf_amd64_c4fbd94d20e3c73c\\netefe3e.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "netelx.inf_amd64_b821dc8c43094e14",
+    "Inf": "netelx.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\netelx.inf_amd64_b821dc8c43094e14\\netelx.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "netg664.inf_amd64_f4299f18c1844724",
+    "Inf": "netg664.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\netg664.inf_amd64_f4299f18c1844724\\netg664.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "netimm.inf_amd64_8b2087393aaef952",
+    "Inf": "netimm.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\netimm.inf_amd64_8b2087393aaef952\\netimm.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "netjme.inf_amd64_7d2f6f04d092b277",
+    "Inf": "netjme.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\netjme.inf_amd64_7d2f6f04d092b277\\netjme.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "netk57a.inf_amd64_a4804fffb8ffc2e6",
+    "Inf": "netk57a.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\netk57a.inf_amd64_a4804fffb8ffc2e6\\netk57a.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "netl160a.inf_amd64_24496b197c188680",
+    "Inf": "netl160a.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\netl160a.inf_amd64_24496b197c188680\\netl160a.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "netl1c63x64.inf_amd64_20b3691d6e7445a9",
+    "Inf": "netl1c63x64.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\netl1c63x64.inf_amd64_20b3691d6e7445a9\\netl1c63x64.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "netl1e64.inf_amd64_616d8a2e59fc462f",
+    "Inf": "netl1e64.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\netl1e64.inf_amd64_616d8a2e59fc462f\\netl1e64.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "netl260a.inf_amd64_39ee03ea6ee818e4",
+    "Inf": "netl260a.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\netl260a.inf_amd64_39ee03ea6ee818e4\\netl260a.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "netmlx4eth63.inf_amd64_59e293fc00a669f4",
+    "Inf": "netmlx4eth63.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\netmlx4eth63.inf_amd64_59e293fc00a669f4\\netmlx4eth63.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "netmlx5.inf_amd64_daa0dfc87505ee8d",
+    "Inf": "netmlx5.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\netmlx5.inf_amd64_daa0dfc87505ee8d\\netmlx5.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "netmyk64.inf_amd64_2f029cbaae1f9a8c",
+    "Inf": "netmyk64.inf",
+    "Class": "Net",
+    "ClassGuid": "{4D36E972-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\netmyk64.inf_amd64_2f029cbaae1f9a8c\\netmyk64.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "netnvm64.inf_amd64_3dc2e896fdc07ff7",
+    "Inf": "netnvm64.inf",
+    "Class": "Net",
+    "ClassGuid": "{4D36E972-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\netnvm64.inf_amd64_3dc2e896fdc07ff7\\netnvm64.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "netnvma.inf_amd64_f3a84765144777ee",
+    "Inf": "netnvma.inf",
+    "Class": "Net",
+    "ClassGuid": "{4D36E972-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\netnvma.inf_amd64_f3a84765144777ee\\netnvma.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "netrtl64.inf_amd64_e646b306d9138846",
+    "Inf": "netrtl64.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\netrtl64.inf_amd64_e646b306d9138846\\netrtl64.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "netrtwlane01.inf_amd64_e88ba65a7546f702",
+    "Inf": "netrtwlane01.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\netrtwlane01.inf_amd64_e88ba65a7546f702\\netrtwlane01.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "nett4x64.inf_amd64_345dd70a1546350e",
+    "Inf": "nett4x64.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\nett4x64.inf_amd64_345dd70a1546350e\\nett4x64.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "netv1x64.inf_amd64_b0aef9976b305f93",
+    "Inf": "netv1x64.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\netv1x64.inf_amd64_b0aef9976b305f93\\netv1x64.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "netvf63a.inf_amd64_6d0895d8fed6bb96",
+    "Inf": "netvf63a.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\netvf63a.inf_amd64_6d0895d8fed6bb96\\netvf63a.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "netvg63a.inf_amd64_dd38edc9e96390ae",
+    "Inf": "netvg63a.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\netvg63a.inf_amd64_dd38edc9e96390ae\\netvg63a.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "netwtw02.inf_amd64_669639d5a41714fa",
+    "Inf": "netwtw02.inf",
+    "Class": "net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\netwtw02.inf_amd64_669639d5a41714fa\\netwtw02.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "netwtw06.inf_amd64_c5f16d20642e3070",
+    "Inf": "netwtw06.inf",
+    "Class": "net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\netwtw06.inf_amd64_c5f16d20642e3070\\netwtw06.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "netxex64.inf_amd64_01587744078125a1",
+    "Inf": "netxex64.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\netxex64.inf_amd64_01587744078125a1\\netxex64.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "pcmcia.inf_amd64_a73a3c20650d72a2",
+    "Inf": "pcmcia.inf",
+    "Class": "PCMCIA",
+    "ClassGuid": "{4d36e977-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\pcmcia.inf_amd64_a73a3c20650d72a2\\pcmcia.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "prnms007.inf_amd64_1b815ddd5227077f",
+    "Inf": "prnms007.inf",
+    "Class": "Printer",
+    "ClassGuid": "{4D36E979-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\prnms007.inf_amd64_1b815ddd5227077f\\prnms007.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "prnms008.inf_amd64_0b031a96e9f575af",
+    "Inf": "prnms008.inf",
+    "Class": "Printer",
+    "ClassGuid": "{4D36E979-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\prnms008.inf_amd64_0b031a96e9f575af\\prnms008.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "prnms010.inf_amd64_81ef500ac19010f2",
+    "Inf": "prnms010.inf",
+    "Class": "Printer",
+    "ClassGuid": "{4D36E979-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\prnms010.inf_amd64_81ef500ac19010f2\\prnms010.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "prnms011.inf_amd64_95908497442505d7",
+    "Inf": "prnms011.inf",
+    "Class": "Printer",
+    "ClassGuid": "{4D36E979-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\prnms011.inf_amd64_95908497442505d7\\prnms011.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "prnms012.inf_amd64_62572df38ebb8a46",
+    "Inf": "prnms012.inf",
+    "Class": "Printer",
+    "ClassGuid": "{4D36E979-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\prnms012.inf_amd64_62572df38ebb8a46\\prnms012.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "prnms014.inf_amd64_5fc89b51405c2cce",
+    "Inf": "prnms014.inf",
+    "Class": "Printer",
+    "ClassGuid": "{4D36E979-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\prnms014.inf_amd64_5fc89b51405c2cce\\prnms014.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "prnms015.inf_amd64_ba37b92548c6931a",
+    "Inf": "prnms015.inf",
+    "Class": "Printer",
+    "ClassGuid": "{4D36E979-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\prnms015.inf_amd64_ba37b92548c6931a\\prnms015.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "qcwlan64.inf_amd64_71c84e1405061462",
+    "Inf": "qcwlan64.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\qcwlan64.inf_amd64_71c84e1405061462\\qcwlan64.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "rawsilo.inf_amd64_780049a07d284cc9",
+    "Inf": "rawsilo.inf",
+    "Class": "EhStorSilo",
+    "ClassGuid": "{9DA2B80F-F89F-4A49-A5C2-511B085B9E8A}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\rawsilo.inf_amd64_780049a07d284cc9\\rawsilo.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "remoteposdrv.inf_amd64_29ef4126d0871721",
+    "Inf": "remoteposdrv.inf",
+    "Class": "RemotePosDevice",
+    "ClassGuid": "{13E42DFA-85D9-424D-8646-28A70F864F9C}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\remoteposdrv.inf_amd64_29ef4126d0871721\\remoteposdrv.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "rtwlanu_oldic.inf_amd64_de1bf895eba0afa5",
+    "Inf": "rtwlanu_oldic.inf",
+    "Class": "Net",
+    "ClassGuid": "{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\rtwlanu_oldic.inf_amd64_de1bf895eba0afa5\\rtwlanu_oldic.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "sbp2.inf_amd64_546e7dc7a4ac303e",
+    "Inf": "sbp2.inf",
+    "Class": "SBP2",
+    "ClassGuid": "{d48179be-ec20-11d1-b6b8-00c04fa372a7}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\sbp2.inf_amd64_546e7dc7a4ac303e\\sbp2.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "sensorsalsdriver.inf_amd64_15a4a04e6bc31c93",
+    "Inf": "sensorsalsdriver.inf",
+    "Class": "Sensor",
+    "ClassGuid": "{5175D334-C371-4806-B3BA-71FD53C9258D}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\sensorsalsdriver.inf_amd64_15a4a04e6bc31c93\\sensorsalsdriver.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "sensorshidclassdriver.inf_amd64_60e89bbbbb8d8b9f",
+    "Inf": "sensorshidclassdriver.inf",
+    "Class": "Sensor",
+    "ClassGuid": "{5175D334-C371-4806-B3BA-71FD53C9258D}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\sensorshidclassdriver.inf_amd64_60e89bbbbb8d8b9f\\sensorshidclassdriver.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "sensorsservicedriver.inf_amd64_a6945e28490a7937",
+    "Inf": "sensorsservicedriver.inf",
+    "Class": "Sensor",
+    "ClassGuid": "{5175D334-C371-4806-B3BA-71FD53C9258D}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\sensorsservicedriver.inf_amd64_a6945e28490a7937\\sensorsservicedriver.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  },
+  {
+    "Folder": "ykinx64.inf_amd64_5f83c04f4adb7630",
+    "Inf": "ykinx64.inf",
+    "Class": "Net",
+    "ClassGuid": "{4D36E972-E325-11CE-BFC1-08002BE10318}",
+    "OprekinHasInf": false,
+    "BootCritical": false,
+    "SourceFile": "C:\\tiny11-work\\lite-v4\\driver-infs\\Windows\\System32\\DriverStore\\FileRepository\\ykinx64.inf_amd64_5f83c04f4adb7630\\ykinx64.inf",
+    "Decision": "Optional device package absent from Oprekin baseline"
+  }
+]

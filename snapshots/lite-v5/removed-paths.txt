@@ -1,0 +1,56 @@
+\Program Files (x86)\Microsoft\EdgeWebView
+\Program Files\WindowsApps\Microsoft.DesktopAppInstaller_1.21.10120.0_x64__8wekyb3d8bbwe\Microsoft.Web.WebView2.Core.dll
+\Program Files\WindowsApps\Microsoft.DesktopAppInstaller_1.21.10120.0_x64__8wekyb3d8bbwe\Microsoft.Web.WebView2.Core.winmd
+\Program Files\WindowsApps\Microsoft.WindowsAppRuntime.1.3_3000.934.1904.0_x64__8wekyb3d8bbwe\Microsoft.Web.WebView2.Core.dll
+\Program Files\WindowsApps\Microsoft.WindowsAppRuntime.1.3_3000.934.1904.0_x64__8wekyb3d8bbwe\Microsoft.Web.WebView2.Core.winmd
+\Program Files\WindowsApps\Microsoft.WindowsAppRuntime.1.4_4000.1136.2333.0_x64__8wekyb3d8bbwe\Microsoft.Web.WebView2.Core.dll
+\Program Files\WindowsApps\Microsoft.WindowsAppRuntime.1.4_4000.1136.2333.0_x64__8wekyb3d8bbwe\Microsoft.Web.WebView2.Core.winmd
+\Program Files\WindowsApps\Microsoft.WindowsCalculator_11.2311.0.0_x64__8wekyb3d8bbwe\Microsoft.Web.WebView2.Core.dll
+\Program Files\WindowsApps\Microsoft.WindowsCalculator_11.2311.0.0_x64__8wekyb3d8bbwe\Microsoft.Web.WebView2.Core.winmd
+\Program Files\WindowsApps\Microsoft.WindowsCalculator_11.2311.0.0_x64__8wekyb3d8bbwe\WebView2Loader.dll
+\Windows\Fonts\app932.fon
+\Windows\Fonts\app936.fon
+\Windows\Fonts\app949.fon
+\Windows\Fonts\app950.fon
+\Windows\Fonts\malgun.ttf
+\Windows\Fonts\malgunbd.ttf
+\Windows\Fonts\malgunsl.ttf
+\Windows\Fonts\mingliub.ttc
+\Windows\Fonts\msgothic.ttc
+\Windows\Fonts\msjh.ttc
+\Windows\Fonts\msjhbd.ttc
+\Windows\Fonts\msjhl.ttc
+\Windows\Fonts\msyh.ttc
+\Windows\Fonts\msyhbd.ttc
+\Windows\Fonts\msyhl.ttc
+\Windows\Fonts\msyi.ttf
+\Windows\Fonts\simsun.ttc
+\Windows\Fonts\simsunb.ttf
+\Windows\Fonts\SimsunExtG.ttf
+\Windows\Fonts\StaticCache.dat
+\Windows\Fonts\YuGothB.ttc
+\Windows\Fonts\YuGothL.ttc
+\Windows\Fonts\YuGothM.ttc
+\Windows\Fonts\YuGothR.ttc
+\Windows\ImmersiveControlPanel\Microsoft.Web.WebView2.Core.dll
+\Windows\System32\Microsoft-Edge-WebView
+\Windows\System32\SecureBootUpdates
+\Windows\SystemApps\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy\Microsoft.Web.WebView2.Core.dll
+\Windows\SystemApps\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy\Microsoft.Web.WebView2.Core.winmd
+\Windows\SystemApps\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy\WebView2Standalone.winmd
+\Windows\SystemApps\Microsoft.Windows.OOBENetworkCaptivePortal_cw5n1h2txyewy\Microsoft.Web.WebView2.Core.dll
+\Windows\SystemApps\Microsoft.Windows.OOBENetworkCaptivePortal_cw5n1h2txyewy\Microsoft.Web.WebView2.Core.winmd
+\Windows\SystemApps\Microsoft.Windows.OOBENetworkCaptivePortal_cw5n1h2txyewy\WebView2Standalone.winmd
+\Windows\SystemApps\Microsoft.WindowsAppRuntime.CBS_8wekyb3d8bbwe\Microsoft.Web.WebView2.Core.dll
+\Windows\SystemApps\Microsoft.WindowsAppRuntime.CBS_8wekyb3d8bbwe\Microsoft.Web.WebView2.Core.winmd
+\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\Microsoft.Web.WebView2.Core.dll
+\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\Microsoft.Web.WebView2.Core.winmd
+\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\WebView2Standalone.winmd
+\Windows\SystemApps\Shared\WebView2SDK
+\Windows\SystemApps\Shared\WebView2SDK\Microsoft.Web.WebView2.Core.dll
+\Windows\SystemApps\Shared\WebView2SDK\Microsoft.Web.WebView2.Core.winmd
+\Windows\SystemApps\Shared\WebView2SDK\webview2standalone.dll
+\Windows\SystemApps\Shared\WebView2SDK\WebView2Standalone.winmd
+\Windows\SystemApps\ShellExperienceHost_cw5n1h2txyewy\Microsoft.Web.WebView2.Core.dll
+\Windows\SystemApps\ShellExperienceHost_cw5n1h2txyewy\Microsoft.Web.WebView2.Core.winmd
+\Windows\SystemApps\ShellExperienceHost_cw5n1h2txyewy\WebView2Standalone.winmd

@@ -1,0 +1,25 @@
+{
+    "BootStorageServices":  [
+                                {
+                                    "Control":  "ControlSet001",
+                                    "Driver":  "viostor",
+                                    "Start":  0,
+                                    "Group":  "SCSI miniport",
+                                    "ImagePath":  "System32\\DriverStore\\FileRepository\\viostor.inf_amd64_2fc8a27a8c1b757c\\viostor.sys",
+                                    "WimPath":  "\\Windows\\System32\\DriverStore\\FileRepository\\viostor.inf_amd64_2fc8a27a8c1b757c\\viostor.sys",
+                                    "BinaryExists":  true
+                                },
+                                {
+                                    "Control":  "ControlSet001",
+                                    "Driver":  "vioscsi",
+                                    "Start":  0,
+                                    "Group":  "SCSI miniport",
+                                    "ImagePath":  "System32\\DriverStore\\FileRepository\\vioscsi.inf_amd64_11391c8694cab0ca\\vioscsi.sys",
+                                    "WimPath":  "\\Windows\\System32\\DriverStore\\FileRepository\\vioscsi.inf_amd64_11391c8694cab0ca\\vioscsi.sys",
+                                    "BinaryExists":  true
+                                }
+                            ],
+    "AllSixDriverDatabaseRegistrationsPresent":  true,
+    "Build":  "26300.9818",
+    "EssentialServicesPreserved":  true
+}

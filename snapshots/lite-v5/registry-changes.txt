@@ -1,0 +1,104 @@
+FONT	Malgun Gothic (TrueType)	malgun.ttf
+FONT	Malgun Gothic Bold (TrueType)	malgunbd.ttf
+FONT	Malgun Gothic SemiLight (TrueType)	malgunsl.ttf
+FONT	Microsoft JhengHei & Microsoft JhengHei UI (TrueType)	msjh.ttc
+FONT	Microsoft JhengHei Bold & Microsoft JhengHei UI Bold (TrueType)	msjhbd.ttc
+FONT	Microsoft JhengHei Light & Microsoft JhengHei UI Light (TrueType)	msjhl.ttc
+FONT	Microsoft YaHei & Microsoft YaHei UI (TrueType)	msyh.ttc
+FONT	Microsoft YaHei Bold & Microsoft YaHei UI Bold (TrueType)	msyhbd.ttc
+FONT	Microsoft YaHei Light & Microsoft YaHei UI Light (TrueType)	msyhl.ttc
+FONT	Microsoft Yi Baiti (TrueType)	msyi.ttf
+FONT	MingLiU-ExtB & PMingLiU-ExtB & MingLiU_HKSCS-ExtB (TrueType)	mingliub.ttc
+FONT	MS Gothic & MS UI Gothic & MS PGothic (TrueType)	msgothic.ttc
+FONT	SimSun & NSimSun (TrueType)	simsun.ttc
+FONT	SimSun-ExtB (TrueType)	simsunb.ttf
+FONT	Yu Gothic Bold & Yu Gothic UI Semibold & Yu Gothic UI Bold (TrueType)	YuGothB.ttc
+FONT	Yu Gothic Light & Yu Gothic UI Light (TrueType)	YuGothL.ttc
+FONT	Yu Gothic Medium & Yu Gothic UI Regular (TrueType)	YuGothM.ttc
+FONT	Yu Gothic Regular & Yu Gothic UI Semilight (TrueType)	YuGothR.ttc
+FONT	SimSun-ExtG (TrueType)	SimsunExtG.ttf
+FONTLINK	Lucida Sans Unicode	9 -> 3
+FONTLINK	Microsoft Sans Serif	9 -> 3
+FONTLINK	Tahoma	9 -> 3
+FONTLINK	Segoe UI	16 -> 6
+FONTLINK	Segoe UI Bold	11 -> 3
+FONTLINK	Segoe UI Light	11 -> 3
+FONTLINK	Segoe UI Semilight	11 -> 3
+FONTLINK	Segoe UI Semibold	11 -> 3
+FONTLINK	Segoe UI Variable Small	16 -> 6
+FONTLINK	Segoe UI Variable Small Bold	11 -> 3
+FONTLINK	Segoe UI Variable Small Light	11 -> 3
+FONTLINK	Segoe UI Variable Small Semilig	11 -> 3
+FONTLINK	Segoe UI Variable Small Semibol	11 -> 3
+FONTLINK	Segoe UI Variable Text	16 -> 6
+FONTLINK	Segoe UI Variable Text Bold	11 -> 3
+FONTLINK	Segoe UI Variable Text Light	11 -> 3
+FONTLINK	Segoe UI Variable Text Semiligh	11 -> 3
+FONTLINK	Segoe UI Variable Text Semibold	11 -> 3
+FONTLINK	Segoe UI Variable Display	16 -> 6
+FONTLINK	Segoe UI Variable Display Bold	11 -> 3
+FONTLINK	Segoe UI Variable Display Light	11 -> 3
+FONTLINK	Segoe UI Variable Display Semil	11 -> 3
+FONTLINK	Segoe UI Variable Display Semib	11 -> 3
+FONTLINK	Ebrima	13 -> 5
+FONTLINK	Ebrima Bold	13 -> 5
+FONTLINK	Gadugi	13 -> 5
+FONTLINK	Gadugi Bold	13 -> 5
+FONTLINK	Khmer UI	13 -> 5
+FONTLINK	Khmer UI Bold	13 -> 5
+FONTLINK	Lao UI	13 -> 5
+FONTLINK	Lao UI Bold	13 -> 5
+FONTLINK	Leelawadee	13 -> 5
+FONTLINK	Leelawadee Bold	13 -> 5
+FONTLINK	Leelawadee UI	13 -> 5
+FONTLINK	Leelawadee UI Bold	13 -> 5
+FONTLINK	Nirmala UI	13 -> 5
+FONTLINK	Nirmala UI Bold	13 -> 5
+FONTLINK	Nirmala UI Semilight	11 -> 3
+FONTLINK	MingLiU	10 -> 5
+FONTLINK	PMingLiU	10 -> 5
+FONTLINK	MingLiU_HKSCS	11 -> 6
+FONTLINK	MingLiU-ExtB	11 -> 6
+FONTLINK	PMingLiU-ExtB	11 -> 6
+FONTLINK	MingLiU_HKSCS-ExtB	12 -> 7
+FONTLINK	Microsoft JhengHei	12 -> 6
+FONTLINK	Microsoft JhengHei Bold	12 -> 6
+FONTLINK	Microsoft JhengHei UI	10 -> 5
+FONTLINK	Microsoft JhengHei UI Bold	10 -> 5
+FONTLINK	Microsoft JhengHei UI Light	10 -> 5
+FONTLINK	SimSun	10 -> 6
+FONTLINK	SimSun-ExtB	11 -> 6
+FONTLINK	NSimSun	8 -> 4
+FONTLINK	Microsoft YaHei	12 -> 5
+FONTLINK	Microsoft YaHei Bold	12 -> 5
+FONTLINK	Microsoft YaHei UI	10 -> 4
+FONTLINK	Microsoft YaHei UI Bold	10 -> 4
+FONTLINK	Microsoft YaHei UI Light	10 -> 4
+FONTLINK	Yu Gothic UI	5 -> 2
+FONTLINK	Yu Gothic UI Bold	5 -> 2
+FONTLINK	Yu Gothic UI Light	5 -> 2
+FONTLINK	Yu Gothic UI Semilight	5 -> 2
+FONTLINK	Yu Gothic UI Semibold	5 -> 2
+FONTLINK	Meiryo	12 -> 3
+FONTLINK	Meiryo Bold	12 -> 3
+FONTLINK	Meiryo UI	12 -> 3
+FONTLINK	Meiryo UI Bold	12 -> 3
+FONTLINK	MS Gothic	8 -> 3
+FONTLINK	MS PGothic	8 -> 3
+FONTLINK	MS UI Gothic	10 -> 5
+FONTLINK	MS Mincho	8 -> 3
+FONTLINK	MS PMincho	8 -> 3
+FONTLINK	Batang	8 -> 3
+FONTLINK	BatangChe	8 -> 3
+FONTLINK	Dotum	8 -> 2
+FONTLINK	DotumChe	8 -> 2
+FONTLINK	Gulim	10 -> 4
+FONTLINK	GulimChe	8 -> 2
+FONTLINK	Gungsuh	8 -> 3
+FONTLINK	GungsuhChe	8 -> 3
+FONTLINK	Malgun Gothic	12 -> 6
+FONTLINK	Malgun Gothic Bold	12 -> 6
+FONTLINK	Malgun Gothic Semilight	12 -> 6
+FONTLINK	SimSun-ExtG	11 -> 6
+WEBVIEW_REG	WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft EdgeWebView	Microsoft Edge WebView2 Runtime
+WEBVIEW_REG	WOW6432Node\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}	 Microsoft EdgeWebView

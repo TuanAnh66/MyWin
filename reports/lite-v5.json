@@ -1,0 +1,23 @@
+{
+  "ProtectedFiles": 10055,
+  "RemovedSecureBootUpdates": true,
+  "SHA256": "D2BFA4503E6A5B94B78F179BE7B3A7DC450645192C2E1685537B0B37A6227CF5",
+  "Output": "C:\\tiny11-work\\lite-v5\\install.wim",
+  "Source": "C:\\tiny11-work\\lite-v4-virtio\\install.wim",
+  "Compression": "LZX",
+  "RemovedFileCount": 979,
+  "VmBootTestPerformed": false,
+  "RemovedWebViewRuntimes": true,
+  "Build": "26300.9818",
+  "SystemAndDriversHivesUnchanged": true,
+  "RemovedFontFiles": 23,
+  "DotNetPowerShellWow64AndVirtioUnchanged": true,
+  "SourceSHA256": "B059DD4969DEFFC81FD7FC93C7F373F9495EF34C9421BC8FFB656366F362BEC4",
+  "SavedBytes": 884462010,
+  "SourcePreserved": true,
+  "WimIntegrityVerified": true,
+  "UnchangedRetainedFiles": 87100,
+  "RemovedWebViewSdkFiles": true,
+  "Bytes": 2553729069,
+  "SoftwareHiveAclPreserved": true
+}

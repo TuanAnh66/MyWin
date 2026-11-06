@@ -1,0 +1,13 @@
+WindowsUpdate
+UpdateOrchestrator
+WaaSMedic
+Application Experience
+Autochk
+Customer Experience Improvement Program
+Feedback
+Maps
+Windows Error Reporting
+Location
+Speech
+XblGameSave
+Xbox

@@ -1,0 +1,21 @@
+{
+  "RequestedThreads": 8,
+  "SavedPercent": 29.03,
+  "Build": "26300.9818",
+  "OutputSHA256": "5479BA9666836D6C382ED69ECB7E55B8C64C9209C222BD663CC3C7E3D47C6C7A",
+  "EsdIntegrityVerified": true,
+  "FilePathsMatch": true,
+  "ElapsedMinutes": 18.72,
+  "ImageMetadataMatches": true,
+  "SourceBytes": 3435097761,
+  "ActualThreads": 8,
+  "Compression": "Solid LZMS",
+  "OutputBytes": 2437952382,
+  "WimPreserved": true,
+  "SourceSHA256": "578B840C2E57E081325D79FC11339AA41F581D475353AB9FD53A75CB6FE82D06",
+  "SolidChunkBytes": 16777216,
+  "Source": "C:\\tiny11-work\\lite-v4\\install.wim",
+  "Output": "C:\\tiny11-work\\lite-v4\\install.esd",
+  "SavedBytes": 997145379,
+  "DismImageInfoVerified": true
+}

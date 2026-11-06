@@ -1,0 +1,31 @@
+{
+  "Bytes": 3438191079,
+  "Output": "C:\\tiny11-work\\lite-v4-virtio\\install.wim",
+  "BootWimModified": false,
+  "MicrosoftCatalogAndKernelSignaturesVerified": true,
+  "DriverCount": 6,
+  "StagedDriverFileHashesVerified": true,
+  "DriverRelease": "0.1.302",
+  "OriginalV4WimAndEsdPreserved": true,
+  "SourceWimSHA256": "578B840C2E57E081325D79FC11339AA41F581D475353AB9FD53A75CB6FE82D06",
+  "NativeDismDriverStagingUsed": true,
+  "SHA256": "B059DD4969DEFFC81FD7FC93C7F373F9495EF34C9421BC8FFB656366F362BEC4",
+  "RuntimeFileCount": 7832,
+  "WimIntegrityVerified": true,
+  "BootCriticalStorageVerified": true,
+  "Drivers": [
+    "balloon",
+    "netkvm",
+    "vioscsi",
+    "viostor",
+    "vioser",
+    "viorng"
+  ],
+  "VmKvmBootTestPerformed": false,
+  "DotNetPowerShellWow64FilesUnchanged": true,
+  "ForceUnsignedUsed": false,
+  "SourceEsdSHA256": "5479BA9666836D6C382ED69ECB7E55B8C64C9209C222BD663CC3C7E3D47C6C7A",
+  "Build": "26300.9818",
+  "Compression": "LZX",
+  "SourceWim": "C:\\tiny11-work\\lite-v4\\install.wim"
+}

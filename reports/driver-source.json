@@ -1,0 +1,10 @@
+{
+  "MsiReadOnlyExtraction": true,
+  "InstallerExecuted": false,
+  "MsiSHA256": "4F4388468A7AC5286BD1F1924EF02E7281A60A600390A7CFCFD55809EFC0889F",
+  "Upstream": "https://github.com/virtio-win/virtio-win-pkg-scripts",
+  "Download": "https://fedora-virt.repo.nfrance.com/virtio-win/direct-downloads/stable-virtio/virtio-win-gt-x64.msi",
+  "MicrosoftCatalogSignaturesVerified": true,
+  "PackageCount": 6,
+  "Version": "0.1.302"
+}

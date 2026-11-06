@@ -1,0 +1,448 @@
+BÀN GIAO TOÀN BỘ CÔNG VIỆC WINDOWS TINY — cập nhật 2026-11-06 (Asia/Bangkok)
+=======================================================================
+
+ĐỌC TRƯỚC KHI LÀM TIẾP
+---------------------
+Người dùng muốn tự build Windows 11 cực nhẹ từ ISO UUP của mình. Build cần giữ
+26300.9818; không cần Windows Update sau cài. Chấp nhận thử trong VM, lỗi thì dựng
+lại. Sau lỗi v2, yêu cầu cố định: GIỮ .NET Framework, PowerShell và WoW64.
+VPS variant còn phải GIỮ VirtIO. Không tự ý hy sinh các nhóm này để đạt dung lượng.
+Luôn tạo bản mới, giữ nguyên các bản trước. Hiện người dùng thích WIM nén LZX bình
+thường để cài thử nhanh; ESD nén mạnh chỉ tạo khi yêu cầu.
+
+TRẠNG THÁI HIỆN TẠI: v5 đã hoàn thành, người dùng đã vào desktop VMware và mở
+Task Manager được. Không có build đang chờ hoàn thành. Chưa có yêu cầu tạo v6.
+Tin nhắn cuối: yêu cầu bàn giao toàn bộ công việc cho agent sau. Không cắt thêm.
+
+File chính hiện tại:
+  C:\tiny11-work\lite-v5\install.wim
+  2,553,729,069 bytes = khoảng 2.38 GiB, LZX, 1 index Windows 11 Pro x64
+  build 26300.9818
+  SHA256 D2BFA4503E6A5B94B78F179BE7B3A7DC450645192C2E1685537B0B37A6227CF5
+  Báo cáo: C:\tiny11-work\lite-v5\report.json
+
+1. MÔI TRƯỜNG VÀ NGUYÊN TẮC THAO TÁC
+------------------------------------
+Windows host, account Administrator; cwd C:\26300.9818.
+Workspace build: C:\tiny11-work. Full filesystem access, approval policy never.
+Không truyền sandbox_permissions vào exec_command.
+Không tạo task/thread/goal/automation hoặc chạy agent khác nếu không có yêu cầu.
+Được phép thao tác image offline theo yêu cầu, không sửa Windows host nhầm.
+Không cài Windows lên host, không tự format ổ hay thay cấu hình VM/VPS.
+
+Công cụ:
+  C:\26300.9818\bin\wimlib-imagex.exe (1.14.1)
+  C:\26300.9818\bin\7z.exe
+  C:\26300.9818\bin\offreg.dll (x86!)
+  C:\Windows\System32\dism.exe (host 10.0.26100.9549)
+  C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe (cho offreg x86)
+  <USERPROFILE>\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell\pwsh.exe
+
+Helper C#:
+  C:\tiny11-work\LiteV3Registry.cs — đọc/sửa hive OFFLINE qua offreg.dll.
+  C:\tiny11-work\app-metadata-cleanup\OfflineAppMetadata.cs
+  C:\tiny11-work\ReadMsiFiles.cs — đọc bảng File MSI bằng msi.dll, không cài MSI.
+Không reg load hive image vào registry host nếu có thể dùng offreg.
+Khi sửa hive: extract file gốc có ACL, sửa vào file khác, ghi bytes lại file gốc
+để giữ ACL rồi wimlib add vào image. Không thay hive bằng bản tạo mới mất ACL.
+
+2. MỐC UUP / NGUỒN GỐC
+---------------------
+Người dùng tải UUP và converter tích hợp SSU, .NET update, LCU; thấy nhiều lượt
+DISM 100% nhưng chưa thoát. DISM phải hoàn tất lưu/commit trước bước tiếp theo.
+Base image có thể báo 26100.1 trước khi cập nhật/enablement lên 26300.9818.
+Không nhầm version DISM với version image/driver.
+
+ISO gốc đã tạo xong:
+  C:\26300.9818\26300.9818.261025-0959.26H2_GE_RELEASE_SVC_PROD3_CLIENTMULTI_X64FRE_EN-US.ISO
+  9,590,216,704 bytes (~8.93 GiB)
+  install.wim có index 1 Pro, index 2 Pro for Workstations.
+  ISO từng mount F:; cần kiểm tra lại trước khi dùng drive letter.
+
+Cấu hình dựng lại từ UUP cache (không cần làm lại nếu dùng image đã cập nhật):
+  C:\tiny11-work\uup-minimal\ConvertConfig.ini
+  C:\tiny11-work\uup-minimal\Rebuild-FromCache.ps1
+  AddUpdates=1, SkipISO=1, SkipApps=1, SkipEdge=1, SkipWinRE=1, v.v.
+Người dùng yêu cầu giữ update ĐÃ tích hợp, không muốn update sau khi cài.
+
+Repo tiny11builder clone C:\tiny11-work, branch đã thấy winui-preview,
+commit từng ghi nhận 38f7ab6. Upstream https://github.com/ntdevlabs/tiny11builder
+GUI: C:\tiny11-work\app\Tiny11Builder-0.2.0-win-x64\Tiny11Builder.exe
+Các script maker upstream cũng ở C:\tiny11-work.
+
+3. MỐC v1 — CORE CỰC HẠN QUA BUILDER
+-----------------------------------
+  C:\tiny11-work\tiny11-extreme-26300.9818.iso
+  3,037,388,800 bytes (~2.83 GiB)
+  SHA256 9D7B813A243B5EFF15B2B3FD38B0E49A175FD71602231DBDA7D6307F8A7E9188
+  Job/report/recipe/log:
+  C:\tiny11-work\builds\tiny11-81e7252b807c49efbbc60f781bdeeae3\
+
+Core remove 37 groups, .NET/WoW64 bị gỡ, component store bị cắt.
+GUI từng lỗi Remove apps, DISM exit 87 initialization; sau đã hoàn thành ISO.
+Warning cuối về boot.wim: nguồn đã compact nên rebuild không nhỏ thêm.
+Không hiểu warning này là build hỏng.
+Image Core mất khả năng servicing thông thường; đừng chạy builder như image stock
+rồi hứa DISM có thể gỡ/cài package bình thường.
+
+4. MỐC v2 — CẮT TRỰC TIẾP / LỖI .NET
+-----------------------------------
+User muốn giữ v1 rồi cắt tiếp WindowsApps và boot.wim.
+  C:\tiny11-work\Build-ExtremeV2.ps1
+  C:\tiny11-work\Finish-FastV2.ps1
+  Workspace C:\tiny11-work\extreme-v2\
+
+Nén LZMS quá lâu, user yêu cầu dừng và dùng nén thường. Đã làm bản fast:
+  C:\tiny11-work\tiny11-extreme-v2-fast-26300.9818.iso
+  3,544,985,600 bytes (~3.30 GiB)
+  SHA256 D6E26D193E5D1EB00CEB2B397D814D047FB1B9BD997C32677D5A8616A56D3406
+  boot.wim đã cắt còn khoảng 501 MiB.
+
+User sau chỉ cần standalone WIM:
+  C:\tiny11-work\install-v2-fast-26300.9818.wim
+  2,825,627,538 bytes sau dọn app metadata.
+  Backup: C:\tiny11-work\install-v2-fast-26300.9818.pre-metadata-cleanup.wim
+  2,829,629,026 bytes.
+
+Metadata cleanup:
+  C:\tiny11-work\app-metadata-cleanup\report.json
+  dọn 174 SOFTWARE app entries/values, 1 DefaultUser, 95 layout tiles,
+  16 hive log sidecars. Các reference app thuộc phạm vi dò không còn.
+  Không được nói toàn bộ StateRepository binary DB hay mọi metadata đều sạch.
+  Đã xóa file payload trực tiếp, metadata chỉ được dọn theo phạm vi cụ thể.
+
+User cài VM: tzsync.exe báo thiếu .NET v4.0.30319, PowerShell 5.1 không chạy.
+Đây là lý do chuyển v3 giữ .NET, PS, WoW64. Không quay lại dùng v2 làm nền để
+"khôi phục nhẹ" các runtime này; v3 được dựng lại từ nguồn đầy đủ.
+
+ESD bỏ dở v2: C:\tiny11-work\extreme-v2\install-lzms-incomplete.esd
+KHÔNG dùng để cài.
+
+5. MỐC THAM CHIẾU OPREKIN
+------------------------
+User đưa ISO:
+  <USERPROFILE>\Downloads\Win11Pro_25H2.7171_oprekin.com.iso
+  1,758,855,168 bytes (~1.64 GiB), từng mount E:.
+  E:\sources\install.esd 1,433,707,376 bytes (~1.34 GiB), LZMS.
+  Windows 11 Pro 26200.7171 en-US, 1 index.
+  boot.wim 303,690,846 bytes (~290 MiB).
+Audit: C:\tiny11-work\oprekin-audit\paths.txt, summary.json, extracted\...
+
+Tham chiếu có .NET 32/64, PS5.1, WoW64, Calculator, codecs, frameworks.
+461 driver folders, ~35 WinSxS top entries, 20 SystemApps, 17 WindowsApps families.
+Không WinRE. Có scripts/compiled runonce, StartAllBack, WindowsUpdateBlocker.
+Không chạy/copy các binary/script Oprekin vào image của mình; không copy activation.
+Oprekin có tắt firewall; image của mình giữ BFE/MpsSvc/firewall.
+Không so kích thước .esd với .wim rồi kết luận toàn bộ chênh do component removal.
+Hai bản khác build, cấu hình, thuật toán nén. Hardlink/shared blobs rất quan trọng.
+
+6. MỐC v3 — DỰNG LẠI GIỮ RUNTIME
+--------------------------------
+  C:\tiny11-work\lite-v3\install.wim
+  3,624,258,955 bytes (~3.38 GiB), LZX
+  SHA256 D0DE50A9E50EA81455333669ADCB3A4A67B5FE9F4705EB99D476A8D799D361AD
+  C:\tiny11-work\lite-v3\report.json
+
+Scripts:
+  Build-LiteV3-Service.ps1 (có Resume)
+  Finish-LiteV3.ps1 (-ResumeRegistry)
+  Configure-LiteV3-Hives.ps1 (-ReuseCleanHives)
+Tất cả nằm C:\tiny11-work.
+
+Dùng original ISO Pro index 1 đã update; DISM deprovision app trước, Core cut sau.
+Gỡ 36 provisioned apps, 23 SystemApps. Giữ các shared/protected packages như
+DesktopAppInstaller, SecHealthUI, Services.Store.Engagement, frameworks, codecs,
+Calculator. Thực tế packages còn lại có danh sách trong paths/apps reports.
+Giữ .NET hai kiến trúc, Windows\assembly, SysWOW64, PS, WebView2, driver đầy đủ
+ban đầu. 31 service entries bị disable và 33 task registrations bị gỡ.
+Disable Windows Update, Defender, indexing, telemetry, Xbox, user-data services...
+Giữ BFE/MpsSvc, DHCP/DNS/RPC/EventLog/Schedule/Winmgmt/AppXSvc/ClipSVC/StateRepository.
+TPM/CPU/RAM/SecureBoot/storage bypass có trong offline Setup\LabConfig;
+MoSetup AllowUpgradesWithUnsupportedTPMOrCPU cũng được đặt. Không nhầm bypasscheck
+với driver/hardware capability thực tế.
+WinRE winre.wim bị gỡ. Source hives preserved tại lite-v3\final-hive-check\.
+
+7. MỐC v4 — WIN SXS / DRIVER STORE, USER ĐÃ THỬ
+--------------------------------------------
+  C:\tiny11-work\lite-v4\install.wim
+  3,435,097,761 bytes (~3.20 GiB), LZX
+  SHA256 578B840C2E57E081325D79FC11339AA41F581D475353AB9FD53A75CB6FE82D06
+  C:\tiny11-work\lite-v4\report.json
+
+  C:\tiny11-work\lite-v4\install.esd
+  2,437,952,382 bytes (~2.27 GiB), solid LZMS
+  SHA256 5479BA9666836D6C382ED69ECB7E55B8C64C9209C222BD663CC3C7E3D47C6C7A
+  esd-report.json / esd-status.json / esd-verify.log cùng folder.
+
+Scripts Build-LiteV4.ps1, Clean-LiteV4-DriverDatabase.ps1,
+Finalize-LiteV4-DriverMetadata.ps1, Inspect/Probe helpers trong lite-v4.
+WinSxS top entries 1522 -> 65: gỡ 1457 payload dirs, vẫn giữ metadata, family
+tham chiếu Oprekin theo major.minor/locale, một số isolation automation/proxystub.
+Driver folders 717 -> 505: gỡ 212 gồm 141 modem, 46 vendor net, printer/sensor/
+floppy/1394/... tùy inventory. Giữ boot-critical, classinstaller c_*, core driver,
+VMware/Hyper-V/generic USB/debug net, Intel I217 VEN8086 DEV153A/B.
+Không xóa bừa System32\drivers; chủ yếu packagefolder+published INF/PNF.
+Offline DRIVERS database dọn mapping; registered packages 450 ->246.
+Có lần cleanup không hiệu lực do PS5 JSON array bị wrap; đã sửa và verify lại.
+Metadata DriverDatabase boot-critical có thể ở SYSTEM, không chỉ DRIVERS.
+
+Bảo vệ 7,832 file bằng manifest hash:
+  C:\tiny11-work\lite-v4\v3-runtime-files.txt
+  C:\tiny11-work\lite-v4\v4-runtime-files.txt
+SYSTEM, SOFTWARE, Default user hives v4 giữ nguyên v3; DRIVERS thay có audit/ACL.
+
+User thử VMware thành công: winver Windows11Pro26H2 build26300.9818;
+PowerShell $PSVersionTable thành công, PSVersion5.1.26100.9818,
+CLR4.0.30319.42000. Chưa có test app x86 cụ thể được ghi nhận.
+RAM ảnh lúc 1.9/4GB, ảnh sau 1.4/4GB; không khẳng định toàn bộ giảm do trimming.
+Không có KVM/VPS boot test.
+
+8. MỐC v4 + VIRTIO
+-----------------
+User yêu cầu tạo WIM mới, giữ v4. Hoàn thành:
+  C:\tiny11-work\lite-v4-virtio\install.wim
+  3,438,191,079 bytes (~3.20 GiB), LZX
+  SHA256 B059DD4969DEFFC81FD7FC93C7F373F9495EF34C9421BC8FFB656366F362BEC4
+  report.json / driver-packages.json / driver-files.json / registry-verification.json
+
+Driver virtio-win stable 0.1.302, Windows11 amd64,
+DriverVer 07/22/2026,100.103.104.30200:
+  balloon, netkvm, vioscsi, viostor, vioser, viorng.
+DISM offline Add-Driver /Recurse thành công 6/6; không ForceUnsigned, không cài
+driver vào host. CAT và SYS signatures Valid Microsoft Windows Hardware
+Compatibility Publisher. Không gọi đây là WHQL nếu chỉ dựa tên certificate.
+
+Nguồn chính fedorapeople gặp Anubis challenge; không bypass challenge.
+Dùng public mirror MSI (4,887,552 bytes):
+  https://fedora-virt.repo.nfrance.com/virtio-win/direct-downloads/stable-virtio/virtio-win-gt-x64.msi
+Không execute MSI, chỉ extract bằng 7z và đọc File table qua native msi.dll.
+MSI container unsigned; file driver bên trong đã verify CAT/SYS Microsoft.
+21 selected input files, proper names tại lite-v4-virtio\drivers\{drivername}\.
+NetKVM optional netkvmco.exe không được DISM stage vì không thuộc INF required;
+không coi đây là missing-driver failure. netkvmp.exe và viorngum.dll required
+đã kiểm tra tồn tại/hash.
+
+Driver SYS dùng DIRID13, chạy trực tiếp từ DriverStore, không cần có bản copy ở
+System32\drivers. vioscsi/viostor Services Start=0, Group=SCSI miniport,
+ImagePath trong DriverStore, StartOverride không disable; đã verify image paths.
+Boot-critical package DB ở SYSTEM; NetKVM DB ở DRIVERS, check union hai hive.
+
+Scripts C:\tiny11-work:
+  Prepare-VirtIO-V4.ps1
+  Build-V4-VirtIO-Service.ps1
+  Finish-V4-VirtIO.ps1 (-ResumeVerification)
+  Verify-V4-VirtIO-Registry.ps1
+  ReadMsiFiles.cs
+
+6 drivers preserved, 7832 runtime files giữ hash như v4, originalv4 WIM/ESD
+giữ nguyên. Không tích hợp guestagent, không cấu hình RDP/user/firewall rules.
+Không sửa boot.wim; WIM chỉ bảo đảm installed Windows có VirtIO.
+  C:\tiny11-work\lite-v4-virtio\Load-VirtIO-in-WinPE.cmd
+để drvload driver storage/net bằng tay từ folder drivers, dành WinPE11.
+WinPE10 có thể cần w10 drivers; MSI extracted còn nguồn để chuẩn bị khi cần.
+
+ESD VirtIO cũng đã hoàn thành:
+  C:\tiny11-work\lite-v4-virtio\install.esd
+  2,449,866,218 bytes (~2.28 GiB), solid LZMS16MiB chunks,8threads
+  SHA256 AA4F86BA6D5DB36A8FC049A7DB8429386052F5DB1A3E4D338AC37895AC73E311
+  saved28.75%, reused v4 ESD compressed data, elapsed2.77min.
+  esd-report.json confirms fullverify, path+metadata match, DISMreadable,
+  sourceWIM and seedESD preserved.
+
+9. MỐC v5 — BẢN HIỆN TẠI
+------------------------
+User yêu cầu: cắt hết WebView2, font Trung/Nhật/Hàn, SecureBootUpdates;
+giữ .NET/PS/WoW64/VirtIO, giữ v4, chỉ WIM LZX để thử.
+
+Source: C:\tiny11-work\lite-v4-virtio\install.wim
+Output/checksum ở đầu hồ sơ. Giảm 884,462,010 bytes =843.5MiB (~25.72%).
+
+Scripts:
+  C:\tiny11-work\Build-LiteV5.ps1
+  C:\tiny11-work\Clean-V5-Registry.ps1
+Build script cố ý từ chối nếu lite-v5 đã tồn tại; không chạy lại đè lên output.
+Muốn v6: tạo script/root mới và xác định baseline/source hash, không sửa v5.
+
+Đã gỡ:
+  \Windows\System32\Microsoft-Edge-WebView
+  \Program Files (x86)\Microsoft\EdgeWebView
+  \Windows\System32\SecureBootUpdates
+  \Windows\SystemApps\Shared\WebView2SDK
+  Microsoft.Web.WebView2.* DLL/winmd, WebView2Loader.dll,
+  WebView2Standalone.dll/winmd trong các app ngoài protected runtime roots.
+  23 file font CJK/Yi/codepage cụ thể trong removed-font-files.txt.
+  StaticCache.dat của font; font registrations và FontLink entries liên quan
+  đã dọn trong SOFTWARE; WebView runtime updater/uninstall registrations đã dọn.
+  SOFTWARE stale log sidecars bị bỏ theo pattern script.
+Tổng 979 file gỡ. Dọn font không đồng nghĩa mọi font trong image đều không chứa
+glyph CJK; scope là các family/file chỉ định, không phá font đa ngôn ngữ lõi.
+
+Giữ Segoe UI/Segoe UI Variable/Arial/Consolas/Segoe UI Emoji/symbol/icons,
+font tiếng Việt và các ngôn ngữ khác ngoài nhóm đã chọn.
+Giữ entire .NET, assembly/GAC, SysWOW64, WindowsPowerShell dirs;
+DriverStore và System32\drivers không sửa; SYSTEM và DRIVERS hives không sửa.
+
+Kiểm chứng:
+  wimlib verify: pass toàn bộ data.
+  Compare mọi retained file path + stream content hash với source, ngoài
+  SOFTWARE là thay đổi có chủ đích: 87,100 retained files unchanged.
+  ProtectedFiles=10,055 (gồm runtime +driver roots); source hash unchanged.
+  SOFTWARE ACL unchanged; offline build identity26300.9818 verified.
+  Native DISM /Get-WimInfo /Index:1 success: x64 Professional26300.9818,
+  5800dirs,87103files; thông tin DISM 'Size'7,905,337,883 là logical image size,
+  KHÔNG phải kích thước file WIM hay installed unique disk usage.
+  C:\tiny11-work\lite-v5\dism-info.log
+
+Report VmBootTestPerformed=false nghĩa agent không boot; SAU build, user gửi
+ảnh VMware desktop +TaskManager và nói 'ok đấy'. V5 boot desktop thành công
+theo ảnh user; RAM1.7/4GB CPU~0. Không chứng minh mọi app, PS5.1/x86, KVM ổn.
+V4 có PS5.1 test thực; v5 mới có boot/shell/TaskManager. Cần phân biệt.
+
+Artifacts lite-v5:
+  report.json / status.json / build.log / install.wim.sha256
+  source-files.txt / output-files.txt (full hash manifests)
+  paths-final.txt / removed-paths.txt / removed-font-files.txt
+  wim-update-commands.txt / registry-changes.txt / hives\SOFTWARE[.cleaned]
+  working.wim (private intermediate, không file cài chính)
+Không tạo ISO/boot.wim/install.esd v5. Không tự xóa intermediates/old artifacts.
+
+10. WEBVIEW2 CÀI LẠI VÀ RECOVERY
+-------------------------------
+Đã giải thích user: Evergreen Standalone Installer x64 chính chủ thường cài
+lại sharedruntime được, nhưng CHƯA TEST trên v5. Không hứa restore đầy đủ vì:
+  runtime installer không tự khôi phục mọi DLL/SDK bị gỡ khỏi từng app;
+  app có thể cần reinstall/repair; System32 integrated runtime cũng không được
+  bảo đảm restore bởi Evergreeninstaller.
+https://developer.microsoft.com/en-us/microsoft-edge/webview2/
+https://learn.microsoft.com/en-us/microsoft-edge/webview2/concepts/distribution
+
+Point-in-time restore:
+  winre.wim đã gỡ từ v3 nên không có WinRE nội bộ đầy đủ để rollback.
+  PITR.dll/PITRTask.dll trong System32\oobe còn; rstrui.exe/srclient.dll,
+  VSSVC.exe/swprv.dll/volsnap.sys còn. Không khẳng định tính năng hoạt động.
+  User hỏi dung lượng:6filePITR/PITRTask/rstrui/VSSVC/swprv/srclient tổng
+  3,316,384bytes raw (~3.16MiB),1,238,832bytes compressed(~1.18MiB).
+  PITR2file831KiBraw296KiBcompressed. Không gồm toàn bộ VSS dependencies.
+  User bảo nhỏ thì giữ => KHÔNG gỡ recovery/VSS thêm.
+  Snapshot của VPS provider là phía hypervisor, tách khỏi guest Windows image.
+
+Core image không thể bảo đảm WindowsUpdate/MSU/CAB upgrade bình thường vì
+componentstore/servicing bị cắt; downloadMSU thủ công vẫn cần servicing.
+Nếu muốn updateable phải dựng bản từ nguồn đầy đủ, giữ servicing rồi disable
+automaticupdate; không chỉ bật lại wuauserv trên v5.
+
+11. AUDIT DUNG LƯỢNG / HƯỚNG v6 CHƯA LÀM
+---------------------------------------
+  C:\tiny11-work\Audit-V4-Sizes.ps1
+  C:\tiny11-work\lite-v4\size-audit-detail.txt (~107MB)
+  C:\tiny11-work\lite-v4\size-audit-folders.csv
+Audit grouped blobs theo SHA1/hashstream, đếm compressed data unique và exclusive
+ở group; không cộng raw folder sizes vì hardlinks/dedup. Cùngblob ở CatRoot,
+WinSxS\Catalogs,servicing\Packages có nhiều reference; xóa1path không tiết kiệm
+bằng advertised compressed folder size.
+Audit lấy từ v4; nhóm v5 đã đụng (WebView/Fonts) không được dùng số cũ làm current.
+
+Trước v5, WebViewSystem32347.76MiBcompressed+Evergreen236.43MiB,
+Fonts202.89MiBcompressed,SecureBootUpdates96.85MiBcompressed.
+v5 đã cắt các phần chọn ở trên và kiểm chứng size thực giảm843.5MiB.
+
+User vừa hỏi còn cắt gì nữa, agent đã trả lời các CANDIDATE, CHƯA ĐƯỢC YÊU CẦU CẮT:
+  Globalization\Ink ~12.2MiBcompressed: nhận dạng chữ viết tay.
+  Globalization\ELS ~14.7MiB: từ điển/chức năng ngôn ngữ liên quan.
+  Calculator ~6MiB; SecHealthUI ~6.3MiB; codec WindowsApps vàiMiB mỗigói.
+  DriverStore còn ~103.3MiBcompressed, exclusive~66.3MiB; không phải tất cả
+    66MiB đều có thể bỏ. Phải giữVirtIO và boot/storage/net/core cần cho VPS.
+  WindowsAppRuntime1.3+1.4 ~39MiB(trước v5 gỡ DLLWebView có thể nhỏ hơn chút).
+    Chỉ cân nhắc sau dependency audit; sharedframework gỡ có thể hỏng app.
+  .NETNativeImages32/64 tổng~133.6MiBcompressed: KHÔNG đề nghị cắt theo yêu
+    cầu giữ .NET/PS ổn định. Không đánh đồng .NETNative UWP với .NETFramework.
+  Không đề xuất ICU/sorting/shell/framework lõi như đồ dư có thể xóa an toàn.
+
+Ứng dụng/packages hiện còn trong v5 (paths-final.txt là nguồn chuẩn):
+Calculator,DesktopAppInstaller,SecHealthUI,Store.Engagement,
+AV1/AVC/HEVC/HEIF/MPEG2/RawImage/VP9/WebMedia/Webp extensions,
+.NET.Native.Framework/Runtime2.2,VCLibs140,UI.Xaml2.7/2.8,
+WindowsAppRuntime1.3/1.4; các SystemApps/coreCBS/ClientCore/Photon/Shell/OOBE...
+Không có Store/StorePurchaseApp đầy đủ. AppxServices retained không bảo đảm
+mọi Storeapp sideload chạy; cần deps/license/app compatibility cụ thể.
+
+12. KỸ THUẬT NÉN NHANH ESD CHO LẦN SAU
+--------------------------------------
+  C:\tiny11-work\Compress-LiteV4.ps1
+Params: -Root <folder> -ImageLabel <label> -SeedEsd <optional verified ESD>
+Mặc định Rootlite-v4; nhớ truyền Root nếu build v5/v6!
+Script đọc SHA từ Root\report.json, từ chối output/partial đã tồn tại.
+Root phải có install.wim, report.json, paths-final.txt.
+V5 chưa được yêu cầu nén; không tự chạy. Khi user yêu cầu có thể dùng:
+  pwsh -NoProfile -File C:\tiny11-work\Compress-LiteV4.ps1 -Root C:\tiny11-work\lite-v5 -ImageLabel v5 -SeedEsd C:\tiny11-work\lite-v4-virtio\install.esd
+Đây là ví dụ triển khai sau yêu cầu; kiểm tra script/paths trước khi chạy.
+
+Mechanism:
+  copy seed ESD sang PRIVATEpartial;
+  wimlib export NEW_WIM1PRIVATE_ESD "unique staging name" --compress=LZMS
+    --solid --solid-chunk-size=16M --threads=8 --check (appendindex2,dedup);
+  wimlib delete PRIVATE_ESD1 --check (rebuildreusecompresseddata);
+  wimlib info PRIVATE_ESD1 "Windows 11 Pro" --check;
+  verifyeveryfile, comparepaths+metadata,source+seedhashunchanged;
+  renameprivatepartialtoinstall.esd.
+Không delete index trên sourceESD gốc! Copy seed trước là bắt buộc.
+Không --recompress nếu muốn reuse compressedblobs. Solidblocks có thể giữ
+deadbytes của vài blobchia sẻ; fullrecompress có thể nhỏ hơn nhưng chậm hơn.
+LZMS default64MiBchunk cần~640MiB/thread; host16GB từng auto2threads rất chậm.
+16MiBchunks cho8threads~1.4GBRAM, fullcompression v4~18.72phút.
+V4VirtIO tận dụngseed chỉ~2.77phút. Không hứa v5 chắc cùng thời gian.
+
+Incomplete files, KHÔNG DÙNG:
+  lite-v4\install-aborted-64MiB.partial
+  lite-v4-virtio\install-from-scratch-aborted.partial
+  extreme-v2\install-lzms-incomplete.esd
+User từng yêu cầu dừng nén quá lâu: nếu dừng, xác minh PID+commandline đúng
+job, không killallwimlib/powershell. Preserve/rename partial nếu cần.
+
+13. CÁC LỖI ĐÃ GẶP VÀ CÁCH TRÁNH
+--------------------------------
+DISM exit87 dưới Codex/MSIX có thể do offline hive regload206/longenvironment.
+Chạy nativeDISM trong elevated scheduledtask độc lập, currentuserInteractive,
+RunLevelHighest, pwshNoProfile, WindowStyleHidden đã thành công. Các task mới
+v3/VirtIO đã remove sau hoàn thành. Có thể còn taskGUI cũ Tiny11-Independent-Build;
+không tự dừng/xóa khi chưa xác định thuộc job nào.
+Get-WimInfo chạy read-only thông thường thành công, không cần scheduledtask.
+
+PS5 ConvertFrom-Json array: đừng @(Get-Content...|ConvertFrom-Json) rồi tưởng
+enumerate element; từng wrap toàn array thành 1object. Directassignment rồi
+foreach hoặc parse đúng kiểu, kiểm tra Count/schema trước edit.
+PS biểu thức @($base+'path1',$base+'path2') sai do comma/plus precedence:
+  dùng @(($base+'path1'),($base+'path2')). V5helper đã sửa trước khi chạy.
+offreg phải chạy x86PS. ORCreateKey fullmissingnestedpath không hiệu lực;
+  helper hiện createparent từng level đã test.
+Đọc DISMdriverinfo Version: firstmatch thường là version DISM, chọn đúng dòng
+  driver version(lastVersion); v4VirtIO audit đã sửa100.103.104.30200.
+MSICOM OpenDatabase reflection từng type mismatch; native msi.dll helper thay.
+Không đòi SYS phải ởSystem32drivers; theo INF DIRID13 và actualserviceImagePath.
+Autoapproval từng reject Remove-Item incompleteESD; Move-Item literalpath sang
+  explicitunusedpartial đã làm an toàn. Không xây commanddelete xuyên shell.
+
+14. TÀI LIỆU GỐC CHÍNH
+---------------------
+https://github.com/ntdevlabs/tiny11builder
+https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md
+https://virtio-win.github.io/Knowledge-Base/Driver-installation.html
+https://learn.microsoft.com/en-us/windows-hardware/drivers/develop/run-from-driver-store
+https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/manage-the-component-store?view=windows-11
+https://learn.microsoft.com/windows/deployment/update/catalog-checkpoint-cumulative-updates
+https://learn.microsoft.com/en-us/windows/configuration/point-in-time-restore
+https://learn.microsoft.com/en-us/microsoft-edge/webview2/concepts/distribution
+https://wimlib.net/man1/wimdelete.html
+https://www.wimlib.net/man1/wimoptimize.html
+
+ĐIỂM TIẾP TỤC CHO AGENT SAU
+--------------------------
+1) Đọc hồ sơ này + lite-v5\report.json + Build-LiteV5.ps1.
+2) Chờ user chọn: test thêm v5, nén ESD, tạo v6 cắt candidate, hoặc chuẩn bị VPS.
+3) Nếu cut thêm, snapshot inputhash và tạo root/output mới; giữv3/v4/v5.
+4) Giữ .NET/PS/WoW64/VirtIO; đừng gọi cắt an toàn nếu chưa verifydependencies.
+5) Hoàn thành fullWIMintegrity+retainedfilehashcompare+DISMinfo trước giao;
+   phân biệt kiểm tra offline với actualVM/KVMruntimecheck.
+6) Giao đường dẫn install.wim cụ thể, size,những gì thay đổi và chưa kiểm chứng.
+
+Hết bàn giao. Hồ sơ không tự cho phép thực hiện các bước gợi ý chưa được yêu cầu.

@@ -1,0 +1,230 @@
+[
+  {
+    "Name": "Clipchamp.Clipchamp",
+    "Package": "Clipchamp.Clipchamp_3.0.10220.0_neutral_~_yxz26nhyzhsrt"
+  },
+  {
+    "Name": "Microsoft.ApplicationCompatibilityEnhancements",
+    "Package": "Microsoft.ApplicationCompatibilityEnhancements_2024.401.617.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.AV1VideoExtension",
+    "Package": "Microsoft.AV1VideoExtension_2024.401.617.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.AVCEncoderVideoExtension",
+    "Package": "Microsoft.AVCEncoderVideoExtension_2024.401.617.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.BingNews",
+    "Package": "Microsoft.BingNews_2024.401.617.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.BingSearch",
+    "Package": "Microsoft.BingSearch_2024.401.617.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.BingWeather",
+    "Package": "Microsoft.BingWeather_2024.401.617.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.DesktopAppInstaller",
+    "Package": "Microsoft.DesktopAppInstaller_2024.401.617.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.GamingApp",
+    "Package": "Microsoft.GamingApp_2024.401.618.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.GetHelp",
+    "Package": "Microsoft.GetHelp_2024.401.617.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.HEIFImageExtension",
+    "Package": "Microsoft.HEIFImageExtension_2024.401.617.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.HEVCVideoExtension",
+    "Package": "Microsoft.HEVCVideoExtension_2024.401.617.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.MicrosoftOfficeHub",
+    "Package": "Microsoft.MicrosoftOfficeHub_2024.401.618.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.MicrosoftSolitaireCollection",
+    "Package": "Microsoft.MicrosoftSolitaireCollection_2024.401.617.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.MicrosoftStickyNotes",
+    "Package": "Microsoft.MicrosoftStickyNotes_2024.401.617.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.MPEG2VideoExtension",
+    "Package": "Microsoft.MPEG2VideoExtension_2024.401.617.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.NET.Native.Framework.2.2",
+    "Package": "Microsoft.NET.Native.Framework.2.2_2.2.29512.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.NET.Native.Runtime.2.2",
+    "Package": "Microsoft.NET.Native.Runtime.2.2_2.2.28604.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.OutlookForWindows",
+    "Package": "Microsoft.OutlookForWindows_1.0.0.0_neutral__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Paint",
+    "Package": "Microsoft.Paint_2024.401.617.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.PowerAutomateDesktop",
+    "Package": "Microsoft.PowerAutomateDesktop_2024.401.618.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.RawImageExtension",
+    "Package": "Microsoft.RawImageExtension_2024.401.617.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.ScreenSketch",
+    "Package": "Microsoft.ScreenSketch_2024.401.617.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.SecHealthUI",
+    "Package": "Microsoft.SecHealthUI_1000.26100.1.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Services.Store.Engagement",
+    "Package": "Microsoft.Services.Store.Engagement_10.0.23012.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.StorePurchaseApp",
+    "Package": "Microsoft.StorePurchaseApp_2024.401.617.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Todos",
+    "Package": "Microsoft.Todos_2024.401.617.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.UI.Xaml.2.7",
+    "Package": "Microsoft.UI.Xaml.2.7_7.2208.15002.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.UI.Xaml.2.8",
+    "Package": "Microsoft.UI.Xaml.2.8_8.2310.30001.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.VCLibs.140.00.UWPDesktop",
+    "Package": "Microsoft.VCLibs.140.00.UWPDesktop_14.0.30704.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.VCLibs.140.00",
+    "Package": "Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.VP9VideoExtensions",
+    "Package": "Microsoft.VP9VideoExtensions_2024.401.617.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WebMediaExtensions",
+    "Package": "Microsoft.WebMediaExtensions_2024.401.618.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WebpImageExtension",
+    "Package": "Microsoft.WebpImageExtension_2024.401.617.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Windows.DevHome",
+    "Package": "Microsoft.Windows.DevHome_2024.401.618.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Windows.Photos",
+    "Package": "Microsoft.Windows.Photos_2024.401.617.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAlarms",
+    "Package": "Microsoft.WindowsAlarms_2024.401.618.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.1.3",
+    "Package": "Microsoft.WindowsAppRuntime.1.3_3000.934.1904.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.1.4",
+    "Package": "Microsoft.WindowsAppRuntime.1.4_4000.1136.2333.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsCalculator",
+    "Package": "Microsoft.WindowsCalculator_2024.401.618.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsCamera",
+    "Package": "Microsoft.WindowsCamera_2024.401.618.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsFeedbackHub",
+    "Package": "Microsoft.WindowsFeedbackHub_2024.401.617.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsNotepad",
+    "Package": "Microsoft.WindowsNotepad_2024.401.617.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsSoundRecorder",
+    "Package": "Microsoft.WindowsSoundRecorder_2024.401.617.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsStore",
+    "Package": "Microsoft.WindowsStore_2024.401.616.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsTerminal",
+    "Package": "Microsoft.WindowsTerminal_2024.401.617.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Xbox.TCUI",
+    "Package": "Microsoft.Xbox.TCUI_2024.401.618.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.XboxGamingOverlay",
+    "Package": "Microsoft.XboxGamingOverlay_2024.401.618.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.XboxIdentityProvider",
+    "Package": "Microsoft.XboxIdentityProvider_2024.401.617.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.XboxSpeechToTextOverlay",
+    "Package": "Microsoft.XboxSpeechToTextOverlay_2024.401.618.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.YourPhone",
+    "Package": "Microsoft.YourPhone_2024.401.618.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.ZuneMusic",
+    "Package": "Microsoft.ZuneMusic_2024.401.618.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "MicrosoftCorporationII.MicrosoftFamily",
+    "Package": "MicrosoftCorporationII.MicrosoftFamily_2024.401.618.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "MicrosoftCorporationII.QuickAssist",
+    "Package": "MicrosoftCorporationII.QuickAssist_2024.401.618.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "MicrosoftWindows.Client.WebExperience",
+    "Package": "MicrosoftWindows.Client.WebExperience_2024.401.617.0_neutral_~_cw5n1h2txyewy"
+  },
+  {
+    "Name": "MicrosoftWindows.CrossDevice",
+    "Package": "MicrosoftWindows.CrossDevice_2024.401.618.0_neutral_~_cw5n1h2txyewy"
+  },
+  {
+    "Name": "MSTeams",
+    "Package": "MSTeams_1.0.0.0_x64__8wekyb3d8bbwe"
+  }
+]

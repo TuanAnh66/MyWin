@@ -1,0 +1,56 @@
+[
+  {
+    "Driver": "balloon",
+    "Inf": "C:\\tiny11-work\\lite-v4-virtio\\drivers\\balloon\\balloon.inf",
+    "Catalog": "C:\\tiny11-work\\lite-v4-virtio\\drivers\\balloon\\balloon.cat",
+    "Version": "07/22/2026,100.103.104.30200",
+    "CatalogSignature": "Valid",
+    "Signer": "CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "CatalogSHA256": "ACBCDAAC730AC6735320674817D3B0B0634C7E6A38C66D135E881C7060DE256E"
+  },
+  {
+    "Driver": "netkvm",
+    "Inf": "C:\\tiny11-work\\lite-v4-virtio\\drivers\\netkvm\\netkvm.inf",
+    "Catalog": "C:\\tiny11-work\\lite-v4-virtio\\drivers\\netkvm\\netkvm.cat",
+    "Version": "07/22/2026,100.103.104.30200",
+    "CatalogSignature": "Valid",
+    "Signer": "CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "CatalogSHA256": "B4C5C6C70DF75777B1E5A44DF8FA67BF0F2A85C016CF93F3113C0B3AB01EBC90"
+  },
+  {
+    "Driver": "vioscsi",
+    "Inf": "C:\\tiny11-work\\lite-v4-virtio\\drivers\\vioscsi\\vioscsi.inf",
+    "Catalog": "C:\\tiny11-work\\lite-v4-virtio\\drivers\\vioscsi\\vioscsi.cat",
+    "Version": "07/22/2026,100.103.104.30200",
+    "CatalogSignature": "Valid",
+    "Signer": "CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "CatalogSHA256": "65164F7341886268D2165805AD4563B3BDAEEE0ADAC368E0484CE54F8FE6E8FC"
+  },
+  {
+    "Driver": "viostor",
+    "Inf": "C:\\tiny11-work\\lite-v4-virtio\\drivers\\viostor\\viostor.inf",
+    "Catalog": "C:\\tiny11-work\\lite-v4-virtio\\drivers\\viostor\\viostor.cat",
+    "Version": "07/22/2026,100.103.104.30200",
+    "CatalogSignature": "Valid",
+    "Signer": "CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "CatalogSHA256": "0223DE68D544A31FA052F9088229B3A83C5AB6054F666E013576D8FFAE80F163"
+  },
+  {
+    "Driver": "vioser",
+    "Inf": "C:\\tiny11-work\\lite-v4-virtio\\drivers\\vioser\\vioser.inf",
+    "Catalog": "C:\\tiny11-work\\lite-v4-virtio\\drivers\\vioser\\vioser.cat",
+    "Version": "07/22/2026,100.103.104.30200",
+    "CatalogSignature": "Valid",
+    "Signer": "CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "CatalogSHA256": "5EF0E1163EC107405DACA1C1703C84C886B114905D086C93CD4EDDECD73A4E19"
+  },
+  {
+    "Driver": "viorng",
+    "Inf": "C:\\tiny11-work\\lite-v4-virtio\\drivers\\viorng\\viorng.inf",
+    "Catalog": "C:\\tiny11-work\\lite-v4-virtio\\drivers\\viorng\\viorng.cat",
+    "Version": "07/22/2026,100.103.104.30200",
+    "CatalogSignature": "Valid",
+    "Signer": "CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "CatalogSHA256": "33976CDECBA1E585B394F95F9F2D89E1F0201B99B2C97ACE06641E057F115596"
+  }
+]

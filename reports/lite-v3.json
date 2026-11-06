@@ -1,0 +1,26 @@
+{
+  "ProtectedAppsRetained": [
+    "Microsoft.DesktopAppInstaller",
+    "Microsoft.SecHealthUI",
+    "Microsoft.Services.Store.Engagement"
+  ],
+  "HiveAclsPreserved": true,
+  "Output": "C:\\tiny11-work\\lite-v3\\install.wim",
+  "RemovedSystemApps": 23,
+  "EmbeddedHiveHashesVerified": true,
+  "PostInstallWindowsUpdateEnabled": false,
+  "WebView2Retained": true,
+  "DotNetAndWow64Retained": true,
+  "RemovedPayloadPaths": 22456,
+  "RemovedProvisionedApps": 36,
+  "FirewallRetained": true,
+  "SourceIsoUnmodified": true,
+  "WimIntegrityVerified": true,
+  "Bytes": 3624258955,
+  "RequiredFilesChecked": 12,
+  "Build": "26300.9818",
+  "Compression": "LZX",
+  "VmBootTestPerformed": false,
+  "SHA256": "D0DE50A9E50EA81455333669ADCB3A4A67B5FE9F4705EB99D476A8D799D361AD",
+  "Serviceable": false
+}

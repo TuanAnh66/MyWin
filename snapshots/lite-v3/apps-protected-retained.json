@@ -1,0 +1,14 @@
+[
+  {
+    "Name": "Microsoft.DesktopAppInstaller",
+    "Package": "Microsoft.DesktopAppInstaller_2024.401.617.0_neutral_~_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.SecHealthUI",
+    "Package": "Microsoft.SecHealthUI_1000.26100.1.0_x64__8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Services.Store.Engagement",
+    "Package": "Microsoft.Services.Store.Engagement_10.0.23012.0_x64__8wekyb3d8bbwe"
+  }
+]
